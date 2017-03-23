@@ -17,6 +17,9 @@
 # show_downloads: true
 title: Heartsuit's Simple Blog
 email: nxq0108@126.com
+owner_url: https://github.com/heartsuit
+github.owner_name: heartsuit
+repository: heartsuit/heartsuit.github.io
 
 description: > # this means to ignore newlines until "baseurl:"
   A place to hold mainly reading notes, and some technical stuff occasionally.
@@ -24,11 +27,13 @@ description: > # this means to ignore newlines until "baseurl:"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 # twitter_username: jekyllrb
-github_username:  heartsuit
+# github_username: heartsuit
 
 # Build settings
 # highlighter: pygments
 markdown: kramdown # rdiscount
+kramdown:
+  input: GFM
 theme: jekyll-theme-midnight
 # gems:
 #   - jekyll-feed
