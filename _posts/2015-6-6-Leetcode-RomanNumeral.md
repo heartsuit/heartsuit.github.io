@@ -4,7 +4,7 @@ title: Leetcode[12-13] Roman to Integer & Integer to Roman(Java)
 tags: Java
 ---
 
-##Roman to Integer
+# Roman to Integer
 - Problem:
 
 > Given a roman numeral, convert it to an integer.
@@ -12,7 +12,7 @@ Input is guaranteed to be within the range from 1 to 3999.
 
 - Java Solution：
 
-<pre>
+``` java
 // Note that the way of defining a constructor
 public class Solution {
     Map<Character, Integer> map = new HashMap<Character, Integer>();
@@ -45,7 +45,7 @@ public class Solution {
 		return sum;
     }
 }
-</pre>
+```
 
 ## Integer to Roman
 
@@ -55,7 +55,7 @@ Input is guaranteed to be within the range from 1 to 3999.
 
 - Java Solution：
 
-<pre>
+``` java
 // The key is to find the rules of formation of a roman number.
 public class Solution {
     public String intToRoman(int num) {
@@ -72,6 +72,6 @@ public class Solution {
         return result.toString();
     }
 }
-</pre>
+```
 
 Reference:<http://blog.csdn.net/beiyeqingteng/article/details/8547565>

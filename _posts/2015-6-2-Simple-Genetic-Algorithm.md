@@ -4,13 +4,13 @@ title: 基本遗传算法（SGA）的MATLAB实现
 tags: Matlab
 ---
 
-### Simple Genetic Algorithm的MATLAB实现
+# Simple Genetic Algorithm的MATLAB实现
 
 - 两个测试用例，直观地阐述基本遗传算法的原理，具体原理参考：http://blog.csdn.net/begtostudy/article/details/4136492
 
 - 对于上述课件（讲得很透彻，适合对遗传算法的入门）中提出的一个问题进行了实现，并通过MATLAB作图直接观察到算法搜索的过程。闲言少叙，Show me the Code！
 
-<pre class="lang-matlab">
+{% highlight matlab %}
 % Date：2015年6月1日 14:01:35
 % Author：heartsuit
 % Function：基本遗传算法(Simple Genetic Algorithm, SGA)的实现
@@ -148,7 +148,7 @@ function evaluateValue = f(x)
 % f =  x .* sin(10*pi*x) + 2.0;
 % plot(x, f); grid on;
 evaluateValue = x .* sin(10*pi*x) + 2.0;
-</pre>
+{% endhighlight %}
 
 以上只是遗传算法的基本原理，由于今后还要用到这个算法，所以还会对其进行改进。update见我的[Github](https://github.com/heartsuit)
 
