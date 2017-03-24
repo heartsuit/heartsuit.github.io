@@ -17,9 +17,6 @@
 # show_downloads: true
 title: Heartsuit's Simple Blog
 email: nxq0108@126.com
-owner_url: https://github.com/heartsuit
-github.owner_name: heartsuit
-repository: heartsuit/heartsuit.github.io
 
 description: > # this means to ignore newlines until "baseurl:"
   A place to hold mainly reading notes, and some technical stuff occasionally.
@@ -44,7 +41,7 @@ exclude:
 # Social account
 # twitter:  username
 # weibo:    ID
-github:   heartsuit
+# github: heartsuit
 # codepen:  username
 # dribbble: username
 
@@ -53,3 +50,5 @@ github:   heartsuit
 
 # Google Analytics
 # google_analytics: UA-64529473-1
+
+repository: heartsuit/heartsuit.github.io
