@@ -3,6 +3,7 @@ layout: post
 title: Win7下搭建Jekyll
 tags: Jekyll
 ---
+## Win7下搭建Jekyll
 
 - 看到好多做的超赞的Blog，自己也想通过Jekyll折腾一下，搞出一个自己的小型blog。然而这个过程可谓举步维艰，各种错误乱冒，这里将摸索后（也参考了不少资料）的正确的安装方法记录下来。
 
@@ -95,6 +96,13 @@ tags: Jekyll
 可以到浏览器中，输入localhost:4000（或者127.0.0.1:4000）查看效果，对于生成的各个文件可以参考[Jekyll 说明文档](http://jekyllrb.com/docs/quickstart/)。自己对文件修改保存后，可以实时在本机4000端口看到效果，调试完成后，可以上传托管到Github上（这个网上资料很多），这样，就拥有了自己的mini blog。
 
 *Note:* 当Jekyll版本不对应时，键入命令：bundle exec jekyll serve
+
+### 运行bundle exec jekyll serve报错：
+	Liquid Exception: SSL_connect returned=1 errno=0 state=SSLv3 read server certi
+	ficate B: certificate verify failed in /_layouts/post.html
+
+	Solution: http://stackoverflow.com/questions/37717131/jekyll-gives-an-regenerating-error-when-i-try-saving-codes-again
+
 
 ### 安装Pygments
 我实现代码高亮用的是Google Code Prettify，所以并没有装pygments。
