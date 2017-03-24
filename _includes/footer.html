@@ -1,4 +1,27 @@
 <div class="footer">
     <p class="footer-entry">Made By <a href="https://github.com/heartsuit" target="_blank">Heartsuit</a>, on May 2015.</p>
-    <p class="footer-entry">Built with <a href="http://jekyllrb.com/" target="_blank">Jekyll</a> and <a href="http://themes.jekyllrc.org/midnight/" target="_blank">jekyll-theme-midnight</a>      • Hosted on <a href="https://github.com/heartsuit/heartsuit.github.io" target="_blank">Github</a></p>
+    <p class="footer-entry">Built with <a href="http://jekyllrb.com/" target="_blank">Jekyll</a> and <a href="http://themes.jekyllrc.org/midnight/"
+            target="_blank">jekyll-theme-midnight</a> • Hosted on <a href="https://github.com/heartsuit/heartsuit.github.io"
+            target="_blank">Github</a></p>
+
 </div>
+
+<!--Add search box, From https://github.com/androiddevelop/jekyll-search -->
+<div class="cb-search-tool" style="position: fixed; top: 0px ; bottom: 0px; left: 0px; right:  0px;
+    opacity: 0.95; background-color: #111111; z-index: 9999; display: none;">
+<input type="text" class="form-control cb-search-content" id="cb-search-content" style="position: fixed; top: 60px" placeholder="文章标题 日期 标签" >
+
+<div style="position: fixed; top: 16px; right: 16px;">
+<img src="/search/img/cb-close.png" id="cb-close-btn" />
+</div>
+</div>
+
+<div style="position: fixed; right: 16px; bottom: 20px;">
+<img src="/search/img/cb-search.png" id="cb-search-btn" title="双击ctrl试一下" />
+</div>
+
+<link rel="stylesheet" href="{{ " /search/css/cb-search.css " | prepend: site.baseurl }}">
+
+<script src="{{ " /search/js/bootstrap3-typeahead.min.js " | prepend: site.baseurl }}"></script>
+<script src="{{ " /search/js/cb-search.js " | prepend: site.baseurl }}"></script>
+<!--Search box Ends-->
