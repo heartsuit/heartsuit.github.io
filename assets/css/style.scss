@@ -3,10 +3,48 @@
 
 @import "jekyll-theme-midnight";
 
-#header nav {
-	background: #353535;	
+// header
+#header #target-menu,.navbar-header {
+	background: url(../images/nav-bg.gif);
 }
 
+#header {
+	height: 52px;
+}
+
+// #header #target-menu li a {
+// 	font-size: 18px;
+// 	font-weight: bold;
+// 	color: #FFF;
+// 	margin-left: 15px;
+// 	border: none;
+// 	background: transparent;
+// 	box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.2), 0px 1px 0px transparent; 
+// }
+
+#header #target-menu li a:hover {
+	color: #FFCC00;
+	border: none;
+	background: #080808;
+	box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.3), 0px 3px 7px rgba(0, 0, 0, 0.7); 
+}
+
+#header #target-menu .dropdown .dropdown-menu {
+	background: url(../images/nav-bg.gif);
+}
+
+#header #target-menu .dropdown .dropdown-menu a {
+	color: #FFF;
+	font-size: 15px;
+	font-weight: normal;
+}
+
+#header #target-menu .dropdown .dropdown-menu a:hover {
+	color: #FFCC00;
+	font-weight: bold;
+}
+
+// post list
 .blogs {
 	font-size: 16px;
 }
@@ -16,36 +54,11 @@
 	color: #999;
 }
 
-#header #target-menu li a {
-	font-size: 18px;
-	font-weight: bold;
-	color: #FFF;
-	margin-left: 15px;
-	border: none;
-	background: transparent;
-	box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.2), 0px 1px 0px transparent; 
+.highlighter-rouge{
+	background: black;
 }
 
-#header #target-menu li a:hover {
-	color: #FFCC00;
-	border: none;
-	background: transparent;
-	box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.3), 0px 3px 7px rgba(0, 0, 0, 0.7); 
-}
-
-.navbar.navbar-default {
-	border: none;
-}
-
-#header #target-menu .dropdown .dropdown-menu {
-	background: #353535;
-}
-
-#header #target-menu .dropdown .dropdown-menu a {
-	font-size: 15px;
-	font-weight: normal;
-}
-
+// footer 
 .footer .footer-entry{
 	font-size: 11px;
 	text-align: center;
