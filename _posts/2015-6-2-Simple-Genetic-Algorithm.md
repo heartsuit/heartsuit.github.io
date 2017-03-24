@@ -4,7 +4,7 @@ title: 基本遗传算法（SGA）的MATLAB实现
 tags: Matlab
 ---
 
-# Simple Genetic Algorithm的MATLAB实现
+## Simple Genetic Algorithm的MATLAB实现
 
 - 两个测试用例，直观地阐述基本遗传算法的原理，具体原理参考：http://blog.csdn.net/begtostudy/article/details/4136492
 

@@ -4,7 +4,7 @@ title: 获取音、视频时长（NAudio，Shell32，FFmpeg）
 tags: C#
 ---
 
-# 获取音、视频时长（NAudio，Shell32，FFmpeg） 
+## 获取音、视频时长（NAudio，Shell32，FFmpeg） 
 > 需要用到第三方组件获取多种`格式`的音视频时长，现分别采用NAudio.dll，Shell32.dll，FFmpeg.exe获取音视频的时长，并对比三者对不同格式文件的支持程度；
 
 以下为本次测试用到的音、视频格式：
