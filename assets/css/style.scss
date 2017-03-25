@@ -63,7 +63,22 @@ body {
 }
 
 // footer 
-.footer .footer-entry{
+#busuanzi_container_site_pv,#busuanzi_container_page_pv {
+	color: #888;
+}
+#busuanzi_value_site_pv,#busuanzi_value_page_pv{
+	color: #40FFFF;
+}
+.footer{
 	font-size: 11px;
 	text-align: center;
+}
+.footer .footer-entry {
+	margin: auto;
+}
+.footer .footer-entry a {
+	color:#4094C7;
+}
+.footer .footer-entry a:hover{
+	color:#40CFFF;
 }
