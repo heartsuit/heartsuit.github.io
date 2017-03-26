@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 基本遗传算法（SGA）的MATLAB实现
-tags: Matlab
+tags: MATLAB
 ---
 
 ## Simple Genetic Algorithm的MATLAB实现

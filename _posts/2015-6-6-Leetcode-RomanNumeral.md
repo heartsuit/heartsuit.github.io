@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Leetcode[12-13] Roman to Integer & Integer to Roman(Java)
-tags: Java
+tags: Algorithm
 ---
 
 ## Roman to Integer
