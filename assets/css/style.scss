@@ -44,9 +44,13 @@
 	font-weight: bold;
 }
 
+#title #time_elapsed{
+	font-size: 12px;
+	text-align: center;
+}
 // post list
 .blogs {
-	font-size: 17px;
+	font-size: 16px;
 }
 
 .blogs .tagEnd {
@@ -70,7 +74,7 @@ body {
 	color: #EEE;
 }
 .footer{
-	font-size: 11px;
+	font-size: 12px;
 	text-align: center;
 }
 .footer .footer-entry {

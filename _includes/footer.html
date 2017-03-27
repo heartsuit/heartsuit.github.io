@@ -4,7 +4,7 @@
     <span id="busuanzi_container_page_pv">本页浏览量：<span id="busuanzi_value_page_pv"></span>次</span>
 
     <hr />
-    <p class="footer-entry">Built by <a href="https://github.com/heartsuit" target="_blank">Heartsuit</a>, on March 2017.</p>
+    <p class="footer-entry">Built by &copy;<a href="https://github.com/heartsuit" target="_blank">Heartsuit</a>, on March 2017.</p>
     <p class="footer-entry">Powered by <a href="http://jekyllrb.com/" target="_blank">Jekyll</a> and <a href="http://themes.jekyllrc.org/midnight/"
             target="_blank">jekyll-theme-midnight</a> • Hosted on <a href="https://github.com/heartsuit/heartsuit.github.io"
             target="_blank">Github</a></p>
@@ -33,3 +33,24 @@
 
 <!--Add Visits counter-->
 <script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+<script>
+    function showElapsedTime() {
+        window.setTimeout("showElapsedTime()", 1000);
+
+        var startTime = new Date(2017, 2, 22, 20, 52, 1);	// set a time to start
+        var curTime = new Date();
+
+        var elapsedTime = (Date.parse(curTime) - Date.parse(startTime)) / 1000;
+
+        var days = Math.floor(elapsedTime / (3600 * 24));
+        elapsedTime = elapsedTime % (3600 * 24);
+        var hours = parseInt(elapsedTime / 3600);
+        elapsedTime = elapsedTime % 3600;
+        var minutes = parseInt(elapsedTime / 60);
+        elapsedTime = elapsedTime % 60;
+        var seconds = parseInt(elapsedTime);
+
+        time_elapsed.innerHTML = "(ง •̀_•́)ง我已经努力运行了：" + days + "天" + hours + "小时" + minutes + "分" + seconds + "秒";
+    } showElapsedTime();
+</script>
