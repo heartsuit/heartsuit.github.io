@@ -34,6 +34,7 @@
 <!--Add Visits counter-->
 <script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 
+<!--Add elapsed time of the site-->
 <script>
     function showElapsedTime() {
         window.setTimeout("showElapsedTime()", 1000);
@@ -51,6 +52,6 @@
         elapsedTime = elapsedTime % 60;
         var seconds = parseInt(elapsedTime);
 
-        time_elapsed.innerHTML = "(ง •̀_•́)ง我已经努力运行了：" + days + "天" + hours + "小时" + minutes + "分" + seconds + "秒";
+        time_elapsed.innerHTML = "(ง •̀_•́)ง 我已经努力运行了：" + days + "天" + hours + "小时" + minutes + "分" + seconds + "秒";
     } showElapsedTime();
 </script>
