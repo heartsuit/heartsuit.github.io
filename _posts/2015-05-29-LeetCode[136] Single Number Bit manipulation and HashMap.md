@@ -24,6 +24,7 @@ public class SingleNumber {
 ```
 ### Thought2：
 	Since the hint tags show that one of the ways to solve this problem is to utilize the HashTable(HasnMap in Java), so I have also tried this one.
+	
 ### Java Solution2
 ``` java
 	// method 2: HashMap

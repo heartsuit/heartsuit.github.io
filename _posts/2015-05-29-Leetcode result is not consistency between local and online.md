@@ -53,6 +53,7 @@ public class Solution {
 The **solution** is : *try to declare the class variables as class instance variables instead of class staic variables; That's because the judger runs all test cases in one go.*
 
 >Reference:https://leetcode.com/discuss/5800/different-answer-between-local-idle-and-leetcode?show=5800#q5800
+
 ### Java Solution（ Accepted）
 
 ``` java
