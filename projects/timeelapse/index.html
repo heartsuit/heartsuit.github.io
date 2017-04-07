@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>My Love</title>
+</head>
+
+<body style="height:100%">
+	<audio autoplay="autopaly">
+		<source src="/projects/timeelapse/一次就好.mp3" type="audio/mp3" />
+	</audio>
+	<canvas id="canvas" style="height:100%">
+		当前浏览器不支持Canvas，请更换浏览器后再试。
+	</canvas>
+
+	<div class="element"></div>
+
+	<script src="/projects/timeelapse/scripts/digit.js"></script>
+	<script src="/projects/timeelapse/scripts/elapse.js"></script>
+	<script src="//cdn.bootcss.com/jquery/1.7.1/jquery.min.js"></script>
+	<script src="/projects/timeelapse/scripts/typed.min.js"></script>
+
+	<script>
+		$(function () {
+			$(".element").scrollTop = $(".element").scrollHeight;
+
+			$(".element").typed({
+				strings: ["Hello，<br> 亲爱的雪，<br> 我好想你。ಠ౪ಠ ",
+					"你相信缘分吗？",
+					"吴军博士曾经做过一个比喻：",
+					"宇宙的年龄约为138亿年，<br> 地球的年龄约为45亿年，恐龙是在6500万年前消失的，<br> 现代智人的年龄约为20万年，人类有文字的历史约为5500年;",
+					"若将地球的年龄缩短为一年，<br> 则人类仅在最后一天的最后半小时才出现。",
+					"而能在这最后半小时里，<br> 并且在茫茫人海中遇到你，<br> 这就是缘分。",
+					"我是一个不懂罗曼蒂克的人，<br> 而且我知道以前有很多时候都是我不对，<br> 经常惹你生气。(ง •̀_•́)ง",
+					"但是，<br> 我心里很清楚，<br> 你一直以来都是一个好女孩。",
+					"我曾在一本书上看到一句话，<br> ‘男人最大的福报就是遇到一个好女人’。",
+					"我一直以来都认为自己很幸运，<br> 而遇到你便是我最大的福气。(｡◕ˇ∀ˇ◕)",
+					"感谢你一直以来对我的包容与理解，<br> 陪伴我成长，使我更快地成熟起来。",
+					"五年多来，<br> 虽然我们之间也有过不少争吵，<br> 但是更多的是开心与快乐。不是吗？",
+					"你说我总是爱说你不好，<br> 那是我太在乎你，<br> 不过，我会慢慢改的哦……｡◕*◕｡",
+					"最近这两年半，<br> 我不在你身边的这些日子里，<br> 我知道你心里很难受（虽然表面上装作无所谓的样子）；",
+					"我们每天的联系只能通过电话，短信，微信，<br> 我曾被你戏称为‘手机里的男朋友’，<br> ‘嘿嘿’我这声苦笑包含了多少心酸。",
+					"我不能说没有异地恋的爱情是不完美的，<br> 毕竟，完美的爱情仅存在于想象中，<br> 但是有了这段异地恋，我们之间的距离反而更近了。",
+					"2016了，<br> 我依然一无所有，<br> 感谢你的不离不弃。",
+					"面包，牛奶什么的，<br> 呵呵~~~，<br> 都会有的啦。",
+					"我很快就可以跳出手机，<br> 恢复成你以前真的男朋友了，<br> Tust me！",
+					"你知道吗，(◔౪◔) <br>自从我跟你表白那天开始，<br> 我们在一起已经2000多天了 ｡◕‿◕｡ ",
+					"观察这里计算得到的天数，<br> 我预设了五位数，<br> 聪明如你，粗略计算后，你懂的……╰(*°▽°*)╯",
+					"希望可以<br> 执子之手，与子偕老。<br>—— 爱你的小情歌(2015.2.1)"
+				],
+				typeSpeed: 132
+			});
+		});
+	</script>
+
+	<style>
+		.typed-cursor {
+			opacity: 1;
+			-webkit-animation: blink 0.7s infinite;
+			-moz-animation: blink 0.7s infinite;
+			animation: blink 0.7s infinite;
+		}
+		
+		@keyframes blink {
+			0% {
+				opacity: 1;
+			}
+			50% {
+				opacity: 0;
+			}
+			100% {
+				opacity: 1;
+			}
+		}
+		
+		@-webkit-keyframes blink {
+			0% {
+				opacity: 1;
+			}
+			50% {
+				opacity: 0;
+			}
+			100% {
+				opacity: 1;
+			}
+		}
+		
+		@-moz-keyframes blink {
+			0% {
+				opacity: 1;
+			}
+			50% {
+				opacity: 0;
+			}
+			100% {
+				opacity: 1;
+			}
+		}
+		
+		.element {
+			position: absolute;
+			z-index: 100;
+			top: 76%;
+			left: 10%;
+			font-size: 30px;
+			font-style: italic;
+			font-weight: bold;
+			font-family: '楷体', '楷体_GB2312';
+			color: #A19;
+			text-shadow: #f3f3f3 1px 1px 0px, #b2b2b2 1px 2px 0;
+		}
+	</style>
+</body>
+
+</html>
