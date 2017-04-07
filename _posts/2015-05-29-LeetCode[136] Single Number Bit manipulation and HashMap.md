@@ -21,29 +21,30 @@ public class SingleNumber {
 		}
 		return result;
 	}
+}
 ```
 ### Thought2：
 	Since the hint tags show that one of the ways to solve this problem is to utilize the HashTable(HasnMap in Java), so I have also tried this one.
-	
+
 ### Java Solution2
 ``` java
-	// method 2: HashMap
-	public int singleNumberHashMap(int[] nums) {	
-		Map<Integer, Integer> map = new HashMap<Integer, Integer>();
+// method 2: HashMap
+public int singleNumberHashMap(int[] nums) {	
+	Map<Integer, Integer> map = new HashMap<Integer, Integer>();
 
-		for (int i = 0; i < nums.length; i++) {
-			if (map.containsKey(nums[i])) {
-				map.remove(nums[i]);
-			} else {
-				map.put(nums[i], i);				
-			}
-		}		
-		// System.out.println(map.entrySet());		
-		for(Map.Entry<Integer, Integer> m : map.entrySet()){
-			return m.getKey();
+	for (int i = 0; i < nums.length; i++) {
+		if (map.containsKey(nums[i])) {
+			map.remove(nums[i]);
+		} else {
+			map.put(nums[i], i);				
 		}
-		return 0;
+	}		
+	// System.out.println(map.entrySet());		
+	for(Map.Entry<Integer, Integer> m : map.entrySet()){
+		return m.getKey();
 	}
+	return 0;
+}
 ```
 ### Online Judge: <a href="https://leetcode.com/problems/single-number/" target="blank"> Single Number
 
