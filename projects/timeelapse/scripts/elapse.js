@@ -58,12 +58,12 @@ function render(cxt) {
 	elapsedTime = elapsedTime % 60;
 	var seconds = parseInt(elapsedTime);
 	
-	cxt.font = "oblique bold 30px MicrosoftYaHei";
+	cxt.font = "oblique bold 52px sans-serif";
 //	cxt.lineWidth = 2;
 //	cxt.strokeStyle = "#F76";
 //	cxt.strokeText("雪妞儿，我们在一起已经度过了", MARGIN_LEFT, MARGIN_TOP - 13*(RADIUS + 1));
 //	cxt.fillStyle = "#F4C";
-	cxt.fillText("雪妞儿，我们在一起已经度过了:", MARGIN_LEFT, MARGIN_TOP - 13*(RADIUS + 1), 300);
+	cxt.fillText("雪妞儿，我们在一起已经度过了:", MARGIN_LEFT, MARGIN_TOP - 13*(RADIUS + 1));
 	
 	renderDigit(MARGIN_LEFT + 60*(RADIUS+1), MARGIN_TOP - 10*(RADIUS + 1), parseInt(days%10), cxt);
 	days = days / 10;
