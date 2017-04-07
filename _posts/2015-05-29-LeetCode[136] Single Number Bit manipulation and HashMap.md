@@ -4,13 +4,13 @@ title: LeetCode[136] Single Number 位运算异或，HashMap（Java）
 tags: Algorithm
 ---
 ## LeetCode[136] Single Number 位运算异或，HashMap（Java）
-###Problem：
+### Problem：
 
->Given an array of integers, every element appears twice except for one. Find that single one.
-###Thought1：
+> Given an array of integers, every element appears twice except for one. Find that single one.
+### Thought1：
 	The standard key to solve this problem is bit manipulation. As XOR will return 1 only when two bits are different, so if two numbers are the same, XOR will return 0. Thus the last remaining number will be the single one.
 
-###Java Solution1
+### Java Solution1
 ``` java
 public class SingleNumber {
 	// method 1:Bit manipulation: XOR
@@ -22,9 +22,9 @@ public class SingleNumber {
 		return result;
 	}
 ```
-###Thought2：
+### Thought2：
 	Since the hint tags show that one of the ways to solve this problem is to utilize the HashTable(HasnMap in Java), so I have also tried this one.
-###Java Solution2
+### Java Solution2
 ``` java
 	// method 2: HashMap
 	public int singleNumberHashMap(int[] nums) {	
@@ -44,7 +44,7 @@ public class SingleNumber {
 		return 0;
 	}
 ```
-###Online Judge: <a href="https://leetcode.com/problems/single-number/" target="blank"> Single Number
+### Online Judge: <a href="https://leetcode.com/problems/single-number/" target="blank"> Single Number
 
 
 ---
