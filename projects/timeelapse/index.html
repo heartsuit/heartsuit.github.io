@@ -1,21 +1,26 @@
+--- 
+---
 <!DOCTYPE html>
 <html>
 
 <head>
 	<meta charset="UTF-8">
 	<title>My Love</title>
+	<link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
 </head>
 
 <body style="height:100%">
-	<audio autoplay="autopaly">
-		<source src="/projects/timeelapse/一次就好.mp3" type="audio/mp3" />
-	</audio>
-	<canvas id="canvas" style="height:100%">
-		当前浏览器不支持Canvas，请更换浏览器后再试。
-	</canvas>
+	<div id="canvasWrap">
+		<audio autoplay="autopaly">
+			<source src="/projects/timeelapse/一次就好.mp3" type="audio/mp3" />
+		</audio>
+		<canvas id="canvas" style="height:100%">
+			当前浏览器不支持Canvas，请更换浏览器后再试。
+		</canvas>
 
-	<div class="element"></div>
-
+		<div class="element"></div>
+	</div>
+	{% include footer.html %}
 	<script src="/projects/timeelapse/scripts/digit.js"></script>
 	<script src="/projects/timeelapse/scripts/elapse.js"></script>
 	<script src="//cdn.bootcss.com/jquery/1.7.1/jquery.min.js"></script>
@@ -110,6 +115,10 @@
 			font-family: '楷体', '楷体_GB2312';
 			color: #A19;
 			text-shadow: #f3f3f3 1px 1px 0px, #b2b2b2 1px 2px 0;
+		}
+		
+		#canvasWrap {
+			background: #FFF;
 		}
 	</style>
 </body>
