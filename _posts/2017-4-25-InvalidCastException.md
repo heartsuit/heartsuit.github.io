@@ -5,13 +5,13 @@ tags:  C#
 ---
 ## An unhandled exception of type "System.InvalidCastException" occurred in System.Windows.Form.dll 
 
-- Problem: 在使用Webbrowser时，异步操作完成后，获取Document时报错：
+- Problem: 在使用Webbrowser时，异步操作完成后，获取Document时报错:
 
   An unhandled exception of type "System.InvalidCastException" occurred in System.Windows.Form.dll   
   Additional information:指定的转换无效。
 
 - Description: 
-[!webbrowser](https://github.com/heartsuit/heartsuit.github.io/raw/master/pictures/webbrowser.png)
+![webbrowser](https://github.com/heartsuit/heartsuit.github.io/raw/master/pictures/webbrowser.png)
 
 - Analysis: 
 这个问题很是莫名其妙，看错误信息让人摸不着头脑；在网上查后才发现是跨线程操作。如何解决？
