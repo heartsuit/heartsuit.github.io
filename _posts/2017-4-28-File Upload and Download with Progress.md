@@ -31,7 +31,7 @@ tags:  Node.js
 - 最后长这样子：
 ![fileUpload](https://github.com/heartsuit/heartsuit.github.io/raw/master/pictures/upload.png)
 - 作为应用Express 4.x与socket.io的小例子，实现文件的上传、下载；
-  > **关键是如何通过socket.io实现前后端的实时通信：在routes中使用socket触发文件上传进度事件。**
+  > 关键是如何通过socket.io实现前后端的实时通信：在routes中使用socket触发文件上传进度事件。
 - 前端上传进度条：显示上传进度，用div宽度模拟，比较简陋；
 - 点击文件名可下载：相对上传，下载简单多了，通过response的download方法实现；
 - 文件去重：在上传过程中通过formidable提供的`form.hash='md5'`计算文件唯一标识，保证上传后的文件不重复；
@@ -39,6 +39,7 @@ tags:  Node.js
 
 ### Let's code
 - Server Side : app.js
+
 ``` javascript
 var express = require('express');
 var path = require('path');
@@ -72,6 +73,7 @@ app.set('socketio', io); // store a reference to the io object, can be passed to
 ---
 
 - Router - Form and File List: index.js
+
 ``` javascript
 var formidable = require('formidable');
 var fs = require('fs');
@@ -87,6 +89,7 @@ exports.list = function (req, res) {
 };
 ```
 - Router - Submit and Upload: index.js
+
 ``` javascript
 exports.submit = function (dir) {
   return function (req, res, next) {
@@ -142,6 +145,7 @@ exports.submit = function (dir) {
 ```
 
 - Router - Download ：index.js
+
 ``` javascript
 exports.download = function (dir) {
   return function (req, res, next) {
@@ -155,7 +159,9 @@ exports.download = function (dir) {
 };
 ```
 ---
+
 - Layout(only part of the file): index.ejs
+
 ``` html
 <table>
 <caption>Uploaded Files</caption>
@@ -183,6 +189,7 @@ exports.download = function (dir) {
 </table>
 ```
 - Client Validation(only part of the file): client.js
+
 ``` javascript
 // client validation
 function validateInput() {
@@ -221,6 +228,7 @@ function getUploadProgressFromServer() {
 	});
 }
 ```
+
 ### Notes:
 1. 为简单起见，后端触发上传进度事件时，通过broadcast方式通知所有客户端，所以当多个客户端（可用两个不同的浏览器模拟）在传文件时，会在所有的窗口内显示进度，更好的实现方式应该是使用socket.io的Session；
 2. 前端上传进度条、已上传文件列表的实现、样式等均比较粗糙，未使用bootstrap美化，不过作为Demo型程序，已经足够；
