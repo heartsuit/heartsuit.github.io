@@ -250,6 +250,8 @@ function getUploadProgressFromServer() {
 
     **上述问题，如您知道原因，还请不吝赐教，非常感谢！**
 
+### Source Code: [Github](https://github.com/heartsuit/Upload-File-with-Progress)
+
 ---
 ***If you have any questions or any bugs are found, please feel free to contact me.***
 
