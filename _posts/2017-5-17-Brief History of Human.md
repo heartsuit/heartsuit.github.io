@@ -4,7 +4,7 @@ title: 《人类简史》阅读感悟
 tags: Notes
 ---
 ## 《人类简史》阅读感悟
-![BookCover](https://github.com/heartsuit/heartsuit.github.io/raw/master/pictures/briefHumamHistory.jepg)
+![BookCover](https://github.com/heartsuit/heartsuit.github.io/raw/master/pictures/briefHumamHistory.jpeg)
 
 书中涉及到很多不同的领域，大都很有意思，仅挑几个印象较深的几个点：
 
