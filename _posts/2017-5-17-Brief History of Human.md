@@ -86,3 +86,6 @@ eg：化学领域的突破性进展都是最近两个世纪的事情；而如今
 全书故事性很强，推荐看原书，自己去感受。
 
 **感觉： 脑洞大开、引人深思**
+
+### Extension
+[阮大神的读后感，相对更深刻一些](http://www.ruanyifeng.com/blog/2016/08/useless-people.html)
