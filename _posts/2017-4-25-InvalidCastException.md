@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  An unhandled exception of type "System.InvalidCastException" occurred
+title:  An unhandled exception of type \"System.InvalidCastException\" occurred
 tags:  C#
 ---
 ## An unhandled exception of type "System.InvalidCastException" occurred in System.Windows.Form.dll 

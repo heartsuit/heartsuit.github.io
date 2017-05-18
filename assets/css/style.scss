@@ -65,11 +65,15 @@
 section {
 	max-width: 700px;
 }
+section a{
+	text-decoration: underline;
+}
 body {
 	font-size: 15px;
 }
 .highlighter-rouge{
 	background: black;
+	font-size: 16px;	
 }
 blockquote {
 	margin-bottom: 1em;
@@ -77,6 +81,10 @@ blockquote {
 blockquote p{
 	color: #999;
 	font-size: 16px;
+}
+strong { 
+	font-weight: bold; 
+	color: #FFCC00;	
 }
 
 // footer 
