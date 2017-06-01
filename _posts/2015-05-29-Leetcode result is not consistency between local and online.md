@@ -6,10 +6,11 @@ tags: Algorithm
 ## Leetcode 运行输出与本地结果不一样的解决方法（用例子说明）
 ### Problem：
 
->Write an algorithm to determine if a number is "happy".
+> Write an algorithm to determine if a number is "happy".
 >A happy number is a number defined by the following process: Starting with any positive integer, replace the number by the sum of the squares of its digits, and repeat the process until the number equals 1 (where it will stay), or it loops endlessly in a cycle which does not include 1. Those numbers for which this process ends in 1 are happy numbers.
 
->Example: 19 is a happy number
+> Example: 19 is a happy number
+
     12 + 92 = 82
     82 + 22 = 68
     62 + 82 = 100
@@ -25,8 +26,8 @@ tags: Algorithm
 ### Java Solution（ Wrong Answer）
 ``` java
 public class Solution {
-    private static Map<Integer, Integer> map = new HashMap<Integer, Integer>();
-    public boolean isHappy(int n) {
+	private static Map<Integer, Integer> map = new HashMap<Integer, Integer>();
+	public boolean isHappy(int n) {
 		if (n == 1) {
 			return true;
 		} else if (map.containsKey(n)) {
@@ -43,7 +44,7 @@ public class Solution {
 		}
 		// recursion
 		return isHappy(temp);
-    }
+	}
 }
 ```
 ### **Exception**
@@ -52,7 +53,7 @@ public class Solution {
 
 The **solution** is : *try to declare the class variables as class instance variables instead of class staic variables; That's because the judger runs all test cases in one go.*
 
->Reference:https://leetcode.com/discuss/5800/different-answer-between-local-idle-and-leetcode?show=5800#q5800
+> Reference:https://leetcode.com/discuss/5800/different-answer-between-local-idle-and-leetcode?show=5800#q5800
 
 ### Java Solution（ Accepted）
 

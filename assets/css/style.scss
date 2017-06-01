@@ -67,10 +67,11 @@ section {
 }
 body {
 	font-size: 15px;
+	color: #93A1A1;
 }
 .highlighter-rouge{
 	background: black;
-	font-size: 16px;	
+	font-size: 15px;	
 }
 blockquote {
 	margin-bottom: 1em;
@@ -80,7 +81,7 @@ blockquote p{
 	font-size: 16px;
 }
 strong { 
-	font-weight: bold; 
+	// font-weight: bold; 
 	color: #FFCC00;	
 }
 
