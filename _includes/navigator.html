@@ -1,36 +1,36 @@
-<div id="header">
-    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#target-menu">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <li class="fork navbar-brand hidden-sm"><a href="{{ site.github.repository_url }}">View On GitHub</a></li>
-            {% if site.show_downloads %}
-            <li class="downloads"><a href="{{ site.github.zip_url }}">ZIP</a></li>
-            <li class="downloads"><a href="{{ site.github.tar_url }}">TAR</a></li>
-            <li class="title">DOWNLOADS</li>
-            {% endif %}
-        </div>
-        <div class="collapse navbar-collapse" id="target-menu" role="navigation">
-            <ul class="nav navbar-nav">
-                <li><a href="{{ site.baseurl }}/">Blog</a></li>
-                <!--<li><a href="{{ site.baseurl }}/about">About</a></li>-->
-                <li><a href="https://github.com/heartsuit">GitHub</a></li>
-                <li><a href="{{ site.baseurl }}/projects/index">Projects</a></li>
-                <li class="hidden-sm hidden-md"><a href="{{ site.baseurl }}/about">About</a></li>
+<div id="siteHeader">
+	<div class="navbar navbar-inverse navbar-static-top" role="navigation">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#target-menu">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<li class="fork navbar-brand hidden-sm"><a href="{{ site.github.repository_url }}">View On GitHub</a></li>
+			{% if site.show_downloads %}
+			<li class="downloads"><a href="{{ site.github.zip_url }}">ZIP</a></li>
+			<li class="downloads"><a href="{{ site.github.tar_url }}">TAR</a></li>
+			<li class="title">DOWNLOADS</li>
+			{% endif %}
+		</div>
+		<div class="collapse navbar-collapse" id="target-menu" role="navigation">
+			<ul class="nav navbar-nav">
+				<li><a href="{{ site.baseurl }}/">Blog</a></li>
+				<!--<li><a href="{{ site.baseurl }}/about">About</a></li>-->
+				<li><a href="https://github.com/heartsuit">GitHub</a></li>
+				<li><a href="{{ site.baseurl }}/projects/index">Projects</a></li>
+				<li class="hidden-sm hidden-md"><a href="{{ site.baseurl }}/about">About</a></li>
 
-                <!--<li class="dropdown">
+				<!--<li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">Resume<span class="caret"></span></a>
                     <ul class="dropdown-menu">
                         <li><a href="{{ site.baseurl }}/resume_ch.pdf" target="_blank">中文</a></li>
                         <li><a href="{{ site.baseurl }}/resume_en.pdf" target="_blank">English</a></li>
                     </ul>
                 </li>-->
-            </ul>
-        </div>
-    </div>
+			</ul>
+		</div>
+	</div>
 </div>
 <!-- end header -->
