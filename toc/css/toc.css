@@ -1,0 +1,41 @@
+.anchorBlog {
+    /*background: #f4f7f9;*/
+    /*padding: 10px;*/
+    line-height: 180%;
+}
+
+.anchorBlog p {
+    font-size: 18px;
+    color: #15a230;
+    margin-bottom: 0.3em;
+}
+
+.anchorBlog .anchorContent {
+    padding: 5px 0px;
+}
+
+.anchorBlog li {
+    list-style:none;
+    text-indent: 20px;
+    font-size: 14px;
+}
+
+#anchorContentToggle {
+    font-size: 13px;
+    font-weight: normal;
+    color: #FFF;
+    display: inline-block;
+    line-height: 20px;
+    background: #5cc26f;
+    font-style: normal;
+    padding: 1px 8px;
+    margin-right: 10px;
+}
+
+.anchorBlog a:hover {
+    color: #5cc26f;
+}
+
+.anchorBlog a {
+    text-decoration: none;
+}

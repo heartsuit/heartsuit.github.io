@@ -7,11 +7,20 @@
 
   <div class="wrapper">
     <section>
-      {% include intro.html %} 
-      
+      {% include intro.html %}
+      <div class="anchorBlog">
+        <p>
+          <b id="anchorContentToggle" title="收起" style="cursor:pointer;">目录[-]</b>
+        </p>
+        <div class="anchorContent" id="anchorContent"> </div>
+      </div>
       {{ content }}
 
     </section>
+    <!-- Table of Content-->
+    <link rel="stylesheet" href="{{ '/toc/css/toc.css' | prepend: site.baseurl }}">
+    <script src="{{ " /toc/js/toc.js " | prepend: site.baseurl }}"></script>
+
     <!-- JiaThis Button BEGIN -->
     <!--<div class="jiathis_style_32x32">
       <a class="jiathis_button_qzone"></a>
@@ -28,10 +37,10 @@
     <script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=2128569" charset="utf-8"></script>-->
     <!-- JiaThis Button END -->
 
-      <!-- UY BEGIN -->
-      <div id="uyan_frame"></div>
-      <script type="text/javascript" src="http://v2.uyan.cc/code/uyan.js?uid=2128569"></script>
-      <!-- UY END -->
+    <!-- UY BEGIN -->
+    <div id="uyan_frame"></div>
+    <script type="text/javascript" src="http://v2.uyan.cc/code/uyan.js?uid=2128569"></script>
+    <!-- UY END -->
     {% include footer.html %}
   </div>
 
@@ -46,7 +55,7 @@
     ga('create', '{{ site.google_analytics }}', 'auto');
     ga('send', 'pageview');
   </script>
-{% endif %}
+  {% endif %}
 </body>
 
 </html>
