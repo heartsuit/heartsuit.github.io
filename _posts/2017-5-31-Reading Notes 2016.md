@@ -4,7 +4,7 @@ title:  2016年度——阅读书单&笔记
 tags:  Notes
 ---
 ## 2016年度——阅读书单&笔记
-### 1. 橘生淮南-暗恋（上）（八月长安）——2016-1-1
+### 橘生淮南-暗恋（上）（八月长安）——2016-1-1
 - 因为你只待天命，不尽人事。
 - 人一旦相信了命运，还能有什么指望。
 - 上帝动动小指头，一个人的命运就能急转直下，至于上帝为什么会动小指……也许只是觉得痒。
@@ -38,15 +38,15 @@ tags:  Notes
 - 也许有一天你不再喜欢他，但不可以厌弃曾经喜欢他的你自己。毕竟他是你的全部青春，他如果很不堪，那你的青春就等于喂狗了。
 - 承诺唯一的用途就是有朝一日用来对着自己抽耳光。
 
-### 2. 文明之光——第二册（吴军）——2016-1-6
+### 文明之光——第二册（吴军）——2016-1-6
 - 走进下议院时我还是个忠诚的英国人，但是离开时却成了纯粹的美国人。——富兰克林
 - 富兰克林和亚历山大·汉密尔顿是两位应该当总统而没有当的政治家。富兰克林主要是因为年龄，而汉密尔顿则因为不是出生在美国。不过美国人民没有忘记他们，而是把他们的头像印在了美元上。要知道，美元上的其他头像都是美国总统的。
 - 我必须研究政治和战争，就是为了让我的孩子们能研究数学和哲学。我的孩子们应当研究数学、哲学、地里、自然、历史、造船学、航海、商业和农业，目的是让他们的孩子们能够研究绘画、诗歌、音乐、建筑、雕塑、编织和陶艺。——约翰·亚当斯
 - I must study politics and war that my sons may have liberty to study mathematics and philosophy. My sons ought to study mathematics and philosophy, geography, natural history, naval architecture, navigation, commerce and agriculture in order to give their children a right to study painting, poetry, music, architecture, statuary, tapestry, and porcelain. -- John Adams
 - 我必须研究政治和战争，我的儿子们便能学习数学和哲学，他们的孩子又能学习绘画、诗歌…所以，第一代平定天下，第二代打下好的经济基础，第三代才开始研究艺术和生活。现在，中国正处第二代，二十年后即将过渡到第三代了。
 
-### 3. 你只是看起来很努力（李尚龙）——2016-3-21
-### 4. Don't make me think中文版：点石成金（Steve Krug）——2016-5-3
+### 你只是看起来很努力（李尚龙）——2016-3-21
+### Don't make me think中文版：点石成金（Steve Krug）——2016-5-3
 - 《The far side》
 - 《Sources of power：How people make decision》——Gray Klein
 - 《乞丐王子》
@@ -59,13 +59,13 @@ tags:  Notes
 - 为什么东西总是在你找的最后一个地方找到？`因为你找到以后就不会再找。。`
 - 我们认为的“精心准备的文字”（或者至少是“产品资料”），在用户看来更像“以每小时100公里的速度驶过的广告牌”。
 
-### 5. MCSD Certification Toolkit (Exam 70-483)——2016-5-5
+### MCSD Certification Toolkit (Exam 70-483)——2016-5-5
 - In a multithreaded application, one thread would spawn another thread to do the fetching and waiting while the parent thread continued to do other work. When the data was needed, the parent thread was blocked waiting for the spawned thread to finish its work.This pattern is known as fork-join pattern.
 - Except for the main thread, all the threads mentioned so far are background threads. When you create a new thread, you have the option to specify if the thread should be a background thread.
 - When the main thread and all other nonbackground threads of a .NET application finishes, the .NET application finishes as well.
 - Multicore and many-core are both used to describe systems with more than one core, but there is a difference between them. Multicore refers to CPUs that have several cores of the same type on the same silicon chip. Many-core refers to CPUs that have different kinds of specialized cores on the same silicon chip.
 
-### 6. 了不起的盖茨比（斯科特·菲茨杰拉德）——2016-6-18
+### 了不起的盖茨比（斯科特·菲茨杰拉德）——2016-6-18
 - 每当你想批评别人的时候，要记住这世上并不是所有人都有你拥有的那些优势。
 - 每个人的基本道德观念生而不同，不可等量齐观。
 - 在都市撩人的暮色里，我有时会感到一种难以排遣的寂寞。
@@ -73,7 +73,7 @@ tags:  Notes
 - 通过一双新的眼睛去看待你已经努力适应的事物，这不免会令人难过。
 - 人类的同情心是有限度的，我们也愿意让他们那些可悲的争论与向后掠去的城市灯光一道渐行渐远。
 
-### 7. 麦田里的守望者（J. D. 塞林格）——2016-7-1
+### 麦田里的守望者（J. D. 塞林格）——2016-7-1
 - 有些人是不能开玩笑的，尽管他们有可笑的地方。
 - 不过博物馆里最好的一点是一切东西总呆在原来的地方不动。谁也不挪移一下位置。
 - 唯一变样的东西只是你自己。倒不一定是变老了什么的。严格说来，倒不一定是这个。不过你反正改了些样儿，就是这么回事。
@@ -88,11 +88,11 @@ tags:  Notes
 - 历史上有许许多多人都象你现在这样，在道德上和精神上都有过彷徨的时期。幸而，他们中间有几个将自己彷徨的经过记录下来了。你可以向他们学习--只要你愿意。正如你有朝一日如果有什么贡献，别人也可以向你学习。这真是个极妙的轮回安排。而且这不是教育。这是历史。这是诗。
 - 谁都不乐意把新知识灌输给那些约莫一百岁的老人。他们不爱听。
 
-### 8. 异类：不一样的成功启示录（马尔科姆·格拉德威尔）——2016-7-26
+### 异类：不一样的成功启示录（马尔科姆·格拉德威尔）——2016-7-26
 - “如果你遇到的是一个真正聪明的小孩，那就完全没有必要知道他的IQ是多少。”
 - 记住，如果你仅仅因为人们的外在与他人不同而轻视他或避开他，或是不象对待别人那样对待他，那么你与他们划分界线是可耻的。
 
-### 9. 无声告白（伍绮诗）——2016-8-1
+### 无声告白（伍绮诗）——2016-8-1
 - 她终于收到了像样的礼物——不是书，也不是暗示，是她想要的东西，而不是他们希望她要的。
 - 是什么让某些东西变得宝贵？失而复得。
 - 得到良好的教育和获得优异的成绩不能再确保成功了，除了我们的孩子，仿佛没有人意识到这一点。
@@ -107,7 +107,7 @@ tags:  Notes
 - 我们只记住了历史事件发生的时间和名称，却没有记住教训。
 - 工作只是面对长期问题的一种暂时的解决办法。
 
-### 10. 我所理解的生活（韩寒）——2016-8-18
+### 我所理解的生活（韩寒）——2016-8-18
 - 对于异乡人，每个陌生的城市都是迷宫。
 - 是的，面对特权，我们厌恶，但享用到一点假特权，心中又有窃喜，面对吃特供的人，我们批判，但自己用到了那些特供，又会得意。很多人恨特- 权，因为特权没有在自己手中。
 - 地表上的光鲜，地底下的不堪，正是我们周围很多东西的缩影。
@@ -133,7 +133,7 @@ tags:  Notes
 - 如果你准备好去打仗，你就得知道敌人扔过来的不会是面包，你准备好去探险，就得知道山谷里没有七尺大床。
 - 拉力赛的时候我就想明白了，除了那几个特地早起来看你比赛的至亲至友，满山遍野的人都是看热闹的，其中很多是来看翻车的。 生活亦如是，冷暖几人知。
 
-### 11. 富爸爸穷爸爸（Robert Toru Kiyosaki-罗伯特清崎）——2016-8-7
+### 富爸爸穷爸爸（Robert Toru Kiyosaki-罗伯特清崎）——2016-8-7
 - 得到良好的教育和获得优异的成绩不能再确保成功了，除了我们的孩子，仿佛没有人意识到这一点。
 - 他知道，世界在变，教育却没有随之改变，在罗伯特看来，孩子们把时间都浪费在一个过时的教育体系中，学一些他们永远用不着的东西，并为一个根本不存在的世界做准备。—— 莎伦·L·莱希特
 - 真正的学习需要精力，激情和热切的愿望，愤怒是其中一个重要的组成部分，因为激情正是愤怒和热爱的结合体。
@@ -164,7 +164,7 @@ tags:  Notes
 - 在现实生活中，人们往往是依靠勇气而不是智慧去取得理想的位置。
 - 我们关注的越多，能够学到的也就越多。
 
-### 12. The Csharp Players Guide 2nd Edition（RB Whitaker）——2016-7-9
+### The Csharp Players Guide 2nd Edition（RB Whitaker）——2016-7-9
 - In fact, even if you know you're the only person who will ever see your code, you should still put comments in it. Do you remember what you ate for lunch a week ago today? Neither do I. Do you really think that you’ll remember what your code was supposed to do a week after you write it?
 - It’s easy to write code. It’s hard to write code that you can actually go back and read and understand.
 - When making a real program, you should use the pre-existing one, instead of making your own.
@@ -178,7 +178,7 @@ tags:  Notes
 - There’s no such thing as getting it right all the time, so don’t beat yourself up when you do. That applies to both beginners and professionals. Just change it to make it work like you think it should and keep moving forward.
 - Readability and understandability should always be a priority over using cool new language features.
 
-### 13. 岛上书店（Gabrielle Zevin-加布瑞埃拉·泽文）——2016-9-15
+### 岛上书店（Gabrielle Zevin-加布瑞埃拉·泽文）——2016-9-15
 - 《我在雨中等你》
 - 《雪地里的女孩》
 - 《1984》
@@ -203,9 +203,9 @@ tags:  Notes
 - 一个地方如果没有一家书店，就算不上个地方了。
 - 我们读书而后知道自己并不孤单。我们读书，因为我们孤单；我们读书，然后就不孤单，我们并不孤单。
 
-### 14. 动物庄园（乔治·奥威尔）——2016-9-27
-### 15. 且听风吟（村上春树）——2016-10-4
-### 16. 你的灯亮着吗（唐纳德·高斯、维拉尔德·温伯格）——2016-10-14
+### 动物庄园（乔治·奥威尔）——2016-9-27
+### 且听风吟（村上春树）——2016-10-4
+### 你的灯亮着吗（唐纳德·高斯、维拉尔德·温伯格）——2016-10-14
 - 问题就是理想状态和现实状态之间的差别。
 - 面对有利可图的问题时，道德考量很可能就烟消云散了。
 - 不要把别人的解决方法作为定义问题的方法。
@@ -220,8 +220,8 @@ tags:  Notes
 - 解决问题的过程，人员或者机构自身也可能成为问题。
 - 人们永远没有足够的时间去考虑到底是不是想要它，但永远有足够的时间去为之后悔。
 
-### 17. 藏地密码第一部（何马）——2016-10-20         
-### 18. 大秦帝国之黑色裂变（孙皓辉）——2016-10-31
+### 藏地密码第一部（何马）——2016-10-20         
+### 大秦帝国之黑色裂变（孙皓辉）——2016-10-31
 - 通常意义上，“帝国”是一个历史概念。它一般包含三个基本标准：其一，统一辽阔的国土（小国家没有帝国）；其二，专制统治（民主制没有帝国）；其三，强大的军事扩张（无扩张不成帝国）。
 - 金钱乃人世流火，生不带来，死不带去，用得其所，方为无价至宝。不得其所，铜臭如粪土。纵然一国之君，概莫能外。
 - "昔我往矣，杨柳依依。今我来思，雨雪霏霏。行道迟迟，载渴载饥。我心伤悲，莫知我哀。"这是母亲年轻美丽的时候最爱唱的《小雅》
@@ -245,11 +245,11 @@ tags:  Notes
 - 十万铁骑踏出函谷关！黑色旌旗所指，大军潮水般漫过原野！一日之间八百里，一举席卷周室洛阳、韩国新郑、魏国大梁；越过淮水，楚国郢都指日可下；北上河外，一支偏师奇袭赵燕，势如破竹。大军东进，三千里之外决战齐国，一鼓可定中原天下……秦孝公深重的叹息一声，上天啊上天，设使你再给我二十年岁月，嬴渠梁当金戈铁马定中原，结束这兵连祸结的无边灾难，还天下苍生以安居乐业。何天不假年？竟使嬴渠梁并吞八荒囊括四海包举宇内席卷天下之雄心，竟化做了东流之水？上天啊上天，你何其不公也……"
 - 公元前三百三十八年，壮志未酬的秦孝公嬴渠梁逝世了，时年四十五岁。
 
-### 19. 活着（余华）——2016-11-14
+### 活着（余华）——2016-11-14
 - 我相信是时间创造了诞生和死亡，创造了幸福和痛苦，创造了平静和动荡，创造了记忆和感受，创造了理解和想象，最后创造了故事和神奇。
 - 生活是属于每个人自己的感受，不属于任何别人的看法。
 
-### 20. 解忧杂货铺（东野圭吾）——2016-11-21
+### 解忧杂货铺（东野圭吾）——2016-11-21
 - 如果你真的爱他，就应该陪他到生命最后一刻。
 - 跟没有干劲的人在一起厮混，只会徒增压力。
 - 其实如果真正有才华，运气并不是那么重要。
@@ -257,7 +257,7 @@ tags:  Notes
 - 人与人之间情断义绝，并不需要什么具体的理由。
 - 心一旦离开了，就再不会回来。
 
-### 21.沉默的大多数（王小波）——2016-12-12
+### 沉默的大多数（王小波）——2016-12-12
 - 《情人》
 - 一个人倘若需要从思想中得到快乐，那么他的第一个欲望就是学习。
 - 在我们生活的这个世界上，最大的不幸就是有些人完全拒绝新奇。
