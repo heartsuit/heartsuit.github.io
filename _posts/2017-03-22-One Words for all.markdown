@@ -1,9 +1,8 @@
 ---
 layout: post
-title:  《一句顶一万句》阅读笔记&感悟
-tags:  Notes
+title: 《一句顶一万句》阅读笔记&感悟
+tags: Notes
 ---
-## 《一句顶一万句》阅读笔记&感悟
 ![BookCover](https://github.com/heartsuit/heartsuit.github.io/raw/master/pictures/oneWordForAll.jpg)
 ### 笔记
 - 一个人说正经话，说得不对可以劝他，一个人在胡言乱语，何劝之有？

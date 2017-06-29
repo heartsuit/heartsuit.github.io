@@ -3,7 +3,6 @@ layout: post
 title: MATLAB中给图像加高斯噪声时imnoise的方差参数问题
 tags: MATLAB
 ---
-## MATLAB中给图像加高斯噪声时imnoise的方差参数问题
 ### 加噪声函数imnoise()的方差参数
 
 - Problem：
@@ -22,7 +21,7 @@ tags: MATLAB
 即默认的M，V值分别为0， 0.01（注意此处的方差形式）。
 
 所以最终的结论就是 **需要对方差归一化处理** ，比如此处要对一幅256*256的图像加入标准偏差为10的高斯噪声，那么相应的语句应为：
-```
+``` matlab
 J = imnoise(I, 'gaussian', 0, 10^2/255^2)
 ```
 

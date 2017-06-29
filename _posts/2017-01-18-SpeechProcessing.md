@@ -3,9 +3,6 @@ layout: post
 title: 百度语音识别、语音合成，NAudio录音（C#）
 tags: C#
 ---
-
-## 百度语音识别、语音合成，NAudio录音（C#）
-
 ### 调用API
 > 调用百度语音识别API实现语音识别（ASR）与语音合成（TTS），分别需要发送一个HTTP请求。
 

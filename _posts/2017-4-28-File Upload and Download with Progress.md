@@ -1,10 +1,8 @@
 ---
 layout: post
-title:  Express 4.x, socket.io, formidable文件的上传（进度条）、下载
-tags:  Node.js
+title: Express 4.x, socket.io, formidable文件的上传（进度条）、下载
+tags: Node.js
 ---
-## Express 4.x, socket.io, formidable文件的上传（进度条）、下载
-
 ### What I Learned
 接触Node.js也有十来天了，算是学点新东西。`The best way to learn something new is to use it.` 学习新知识最好的方式莫过于去使用它(do something)，在自然语言、编程语言的习得过程中尤为如此。
 

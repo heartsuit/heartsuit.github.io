@@ -3,7 +3,6 @@ layout: post
 title: Java获取视频的时长——日期时间处理
 tags: Java
 ---
-## Java获取视频的时长——日期时间处理
 ### Problem：
 
 >如何通过Java获取视频的时长？
@@ -18,8 +17,6 @@ tags: Java
 >以单个目录下的视频为例，通过JAVE实现，并采用不同的日期时间处理方式转换为时-分-秒格式，顺便熟悉了一下Java 中的日期处理。
 
 - Note：当然，需要导入下载的JAVE的jar文件。。
-
-### eg：
 
 ``` java
 import java.io.File;

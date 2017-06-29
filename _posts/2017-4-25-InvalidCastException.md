@@ -1,10 +1,8 @@
 ---
 layout: post
-title:  An unhandled exception of type 'System.InvalidCastException' occurred
-tags:  C#
+title: An unhandled exception of type 'System.InvalidCastException' occurred in System.Windows.Form.dll 
+tags: C#
 ---
-## An unhandled exception of type "System.InvalidCastException" occurred in System.Windows.Form.dll 
-
 - Problem: 在使用Webbrowser时，异步操作完成后，获取Document时报错:
 
   An unhandled exception of type "System.InvalidCastException" occurred in System.Windows.Form.dll   

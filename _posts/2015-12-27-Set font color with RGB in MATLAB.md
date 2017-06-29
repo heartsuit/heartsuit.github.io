@@ -3,7 +3,6 @@ layout: post
 title: MATLAB如何采用0~1的RGB值设置字体颜色？
 tags: MATLAB
 ---
-## MATLAB如何采用0~1的RGB值设置字体颜色？
 ### Problem：
 
 >在MATLAB中，如何采用0~1的RGB值设置字体颜色？
@@ -19,11 +18,8 @@ tags: MATLAB
 ### Solution：
 >选择自己欲显示的颜色，得到0~255间的RGB值，进行归一化即可：[R, G, B]/256
 
-
-### eg：
-
-``` C
-	set(handles.text1, 'foregroundColor', [187 25 34]/256);
+``` matlab
+set(handles.text1, 'foregroundColor', [187 25 34]/256);
 ```
 
 ### Theory：

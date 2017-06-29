@@ -3,7 +3,6 @@ layout: post
 title: LeetCode[136] Single Number 位运算异或，HashMap（Java）
 tags: Algorithm
 ---
-## LeetCode[136] Single Number 位运算异或，HashMap（Java）
 ### Problem：
 
 > Given an array of integers, every element appears twice except for one. Find that single one.

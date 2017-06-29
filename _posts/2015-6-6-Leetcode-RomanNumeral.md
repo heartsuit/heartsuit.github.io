@@ -4,7 +4,7 @@ title: Leetcode[12-13] Roman to Integer & Integer to Roman(Java)
 tags: Algorithm
 ---
 
-## Roman to Integer
+### Roman to Integer
 - Problem:
 
 > Given a roman numeral, convert it to an integer.

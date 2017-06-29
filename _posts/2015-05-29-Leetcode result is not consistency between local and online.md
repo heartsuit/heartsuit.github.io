@@ -3,7 +3,6 @@ layout: post
 title: Leetcode 运行输出与本地结果不一样的解决方法（用例子说明）
 tags: Algorithm
 ---
-## Leetcode 运行输出与本地结果不一样的解决方法（用例子说明）
 ### Problem：
 
 > Write an algorithm to determine if a number is "happy".

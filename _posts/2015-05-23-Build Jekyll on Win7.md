@@ -3,8 +3,6 @@ layout: post
 title: Win7下搭建Jekyll
 tags: Jekyll
 ---
-## Win7下搭建Jekyll
-
 - 看到好多做的超赞的Blog，自己也想通过Jekyll折腾一下，搞出一个自己的小型blog。然而这个过程可谓举步维艰，各种错误乱冒，这里将摸索后（也参考了不少资料）的正确的安装方法记录下来。
 
 ## 安装步骤

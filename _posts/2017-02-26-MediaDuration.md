@@ -4,14 +4,13 @@ title: 获取音、视频时长（NAudio，Shell32，FFmpeg）
 tags: C#
 ---
 
-## 获取音、视频时长（NAudio，Shell32，FFmpeg） 
 > 需要用到第三方组件获取多种`格式`的音视频时长，现分别采用NAudio.dll，Shell32.dll，FFmpeg.exe获取音视频的时长，并对比三者对不同格式文件的支持程度；
 
 以下为本次测试用到的音、视频格式：
 
 - `audio` ：".wav;.mp3;.wma;.ra;.mid;.ogg;.ape;.au;.aac;";
 
-- `vedio` ：".mp4;.mpg;.mpeg;.avi;.rm;.rmvb;.wmv;.3gp;.flv;.mkv;.swf;.asf;";
+- `video` ：".mp4;.mpg;.mpeg;.avi;.rm;.rmvb;.wmv;.3gp;.flv;.mkv;.swf;.asf;";
 
 **Note：**
 1. 测试音、视频均为对应格式的有效文件（下载自[地址：](https://samples.mplayerhq.hu/)包含了各种可供测试音视频格式，且不断更新中。。）；
@@ -24,9 +23,9 @@ tags: C#
 public abstract class Duration
 {
     /// <summary>
-    /// Abstract method of getting duration(ms) of audio or vedio
+    /// Abstract method of getting duration(ms) of audio or video
     /// </summary>
-    /// <param name="filePath">audio/vedio's path</param>
+    /// <param name="filePath">audio/video's path</param>
     /// <returns>Duration in original format, duration in milliseconds</returns>
     public abstract Tuple<string, long> GetDuration(string filePath);
 
@@ -60,9 +59,9 @@ public abstract class Duration
 public class ByNAudio : Duration
 {
     /// <summary>
-    /// Get duration(ms) of audio or vedio by NAudio.dll
+    /// Get duration(ms) of audio or video by NAudio.dll
     /// </summary>
-    /// <param name="filePath">audio/vedio's path</param>
+    /// <param name="filePath">audio/video's path</param>
     /// <returns>Duration in original format, duration in milliseconds</returns>
     /// <remarks>return value from NAudio.dll is in format of: "00:00:19.820"</remarks>
     public override Tuple<string, long> GetDuration(string filePath)
@@ -101,9 +100,9 @@ public class ByNAudio : Duration
 public class ByShell32 : Duration
 {
     /// <summary>
-    /// Get duration(ms) of audio or vedio by Shell32.dll
+    /// Get duration(ms) of audio or video by Shell32.dll
     /// </summary>
-    /// <param name="filePath">audio/vedio's path</param>
+    /// <param name="filePath">audio/video's path</param>
     /// <returns>Duration in original format, duration in milliseconds</returns>
     /// <remarks>return value from Shell32.dll is in format of: "00:10:16"</remarks>
     public override Tuple<string, long> GetDuration(string filePath)
@@ -154,9 +153,9 @@ public class ByFFmpeg : Duration
         private StringBuilder result = new StringBuilder(); // Store output text of ffmpeg
 
         /// <summary>
-        /// Get duration(ms) of audio or vedio by FFmpeg.exe
+        /// Get duration(ms) of audio or video by FFmpeg.exe
         /// </summary>
-        /// <param name="filePath">audio/vedio's path</param>
+        /// <param name="filePath">audio/video's path</param>
         /// <returns>Duration in original format, duration in milliseconds</returns>
         /// <remarks>return value from FFmpeg.exe is in format of: "00:00:19.82"</remarks>
         public override Tuple<string, long> GetDuration(string filePath)
