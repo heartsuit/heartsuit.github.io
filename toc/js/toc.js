@@ -10,6 +10,9 @@ $(document).ready(function () {
 		$(".newh5").css("margin-left", 60);
 		$(".newh6").css("margin-left", 80);
 	});
+	if ($("#anchorContent").text().trim() === "") {
+		$(".anchorBlog").hide();
+	}
 	$("#anchorContentToggle").click(function () {
 		var text = $(this).html();
 		if (text == "目录[-]") {

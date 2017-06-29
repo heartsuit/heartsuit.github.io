@@ -71,20 +71,23 @@ section {
 	max-width: 700px;
 	margin-top: 0px;
 }
+section h3 {
+	text-shadow: 2px 2px 4px #93A1A1;
+}
 body {
-	font-size: 15px;
+	font-size: 16px;
 	color: #93A1A1;
 }
 .highlighter-rouge{
 	background: black;
-	font-size: 15px;	
+	font-size: 13px;	
 }
 blockquote {
 	margin-bottom: 1em;
 }
 blockquote p{
 	color: #999;
-	font-size: 16px;
+	font-size: 17px;
 }
 strong { 
 	// font-weight: bold; 
