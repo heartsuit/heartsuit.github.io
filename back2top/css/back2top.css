@@ -3,9 +3,10 @@ div.go-top {
     opacity: 0.6;
     z-index: 999999;
     position: fixed;
+    right: 16px;
     bottom: 113px;
-    left: 90%;
-    margin-left: 40px;
+    /*left: 90%;*/
+    /*margin-left: 40px;*/
     border: 1px solid #40CFFF;
     width: 38px;
     height: 38px;
