@@ -13,3 +13,5 @@
 - Add the elapsed time of the site.
 - ~~Add Comment and Share function with [Youyan](http://www.uyan.cc/)~~
 - Hang a small program to Projects, which was forked from IMOOC course with some modification in 2016.2.1
+- Add Table of Content to posts.
+- Add Back to Top button in posts.

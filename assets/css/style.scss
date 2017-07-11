@@ -80,8 +80,14 @@ body {
 }
 .highlighter-rouge{
 	background: black;
-	font-size: 13px;	
+	font-size: 14px;	
 }
+code {font-family:Menlo,Consolas}
+.highlight .err {
+	color: #A6E22A;
+	background-color: #272822;
+}
+
 blockquote {
 	margin-bottom: 1em;
 }
@@ -90,8 +96,7 @@ blockquote p{
 	font-size: 17px;
 }
 strong { 
-	// font-weight: bold; 
-	color: #FFCC00;	
+	color: #CCC;	
 }
 
 // footer 

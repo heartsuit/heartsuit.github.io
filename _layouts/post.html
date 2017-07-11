@@ -8,6 +8,8 @@
   <div class="wrapper">
     <section>
       {% include intro.html %}
+
+      <!-- TOC -->
       <h1>{{ page.title }}</h1>
       <div class="anchorBlog">
         <p>
@@ -17,10 +19,19 @@
       </div>
       {{ content }}
 
+      <!--Back 2 Top-->
+      <div class="go-top">
+        <div class="arrow"></div>
+        <div class="stick"></div>
+      </div>
     </section>
     <!-- Table of Content-->
     <link rel="stylesheet" href="{{ '/toc/css/toc.css' | prepend: site.baseurl }}">
     <script src="{{ " /toc/js/toc.js " | prepend: site.baseurl }}"></script>
+    
+    <!--Back 2 Top-->
+    <link rel="stylesheet" href="{{ '/back2top/css/back2top.css' | prepend: site.baseurl }}">
+    <script src="{{ " /back2top/js/back2top.js " | prepend: site.baseurl }}"></script>
 
     <!-- JiaThis Button BEGIN -->
     <!--<div class="jiathis_style_32x32">
