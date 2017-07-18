@@ -79,13 +79,16 @@ body {
 	color: #93A1A1;
 }
 .highlighter-rouge{
-	background: black;
+	background: #282C34;
 	font-size: 14px;	
 }
 code {font-family:Menlo,Consolas}
 .highlight .err {
 	color: #A6E22A;
 	background-color: #272822;
+}
+.highlight .nt {
+	color: #C678BD;
 }
 
 blockquote {

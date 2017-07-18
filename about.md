@@ -15,3 +15,4 @@
 - Hang a small program to Projects, which was forked from IMOOC course with some modification in 2016.2.1
 - Add Table of Content to posts.
 - Add Back to Top button in posts.
+- Add Progress Bar in posts.

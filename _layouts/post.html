@@ -8,7 +8,8 @@
   <div class="wrapper">
     <section>
       {% include intro.html %}
-
+      <!--Progress Bar-->
+      <div class="progress-container"><span class="progress-bar" style="width: 95.7897%;"></span></div>
       <!-- TOC -->
       <h1>{{ page.title }}</h1>
       <div class="anchorBlog">
@@ -25,10 +26,14 @@
         <div class="stick"></div>
       </div>
     </section>
+    <!--Progress Bar-->
+    <link rel="stylesheet" href="{{ '/progressbar/css/progressbar.css' | prepend: site.baseurl }}">
+    <script src="{{ " /progressbar/js/progressbar.js " | prepend: site.baseurl }}"></script>
+
     <!-- Table of Content-->
     <link rel="stylesheet" href="{{ '/toc/css/toc.css' | prepend: site.baseurl }}">
     <script src="{{ " /toc/js/toc.js " | prepend: site.baseurl }}"></script>
-    
+
     <!--Back 2 Top-->
     <link rel="stylesheet" href="{{ '/back2top/css/back2top.css' | prepend: site.baseurl }}">
     <script src="{{ " /back2top/js/back2top.js " | prepend: site.baseurl }}"></script>

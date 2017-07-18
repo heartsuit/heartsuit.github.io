@@ -1,0 +1,19 @@
+/*progress bar*/
+.progress-container {
+    width: 100%;
+    z-index: 11;
+    background-color: transparent;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 4px;
+    display: block;
+    background: #eee
+}
+
+.progress-bar {
+    background-color: #40CFFF;
+    width: 0%;
+    display: block;
+    height: inherit
+}
