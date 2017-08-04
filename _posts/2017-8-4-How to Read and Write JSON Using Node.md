@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Node读写json
+title: Node读写JSON
 tags: Node.js
 ---
-### Node读写json
+### Node读写JSON
 - 使用require读取JSON；
 - 使用fs.writeFile异步写入JSON；
   - `JSON.stringify(jsonObj, null, 2);`后面两个参数仅为了目标文件内容格式相对美观一些；
