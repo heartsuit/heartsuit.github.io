@@ -39,6 +39,7 @@ tags: Front-End
 
 ### What does it look like
 ![Modal Appearance](https://github.com/heartsuit/heartsuit.github.io/raw/master/pictures/modal.gif)
+
 ---
 ***If you have any questions or any bugs are found, please feel free to contact me.***
 
