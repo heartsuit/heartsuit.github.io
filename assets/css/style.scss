@@ -49,6 +49,18 @@
 	text-align: center;
 }
 // post list
+body {
+		opacity: 0.9;
+		height: 100%;
+		width: 100%;
+		background: #252525 url('https://cn.bing.com/az/hprichbg/rb/AlaskaLynx_ZH-CN8211406639_1920x1080.jpg') no-repeat;
+}
+
+.wrapper {
+	margin-top: -10px;
+	background: #252525;
+}
+
 .blogs {
 	font-size: 16px;
 }
