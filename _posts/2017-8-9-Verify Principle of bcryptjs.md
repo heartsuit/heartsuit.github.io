@@ -4,13 +4,13 @@ title: 使用bcryptjs对密码加密时，其校验原理是怎样的？
 tags: Node.js
 ---
 ### Question
-刚开始接触这种加密方式，而又对加密原理不了解时，很容易产生这种疑问：
+刚开始接触这种加密方式，而又对加密原理不了解时，很容易产生这种疑问❔：
 
 > 对一个密码，[bcryptjs](https://www.npmjs.com/package/bcryptjs)每次生成的hash都不一样，那么它是如何进行校验的？
 
 ### Basic verification
 1. 虽然对同一个密码，每次生成的hash不一样，但是hash中包含了salt（hash产生过程：先随机生成salt，salt跟password进行hash）；
-2. 在下次校验时，从hash中取出salt，salt跟password进行hash；得到的结果跟保存在DB中的hash进行比对，compareSync中已经实现了这一过程：bcrypt.compareSync(password, hashFromDB);
+2. 在下次校验时，从hash中取出salt，salt跟password进行hash；得到的结果跟保存在DB中的hash进行比对，compareSync中已经实现了这一过程：`bcrypt.compareSync(password, hashFromDB);`
 
 ### Let Code tell you
 ``` javascript
