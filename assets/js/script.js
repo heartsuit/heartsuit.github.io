@@ -1,6 +1,6 @@
 $.ajax({  
-  // url: 'https://3ae3192a.ngrok.io/background',
-  url: 'http://dataapi.ngrok.cc/background',
+  url: 'https://89c8658d.ngrok.io/background',
+  // url: 'http://dataapi.ngrok.cc/background',
   type: "GET",
   dataType: "jsonp",
   jsonpCallback: 'jsonpCallback',
