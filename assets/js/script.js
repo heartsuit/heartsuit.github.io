@@ -1,4 +1,4 @@
-$("body").css('background-image', `url('https://89c8658d.ngrok.io/backgroundb')`);
+$("body").css('background-image', `url('http://150810cf.all123.net:4001/backgroundb')`);
 $("body").css('background-repeat', `no-repeat`);
 $("body").css('background-size', `cover`);
 
