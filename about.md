@@ -16,3 +16,10 @@
 - Add Table of Content to posts.
 - Add Back to Top button in posts.
 - Add Progress Bar in posts.
+- Add background image(from [Bing](https://www.bing.com/)) for posts, update on a daily basis.
+
+## You can find me by: 
+``` json
+1. Email: nxq0108@126.com
+2. QQ: 454670286
+```

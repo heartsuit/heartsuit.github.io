@@ -25,15 +25,17 @@
     display: inline-block;
     line-height: 20px;
     background: #FFCC00;
+    border-radius: 2px;
     font-style: normal;
     padding: 1px 8px;
     margin-right: 10px;
 }
 
-.anchorBlog a:hover {
-    color: #5cc26f;
-}
-
 .anchorBlog a {
     text-decoration: none;
+}
+
+.anchorBlog a:hover {
+    color: #5cc26f;
+    text-decoration: underline;
 }

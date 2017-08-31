@@ -104,6 +104,11 @@ body {
 .highlighter-rouge{
 	background: #282C34;
 	font-size: 14px;	
+	transition: all 1s;
+}
+.highlighter-rouge:hover{
+	background: #CCC;
+	color: black;	
 }
 code {font-family:Menlo,Consolas}
 .highlight .err {
@@ -115,11 +120,14 @@ code {font-family:Menlo,Consolas}
 }
 
 blockquote {
+	padding:30px;
 	margin-bottom: 1em;
+	background: #191919;
 }
 blockquote p{
 	color: #999;
-	font-size: 17px;
+	font-size: 18px;
+	font-style: normal;
 }
 strong { 
 	color: #CCC;	
