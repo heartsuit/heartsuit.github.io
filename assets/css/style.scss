@@ -50,10 +50,12 @@
 }
 // post list
 body {
+		font-size: 16px;
+		color: #D9F1F1;
 		opacity: 0.9;
 		height: 100%;
 		width: 100%;
-		background: #252525 url('https://cn.bing.com/az/hprichbg/rb/AlaskaLynx_ZH-CN8211406639_1920x1080.jpg') no-repeat;
+		background: #252525 url('https://github.com/heartsuit/heartsuit.github.io/raw/master/pictures/background.jpg') no-repeat;
 		background-size: cover;
 }
 
@@ -95,11 +97,8 @@ section {
 	margin-top: 0px;
 }
 section h3 {
+	font-size: 24px;	
 	text-shadow: 2px 2px 4px #93A1A1;
-}
-body {
-	font-size: 16px;
-	color: #93A1A1;
 }
 .highlighter-rouge{
 	background: #282C34;
