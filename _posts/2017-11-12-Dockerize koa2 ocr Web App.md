@@ -19,7 +19,7 @@ MAINTAINER Heartsuit
 
 RUN \
  DEBIAN_FRONTEND=noninteractive apt-get update && \
- DEBIAN_FRONTEND=noninteractive apt-get -y install tesseract-ocr && \
+ DEBIAN_FRONTEND=noninteractive apt-get -y install tesseract-ocr
 
 # Create app directory
 WORKDIR /usr/src/app
@@ -47,7 +47,7 @@ CMD [ "npm", "start" ]
 ``` bash
 RUN \
  DEBIAN_FRONTEND=noninteractive apt-get update && \
- DEBIAN_FRONTEND=noninteractive apt-get -y install tesseract-ocr && \
+ DEBIAN_FRONTEND=noninteractive apt-get -y install tesseract-ocr
 ```
 
 - .dockerignore
