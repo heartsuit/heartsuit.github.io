@@ -3,10 +3,12 @@ layout: post
 title: SQL Server修改已有字段类型，并添加默认约束
 tags: Database
 ---
+### Problem
 
     当数据表中存在数据，修改具有默认约束的字段定义时，需要先删除已有约束，才能对字段定义进行修改；而在SQL Server建表时创建的默认约束，其名称后会自动生成一段随机码，因此在删除时需要找到（在SQL Server Management Studio中选择表——>约束，可以看到以DF_开头的默认约束）已有约束名，再进行删除，这一过程较为繁琐。
 
-    现采用以下代码实现对默认约束的自动匹配，并修改。看代码：
+### Solution
+- 现采用以下代码实现对默认约束的自动匹配，并修改。看代码：
 
 ``` sql
 -- 修改已有字段类型(eg:整型)为字符串，并添加、修改（如果有的话）默认约束(默认值为空串)
@@ -24,6 +26,7 @@ ELSE BEGIN
 END
 
 ```
+
 ---
 if you have any questions or any bugs are found, please feel free to contact me.
 

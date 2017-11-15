@@ -3,7 +3,7 @@ layout: post
 title: Markdown Basic
 tags: Markdown
 ---
-# This is for titles, and there are 6 kinds of this in total.
+### This is for titles, and there are 6 kinds of this in total.
 ## For instatnce, this is the secondary title.
 
 1. This is the Ordered List.

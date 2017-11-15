@@ -79,6 +79,20 @@ body {
 	color: #999;
 }
 
+.postInfo .info.left {
+	float: left;
+}
+.postInfo .info.right {
+	float: right;
+}
+.postInfo .info {
+	font-size: 12px;
+	font-family: 'OpenSansRegular', "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-weight: normal;
+	color: #40CFFF;
+	margin-top: 5px;
+}
+
 // .posts li{
 // 	display:block;
 // 	width:680px;
@@ -100,6 +114,10 @@ section h3 {
 	font-size: 24px;	
 	text-shadow: 2px 2px 4px #93A1A1;
 }
+// section li {
+// 	font-size: 17px;
+// 	color: #fff;
+// }
 .highlighter-rouge{
 	background: #282C34;
 	font-size: 14px;	
