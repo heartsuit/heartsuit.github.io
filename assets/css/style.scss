@@ -60,6 +60,7 @@ body {
 }
 
 .wrapper {
+	max-width: 750px;	
 	margin-top: -10px;
 	background: #252525;
 }
@@ -103,9 +104,6 @@ body {
 }
 
 // content
-.wrapper {
-	max-width: 750px;
-}
 section {
 	max-width: 750px;
 	margin-top: 0px;
