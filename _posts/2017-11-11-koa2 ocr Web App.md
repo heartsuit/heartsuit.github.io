@@ -33,6 +33,8 @@ Note：**node-tesseract需要计算机安装tesseract-ocr@3.02，当前的tesser
 
 ### Source Code: [Github](https://github.com/heartsuit/koa2-ocr-on-docker)
 
+### Live Demo: [Aliyun](http://101.132.130.218:8881/)
+
 ---
 ***If you have any questions or any bugs are found, please feel free to contact me.***
 
