@@ -1,6 +1,6 @@
 $(document).ready(function () {
 	//在文章中查找title并填充到div anchorContent中
-	$("section").find("h3,h4,h5,h6").each(function (i, item) {
+	$("section").find("h2,h3,h4,h5,h6").each(function (i, item) {
 		var tag = $(item).get(0).localName;
 		$(item).attr("id", "whoru" + i);
 		$("#anchorContent").append('<li><a class="new' + tag + ' anchor-link" onclick="return false;" href="#" link="#whoru' + i + '">' + (i + 1) + " · " + $(this).text() + '</a></li>');
