@@ -45,7 +45,7 @@ circle.disableMassClear(); // 禁止circle在 map.clearOverlays 方法中被清�
 map.clearOverlays();  // 结合circle.disableMassClear(); 清除所有marker而保留circle；
 ```
 
-### [Live Demo](https://heartsuit.github.io/projects//baidumap/circle-range)
+### Source Code: [Github](https://github.com/heartsuit/baidumap)
 
 ---
 ***If you have any questions or any bugs are found, please feel free to contact me.***
