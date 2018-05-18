@@ -76,7 +76,7 @@ for (var i = 0; i < plys.length; i++) {
 }
 ```
 
-(2) mouseover和mouseout在鼠标悬浮时多次触发；
+(4) mouseover和mouseout在鼠标悬浮时多次触发；
 
 问题的根源在子元素，一句话说明 mouseover与mouseenter 的区别：
 
