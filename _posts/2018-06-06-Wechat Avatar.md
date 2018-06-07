@@ -4,7 +4,7 @@ title: Node.js实现微信好友头像拼接（wechaty+sharp）
 tags: Node.js
 ---
 
-![2018-06-06-MicrosoftGithub.jpg](https://github.com/heartsuit/heartsuit.github.io/raw/master/pictures/2018-06-06-MicrosoftGithub.jpg.jpg)
+![2018-06-06-MicrosoftGithub.jpg](https://github.com/heartsuit/heartsuit.github.io/raw/master/pictures/2018-06-06-MicrosoftGithub.jpg)
 
 
 > Github被Microsoft收购，Node也要倒过来了Deno... 最近新鲜事儿着实不少。。
