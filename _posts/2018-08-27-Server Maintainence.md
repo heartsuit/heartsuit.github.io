@@ -4,6 +4,9 @@ title: 服务器运维相关问题
 tags: Server
 ---
 
+---
+2018-08-27
+
 ### TypeError: Cannot assign to read only property 'exports' of object '#<Object>'
 
     module.exports = {
@@ -42,6 +45,9 @@ tags: Server
     svnserve -d -r /opt/svn
     停止svn服务：
     killall svnserve
+
+---
+2018-09-17
 
 ### spring 开发环境与生产环境配置
 
@@ -83,6 +89,49 @@ Method2. 修改 Tomcat 启动脚本 `catalina.bat`
 set JAVA_OPTS="-Dspring.profiles.active=prod"
 ```
 
+---
+2018-09-29
+
+### node.js 安装nodejieba报错
+    node-gyp rebuild
+    if not defined npm_config_node_gyp (node "E:\Program Files\nodejs\node_modules\npm\node_modules\npm-lifecycle\node-gyp-bin\\..\..\node_modules\node-gyp\bin\node-gyp.js" rebuild )  else (node "E:\Program Files\nodejs\node_modules\npm\node_modules\node-gyp\bin\node-gyp.js" rebuild )
+    gyp ERR! configure error
+    gyp ERR! stack Error: Can't find Python executable "E:\Anaconda3\python.EXE", you can set the PYTHON env variable.
+    gyp ERR! stack     at PythonFinder.failNoPython (E:\Program Files\nodejs\node_modules\npm\node_modules\node-gyp\lib\configure.js:483:19)
+    gyp ERR! stack     at PythonFinder.<anonymous> (E:\Program Files\nodejs\node_modules\npm\node_modules\node-gyp\lib\configure.js:508:16)
+    gyp ERR! stack     at E:\Program Files\nodejs\node_modules\npm\node_modules\graceful-fs\polyfills.js:284:29
+    gyp ERR! stack     at FSReqWrap.oncomplete (fs.js:152:21)
+    gyp ERR! System Windows_NT 6.1.7601
+
+    MSBUILD : error MSB3428: 未能加载 Visual C++ 组件“VCBuild.exe”。
+
+    需要安装windows环境构建工具：`npm install --global --production windows-build-tools`
+    其中包含python 2.7与vs_BuildTools.exe
+
+---
+2018-10-12
+
+### MySQL 保存微信昵称（含表情等特殊字符）报错
+
+- 修改my.cnf配置文件，character-set-server=utf8mb4，并重启
+[mysqld]
+character-set-server=utf8mb4
+
+- 修改数据表字段编码类型
+
+``` sql
+ALTER TABLE b_wx CHANGE nickname nickname varchar(30) character set utf8mb4 collate utf8mb4_unicode_ci;
+``` 
+
+这样，可以将包含表情的微信昵称保存至数据表，不过表中仍然无法显示，在Web页面可以显示相应的表情。
+
+- Appearance: 
+
+![2018-10-12-WXNickName.jpg](https://github.com/heartsuit/heartsuit.github.io/raw/master/pictures/2018-10-12-WXNickName.jpg)
+
+PS：一个有趣的发现：昵称中的表情在FireFox中显示为彩色，Chrome中显示为灰色；
+
+持续更新……
 
 ---
 ***If you have any questions or any bugs are found, please feel free to contact me.***
