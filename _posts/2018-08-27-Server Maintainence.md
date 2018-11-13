@@ -131,6 +131,27 @@ ALTER TABLE b_wx CHANGE nickname nickname varchar(30) character set utf8mb4 coll
 
 PS：一个有趣的发现：昵称中的表情在FireFox中显示为彩色，Chrome中显示为灰色；
 
+
+---
+2018-11-02
+
+### https下使用WebSocket
+
+小程序要求服务器必须为`https`的，将阿里云的`http`升级为`https`后，发现客户端的WebSocket无法与服务器建立连接了：DOMException: "The operation is insecure."
+
+    `ws://127.0.0.1:8080/websocket` 改为 `wss://127.0.0.1:8080/websocket`
+
+
+### vue-cli, axios 参数使用URLSearchParams，在IE中报错: ReferenceError: “URLSearchParams”未定义
+    1 npm i url-search-params-polyfill --save
+    2 在main.js `import 'url-search-params-polyfill';`
+
+然后又报 ReferenceError:“Promise”未定义
+    1 npm i babel-polyfill --save
+    2 在main.js `import 'babel-polyfill';`
+
+
+--- 
 持续更新……
 
 ---
