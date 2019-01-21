@@ -151,6 +151,58 @@ PS：一个有趣的发现：昵称中的表情在FireFox中显示为彩色，Ch
     2 在main.js `import 'babel-polyfill';`
 
 
+### Spring Boot配置HTTP2
+
+- 版本： 
+操作系统：Ubuntu 16.04.2 LTS
+Spring Boot：2.1.1
+JDK：1.8.0_191
+
+- 实现HTTP2配置
+刚开始采用Tomcat作为Servlet容器，但是通过
+[Spring Boot文档](https://docs.spring.io/spring-boot/docs/2.0.2.RELEASE/reference/html/howto-embedded-web-servers.html#howto-configure-http2-tomcat) 发现有比较多的限制，比如要求Tomcat9.x以上等，很是繁琐，尝试多次未果。转而使用Undertow替代Tomcat，因为从Spring Boot文档可以看出，使用Undertow基本不用任何配置便可实现对HTTP2的支持。
+
+需要做的是，在pom.xml中移除Tomcat的依赖，增加Undertow的依赖：
+
+``` xml
+<dependency>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-web</artifactId>
+    <exclusions>
+        <exclusion>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-tomcat</artifactId>
+        </exclusion>
+    </exclusions>
+</dependency>
+<dependency>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-undertow</artifactId>
+</dependency>
+```
+
+在application-prod.yml
+
+``` yml
+server:
+    port: 443
+    http2:
+        enabled: true
+    ssl:
+        key-store: classpath:yours.pfx
+        key-store-password: yours
+        keyStoreType: PKCS12
+    undertow:
+        io-threads: 2
+        worker-threads: 20
+        buffer-size: 1024
+        direct-buffers: true
+```
+
+Note：
+首先需要有证书，采用HTTPS；
+HTTP默认端口号：80，HTTPS默认端口号：443；
+
 --- 
 持续更新……
 
