@@ -1,10 +1,8 @@
 ---
 layout: post
-title: MySQL Backup
+title: Ubuntu下对MySQL指定数据表定时备份
 tags: MySQL
 ---
-
-实现对MySQL指定数据表的定时备份。
 
 ### 编写备份脚本
 
