@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Ubuntu下对MySQL指定数据表定时备份
+title: Ubuntu下对MySQL指定数据库定时备份
 tags: MySQL
 ---
 
