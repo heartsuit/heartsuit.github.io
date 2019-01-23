@@ -6,7 +6,7 @@ tags: MySQL
 
 ### 编写备份脚本
 
-- backupdb.sh
+- `backupdb.sh`(这里在根目录下新建文件)
 
 ``` bash
 db_user="root"
@@ -17,8 +17,12 @@ time="$(date +"%Y%m%d%H%M%S")"
 mysqldump -u$db_user -p$db_password $db_name | gzip > $backup_dir/$db_name"_"$time.sql.gz
 ```
 
-直接运行`backupdb.sh`，会出现警告：
+赋予其执行权限：`chmod u+x backupdb.sh `；
+
+若此时直接运行`./backupdb.sh`，会出现警告：
+
 > mysqldump: [Warning] Using a password on the command line interface can be insecure.
+
 为避免出现警告信息，可通过以下方式配置实现：
 
 `vi /etc/mysql/my.cnf`
@@ -29,7 +33,7 @@ user=your_db_user_name
 password=your_db_password 
 ```
 
-保存配置文件后, 再修改备份脚本，其中不需要涉及用户名密码等信息。
+保存配置文件后, 再修改备份脚本，其中不需要再涉及用户名密码等信息。
 
 ``` bash
 db_name="demo"
