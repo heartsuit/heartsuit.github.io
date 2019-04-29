@@ -51,7 +51,7 @@ Notes:
 
 ### 第二步 在 Nginx 中完成跨域配置
 
-```json
+```conf
 server {
     listen       80;
     server_name  localhost;
