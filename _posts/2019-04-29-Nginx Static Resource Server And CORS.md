@@ -10,7 +10,7 @@ tags: Nginx
 
 - 不论是调用第三方服务端接口，还是自己的后端服务，如果跨域未在服务器端处理，那么 Vue 部署时需要在生产环境下处理跨域。下面以 Windows 为例，采用 Nginx 两个步骤，来实现针对 Vue 项目的静态资源服务器及跨域配置。
 
-Notes: 补充一下，何为跨域？借用安全大神吴翰清名作《白帽子讲Web安全》中的一张图：
+Notes: 补充一下，何为跨域？借用安全大神吴翰清名作《白帽子讲 Web 安全》中的一张图：
 
 ![2019-04-29-CrossOrigin.jpg](https://github.com/heartsuit/heartsuit.github.io/raw/master/pictures/2019-04-29-CrossOrigin.jpg)
 
@@ -26,7 +26,7 @@ Notes: 补充一下，何为跨域？借用安全大神吴翰清名作《白帽�
 
 - 编辑 Nginx 配置文件，在 nginx.conf 文件中新增`server`节点如下（主要是`root`的路径指向打包后的目录）
 
-```conf
+```nginx
 server {
     listen       80;
     server_name  localhost;
@@ -41,9 +41,10 @@ server {
 }
 ```
 
-Notes: 
+Notes:
+
 1. Linux 下 Nginx 配置文件的默认路径：`/etc/nginx/nginx.conf`，通过`vi /etc/nginx/nginx.conf`修改。
-2. 实际项目中`server_name`一般采用域名，这里在本机测试，设置为localhost。
+2. 实际项目中`server_name`一般采用域名，这里在本机测试，设置为 localhost。
 
 至此，静态资源服务器已搭建完毕，`nginx -s reload`刷新 Nginx 配置；在浏览器访问对应的地址+端口，不出意外，应该可以正常访问到 Vue 的前端页面。然而，问题是，这些接口由于需要跨域都不能正常调用(╥╯^╰╥)。
 
@@ -51,7 +52,7 @@ Notes:
 
 ### 第二步 在 Nginx 中完成跨域配置
 
-```conf
+```nginx
 server {
     listen       80;
     server_name  localhost;
@@ -78,11 +79,11 @@ server {
 }
 ```
 
-Notes: Vue开发环境跨域
+Notes: Vue 开发环境跨域
 
 ![2019-04-19-DevCors.png](https://github.com/heartsuit/heartsuit.github.io/raw/master/pictures/2019-04-19-DevCors.png)
 
-至此，便实现了基于Nginx的静态资源服务器及跨域配置，后续将从实例出发，逐步介绍`Nginx反向代理`，`Nginx负载均衡`。
+至此，便实现了基于 Nginx 的静态资源服务器及跨域配置，后续将从实例出发，逐步介绍`Nginx反向代理`，`Nginx负载均衡`。
 
 ### Source Code: [Github](https://github.com/heartsuit/devcloud-vue)
 

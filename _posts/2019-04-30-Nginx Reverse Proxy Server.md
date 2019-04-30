@@ -23,16 +23,18 @@ tags: Nginx
 阿里云、腾讯云、华为云等都可以进行云解析；这里以阿里云、腾讯云为例。
 
 - 阿里云解析
-  ![2019-04-30-NginxAliA.png](https://github.com/heartsuit/heartsuit.github.io/raw/master/pictures/2019-04-30-NginxAliA.png)
+
+![2019-04-30-NginxAliA.png](https://github.com/heartsuit/heartsuit.github.io/raw/master/pictures/2019-04-30-NginxAliA.png)
 
 - 腾讯云解析
-  ![2019-04-30-NginxTencentA.png](https://github.com/heartsuit/heartsuit.github.io/raw/master/pictures/2019-04-30-NginxTencentA.png)
+
+![2019-04-30-NginxTencentA.png](https://github.com/heartsuit/heartsuit.github.io/raw/master/pictures/2019-04-30-NginxTencentA.png)
 
 ### 第二步 在 Nginx 中完成反向代理配置
 
 - 编辑 Nginx 配置文件，在 nginx.conf 文件中新增`server`节点如下（通过`vi /etc/nginx/nginx.conf`修改）
 
-```conf
+```nginx
 server {
     listen 80;
     server_name www.abc.com;
@@ -64,7 +66,8 @@ server {
 Notes：
 
 1. 文中所使用的顶级域名`abc.com`纯属虚构；
-2. 在云解析添加 A 记录后，可能需要等几分钟，添加的二级域名解析才会生效，一般为 10 分钟左右；
+2. 建议80端口（HTTP默认端口）分配给Nginx来监听，便于实现对入站请求的统一拦截；
+3. 在云解析添加 A 记录后，可能需要等几分钟，添加的二级域名解析才会生效，一般为 10 分钟左右；
 
 至此，基于 Nginx 的反向代理，实现了二级域名的转发，下一篇再去了解下`Nginx负载均衡`。
 
