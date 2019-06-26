@@ -21,7 +21,7 @@ SpringBoot本身提供了一套监控端点， 可以查看应用的基本信息
 
     2019 - 06 - 26 18: 07: 27.896 INFO 7868-- - [restartedMain] o.s.b.a.e.web.EndpointLinksResolver: Exposing 2 endpoint(s) beneath base path '/actuator'
 
-在浏览器访问 `http://localhost:8000/actuator` ， 结果如下： 
+在浏览器访问 `http://localhost:9000/actuator` ， 结果如下： 
 
 ![2019-06-26-SpringBootActuator1.png](https://github.com/heartsuit/heartsuit.github.io/raw/master/pictures/2019-06-26-SpringBootActuator1.png)
 
