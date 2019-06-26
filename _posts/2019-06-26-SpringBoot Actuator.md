@@ -1,7 +1,7 @@
 ---
 layout: post
 title: SpringBoot2开启Actuator端点监控
-tags: Nginx
+tags: SpringBoot
 ---
 
 SpringBoot本身提供了一套监控端点， 可以查看应用的基本信息、 健康程度、 配置等监控信息， 很容易上手。 
