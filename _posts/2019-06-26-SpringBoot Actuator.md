@@ -6,6 +6,8 @@ tags: SpringBoot
 
 SpringBoot本身提供了一套监控端点， 可以查看应用的基本信息、 健康程度、 配置等监控信息， 很容易上手。 
 
+Note: 此处所用SpringBoot版本： `2.1.4` 
+
 ### 开启Actuator
 
 在Maven的pom.xml文件中添加 `spring-boot-starter-actuator` 依赖： 
