@@ -51,7 +51,7 @@ management:
 Notes： 
 
 - 虽然端点 `enabled` ， 但是还需要 `exposed` ， 才能在Web端访问； 
-- `health` 端点在未认证情况下， 仅显示 `"status": "UP"` ； 
+- `health` 端点在默认情况下， 仅显示 `"status": "UP"` ； 如需显示详细信息， 配置： `management.endpoint.health.show-details=always` 
 - 实际中， 请谨慎选择要开启的端点！ 
 
 以上配置仅实现了对应用监控信息的获取， 但其实已经有专门用于展现这些 `json` 数据的管理端， 后续将实践一下SpringBoot Admin这套社区提供的可视化应用监控管理端。 
