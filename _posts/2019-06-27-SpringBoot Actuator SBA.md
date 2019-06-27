@@ -1,7 +1,7 @@
 ---
 layout: post
 title: SpringBoot Admin 实现Actuator端点可视化监控
-tags: Nginx
+tags: SpringBoot
 ---
 
 ### 简介
@@ -46,7 +46,7 @@ public class AdminApplication {
 }
 ```
 
-到此， Spring Boot Admin服务端工程建立完毕， 在浏览器访问 `http://localhost:8000` ， 打开管理页面， 目前没有客户端实例注册过来，显示为空。 接下来建立客户端工程。 
+到此， Spring Boot Admin服务端工程建立完毕， 在浏览器访问 `http://localhost:8000` ， 打开管理页面， 目前没有客户端实例注册过来， 显示为空。 接下来建立客户端工程。 
 
 ### Spring Boot Admin Client
 
@@ -101,7 +101,7 @@ Note: 当然这里首先要开启项目的Actuator端点监控功能， 可参�
 
 以上通过 `Spring Boot Admin` 实现了对Spring Boot暴露的 `Actuator` 端点的可视化监控， 对于详细的端点信息， 以及 `Spring Boot Admin` 的其他配置， 可参考相关文档。 后续增加认证功能， 即需要用户登录才能进入管理端。 
 
-### References： 
+### References
 
 - [https://docs.spring.io/spring-boot/docs/current/reference/html/production-ready-endpoints.html](https://docs.spring.io/spring-boot/docs/current/reference/html/production-ready-endpoints.html)
 - [http://codecentric.github.io/spring-boot-admin/2.1.4/#securing-spring-boot-admin](http://codecentric.github.io/spring-boot-admin/2.1.4/#securing-spring-boot-admin)
