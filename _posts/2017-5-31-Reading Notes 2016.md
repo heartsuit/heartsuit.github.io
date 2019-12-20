@@ -106,7 +106,7 @@ tags: Notes
 - 我们只记住了历史事件发生的时间和名称，却没有记住教训。
 - 工作只是面对长期问题的一种暂时的解决办法。
 
-### 我所理解的生活（韩寒）——2016-8-18
+### 我所理解的生活（韩寒）——2016-8-8
 - 对于异乡人，每个陌生的城市都是迷宫。
 - 是的，面对特权，我们厌恶，但享用到一点假特权，心中又有窃喜，面对吃特供的人，我们批判，但自己用到了那些特供，又会得意。很多人恨特- 权，因为特权没有在自己手中。
 - 地表上的光鲜，地底下的不堪，正是我们周围很多东西的缩影。
@@ -132,7 +132,7 @@ tags: Notes
 - 如果你准备好去打仗，你就得知道敌人扔过来的不会是面包，你准备好去探险，就得知道山谷里没有七尺大床。
 - 拉力赛的时候我就想明白了，除了那几个特地早起来看你比赛的至亲至友，满山遍野的人都是看热闹的，其中很多是来看翻车的。 生活亦如是，冷暖几人知。
 
-### 富爸爸穷爸爸（Robert Toru Kiyosaki-罗伯特清崎）——2016-8-7
+### 富爸爸穷爸爸（Robert Toru Kiyosaki-罗伯特清崎）——2016-8-27
 - 得到良好的教育和获得优异的成绩不能再确保成功了，除了我们的孩子，仿佛没有人意识到这一点。
 - 他知道，世界在变，教育却没有随之改变，在罗伯特看来，孩子们把时间都浪费在一个过时的教育体系中，学一些他们永远用不着的东西，并为一个根本不存在的世界做准备。—— 莎伦·L·莱希特
 - 真正的学习需要精力，激情和热切的愿望，愤怒是其中一个重要的组成部分，因为激情正是愤怒和热爱的结合体。
@@ -163,7 +163,7 @@ tags: Notes
 - 在现实生活中，人们往往是依靠勇气而不是智慧去取得理想的位置。
 - 我们关注的越多，能够学到的也就越多。
 
-### The Csharp Players Guide 2nd Edition（RB Whitaker）——2016-7-9
+### The Csharp Players Guide 2nd Edition（RB Whitaker）——2016-9-9
 - In fact, even if you know you're the only person who will ever see your code, you should still put comments in it. Do you remember what you ate for lunch a week ago today? Neither do I. Do you really think that you’ll remember what your code was supposed to do a week after you write it?
 - It’s easy to write code. It’s hard to write code that you can actually go back and read and understand.
 - When making a real program, you should use the pre-existing one, instead of making your own.
