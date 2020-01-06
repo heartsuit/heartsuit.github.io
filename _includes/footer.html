@@ -34,3 +34,10 @@
 <!--Add Visits counter-->
 <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 
+<!--activate-power-mode: https://github.com/disjukr/activate-power-mode-->
+<script src="{{ " /powermode/activate-power-mode.min.js " | prepend: site.baseurl }}"></script>
+<script>
+POWERMODE.colorful = true; // make power mode colorful
+POWERMODE.shake = true; // turn on shake
+document.body.addEventListener('input', POWERMODE);
+</script>
