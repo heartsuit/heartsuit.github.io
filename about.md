@@ -17,6 +17,7 @@
 - Add Back to Top button in posts.
 - Add Progress Bar in posts.
 - Add background image(from [Bing](https://www.bing.com/)) for posts, update on a daily basis.
+- Add comment function with [Valine](https://valine.js.org/) for each post. 2020-01-06
 
 ## You can find me by: 
 ``` json
