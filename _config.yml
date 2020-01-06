@@ -48,9 +48,20 @@ exclude:
 
 # Comment
 # disqus_shortname: heartsuit
+valine:
+  enable: true
+  appid: PBIPk11qixwpfuuoLNjNyihW-gzGzoHsz # your leancloud app id
+  appkey: j48t7uK7FlIFY0W8qW03jrPV # your leancloud app key
+  notify: true # mail notifier , https://github.com/xCss/Valine/wiki
+  verify: true # Verification code
+  placeholder: 请在此处留言…… # comment box placeholder
+  avatar: monsterid # gravatar style
+  guest_info: 昵称,邮件,网址 # custom comment header
+  pageSize: 10 # pagination size
+  # path: window.location.pathname
 
 # Google Analytics
 # google_analytics: UA-64529473-1
 analytics:
-    baidu:
-        siteid: xxxxxxxxxxxxxxxx        # 百度统计 js 代码后的字符串
+  baidu:
+    siteid: xxxxxxxxxxxxxxxx # 百度统计 js 代码后的字符串
