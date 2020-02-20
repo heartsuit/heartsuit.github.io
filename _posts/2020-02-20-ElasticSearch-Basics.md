@@ -42,7 +42,7 @@ cd elasticsearch-7.5.2\bin
 
 ### 测试
 
-单节点的ES集群跑起来了，那么接下来就可以把玩一番了，增删改成搞起来。刚开始建议用`Postman`，或者在命令行直接发出`curl`请求，方便上手，后期可以使用ELK技术栈中的`Kibana`提供的开发工具执行`DSL`。
+单节点的ES集群跑起来了，那么接下来就可以把玩一番了，增删改查搞起来。刚开始建议用`Postman`，或者在命令行直接发出`curl`请求，方便上手，后期可以使用ELK技术栈中的`Kibana`提供的开发工具执行`DSL`。
 
 以下以`curl`为例进行测试：
 
@@ -62,7 +62,7 @@ cd elasticsearch-7.5.2\bin
 
 ![2020-02-20-ES-DELETE.jpg](https://github.com/heartsuit/heartsuit.github.io/raw/master/pictures/2020-02-20-ES-DELETE.jpg)
 
-这里仅是简答的增删改查，后续针对查询分别介绍：简单查询、条件查询、聚合查询、复合查询等。
+这里仅是简单的增删改查，后续针对查询分别介绍：简单查询、条件查询、聚合查询、复合查询等。
 
 ---
 
