@@ -48,17 +48,35 @@ cd elasticsearch-7.5.2\bin
 
 - 增
 
+``` bash
+curl -X PUT "localhost:9200/movie/_doc/1?pretty" -H 'Content-Type: application/json' -d'{"name": "Fantasy Island"}'
+```
+
 ![2020-02-20-ES-INSERT.png](https://github.com/heartsuit/heartsuit.github.io/raw/master/pictures/2020-02-20-ES-INSERT.png)
 
 - 查
+
+``` bash
+curl -X GET "localhost:9200/movie/_doc/1?pretty"
+```
 
 ![2020-02-20-ES-SELECT.jpg](https://github.com/heartsuit/heartsuit.github.io/raw/master/pictures/2020-02-20-ES-SELECT.jpg)
 
 - 改
 
+``` bash
+curl -X PUT "localhost:9200/movie/_doc/1?pretty" -H 'Content-Type: application/json' -d'{"name": "JOKER"}'
+curl -X GET "localhost:9200/movie/_doc/1?pretty"
+```
+
 ![2020-02-20-ES-Update.jpg](https://github.com/heartsuit/heartsuit.github.io/raw/master/pictures/2020-02-20-ES-Update.jpg)
 
 - 删
+
+``` bash
+curl -X DELETE "localhost:9200/movie/_doc/1?pretty"
+curl -X GET "localhost:9200/movie/_doc/1?pretty"
+```
 
 ![2020-02-20-ES-DELETE.jpg](https://github.com/heartsuit/heartsuit.github.io/raw/master/pictures/2020-02-20-ES-DELETE.jpg)
 
