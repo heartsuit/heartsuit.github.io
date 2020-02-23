@@ -20,13 +20,13 @@ ElasticSearch官方有个[数据集](https://raw.githubusercontent.com/elastic/e
 
 以下提供两种方法批量导入数据到ES的`bank`索引：`Postman`与`Kibana`。通过ES提供的`_bulk` API完成批量导入。
 
-### 1. 通过Postman完成数据批量导入
+### 方法一：通过Postman完成数据批量导入
 
 首先在`Postman`中新建 `POST` 请求：`localhost:9200/bank/_bulk`, 请求体Body下选择`binary`二进制, 然后`Select File`选择对应的`json`文件, 最后点击Send发送请求即可，见下图。
 
 ![2020-02-23-ES-Bulk-Postman.jpg](https://github.com/heartsuit/heartsuit.github.io/raw/master/pictures/2020-02-23-ES-Bulk-Postman.jpg)
 
-### 2. 通过Kibana完成数据批量导入
+### 方法二：通过Kibana完成数据批量导入
 
 依次启动ElasticSearch、Kibana，`Kibana`默认启动在`5601`端口，打开（Dev Tools）开发工具。
 
@@ -58,7 +58,7 @@ POST bank/_bulk
 }
 ```
 
-得到bank索引中所有数据，表明批量操作成功：
+得到`bank`索引中所有1000条数据，表明批量导入操作成功：
 
 ![2020-02-23-ES-Bulk-Result.jpg](https://github.com/heartsuit/heartsuit.github.io/raw/master/pictures/2020-02-23-ES-Bulk-Result.jpg)
 
