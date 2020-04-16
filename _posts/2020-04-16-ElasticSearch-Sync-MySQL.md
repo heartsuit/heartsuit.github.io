@@ -11,7 +11,7 @@ tags: ElasticSearch
 ### 数据同步中间件
 
 关于MySQL数据同步至ES，Github上的中间件有：
-- alibab/cannal
+- alibaba/cannal
 - siddontang/go-mysql-elasticsearch
 - Logstash（ES官方）
 
