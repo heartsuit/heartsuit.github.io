@@ -26,6 +26,8 @@ tags: ElasticSearch
 
 - 配置MySQL与ES同步
 
+在`logstash-7.5.2/config`下新建`mysql.conf`文件：
+
 ```conf
 input{
     jdbc{
