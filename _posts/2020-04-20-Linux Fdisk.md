@@ -52,10 +52,12 @@ w: 将分区结果写入分区表中
 5. 将新建分区文件系统设为系统所需格式：`mkfs -t ext4 /dev/vdb1`
 
 该过程需要一段时间，大概一两分钟，耐心等待。。
+
 ![2020-04-20-LinuxFdisk-fs.png](https://github.com/heartsuit/heartsuit.github.io/raw/master/pictures/2020-04-20-LinuxFdisk-fs.png)
 
 
 这是执行完毕后的效果：
+
 ![2020-04-20-LinuxFdisk-fs-ok.png](https://github.com/heartsuit/heartsuit.github.io/raw/master/pictures/2020-04-20-LinuxFdisk-fs-ok.png)
 
 6. 新建挂载目录：`mkdir /mnt/sdc`
