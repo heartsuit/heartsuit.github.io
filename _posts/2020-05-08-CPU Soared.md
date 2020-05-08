@@ -4,9 +4,9 @@ title: 问题排查：线上环境CPU飙到300%多。。
 tags: Server
 ---
 
-## 背景
+### 背景
 
-线上一台后端服务所在机器`CPU`飙到300%多。。而且这个过程并不是一下子就完成的，而是过几个小时就来一次，奇了怪了。
+线上一台后端服务所在机器`CPU`飙到300%多。。这个过程并不是一下子就完成的，而是过几个小时就来一次，奇了怪了。
 
 ### 解决思路
 
@@ -42,7 +42,7 @@ tags: Server
 
 ![2020-05-08-CPU-Map.jpg](https://github.com/heartsuit/heartsuit.github.io/raw/master/pictures/2020-05-08-CPU-Map.jpg)
 
-对线上环境，间隔时间，连续三次dump出堆内存信息。
+对线上环境，间隔时间，连续三次dump出堆内存信息。从这几个文件大小也可以看出，随着时间推移，内存占用越来越大，请看下一步。
 
 - 工具分析：`MAT：https://www.eclipse.org/mat/downloads.php`
 
@@ -69,38 +69,38 @@ tags: Server
 问题代码：
 
 ```java
-    Provider provider = new org.bouncycastle.jce.provider.BouncyCastleProvider();
-    Security.addProvider(provider);
-    Cipher cipher = Cipher.getInstance("RSA/ECB/PKCS1Padding", provider);
+Provider provider = new org.bouncycastle.jce.provider.BouncyCastleProvider();
+Security.addProvider(provider);
+Cipher cipher = Cipher.getInstance("RSA/ECB/PKCS1Padding", provider);
 ```
 
     原来是每次用户登录，都有一个`BouncyCastleProvider`对象被放到`IdentityHashMap`中，而这个Map（static）又无法被回收。。
     解决方法就是将`BouncyCastleProvider`作为单例，而不是每次解密时都new一个新对象。
 
 ```java
-    private static org.bouncycastle.jce.provider.BouncyCastleProvider bouncyCastleProvider = null;
-    public static synchronized org.bouncycastle.jce.provider.BouncyCastleProvider getInstance() {
-        if (bouncyCastleProvider == null) {
-            bouncyCastleProvider = new org.bouncycastle.jce.provider.BouncyCastleProvider();
-        }
-        return bouncyCastleProvider;
+private static org.bouncycastle.jce.provider.BouncyCastleProvider bouncyCastleProvider = null;
+public static synchronized org.bouncycastle.jce.provider.BouncyCastleProvider getInstance() {
+    if (bouncyCastleProvider == null) {
+        bouncyCastleProvider = new org.bouncycastle.jce.provider.BouncyCastleProvider();
     }
+    return bouncyCastleProvider;
+}
 
-    Cipher cipher = Cipher.getInstance("RSA/ECB/PKCS1Padding", getInstance());
+Cipher cipher = Cipher.getInstance("RSA/ECB/PKCS1Padding", getInstance());
 ```
 
 ### 本地环境，问题复现
 
 进行本地测试，用到的工具：
 
-- Java虚拟机可视化监控：JConsole, JavaVisualVM(JDK自带)
-- 压力测试：JMeter(http://jmeter.apache.org/download_jmeter.cgi)
+- Java虚拟机可视化监控：`JConsole`, `JavaVisualVM`(JDK自带)
+- 压力测试：`JMeter`(http://jmeter.apache.org/download_jmeter.cgi)
 
 测试步骤如下：
 
     1. 本地启动后的服务；
-    2. JavaVisualVM 监听服务的进程；
-    3. JMeter压测解密相关接口；
+    2. `JavaVisualVM` 监听服务的进程；
+    3. `JMeter`压测解密相关接口；
 
 ![2020-05-08-CPU-VM.jpg](https://github.com/heartsuit/heartsuit.github.io/raw/master/pictures/2020-05-08-CPU-VM.jpg)
 
