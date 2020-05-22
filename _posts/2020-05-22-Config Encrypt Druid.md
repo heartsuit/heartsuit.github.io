@@ -90,7 +90,9 @@ mybatis:
 
 - 通过服务启动参数
 
+```bash
 java -jar xxx.jar --spring.datasource.druid.publickey=MFwwDQYJKoZIhvcNAQEBBQADSwAwSAJBAIYYdcdptMU6n/4wtb7StmX4LFvmlw7+b5KHm7L8C0txn1+iMeXz3FM7emkGkKMuaLd9OazkjgxNpPCDRaNM7ecCAwEAAQ==
+```
 
 - 通过系统环境变量
 
