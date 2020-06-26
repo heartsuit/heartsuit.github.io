@@ -1,12 +1,21 @@
 ---
 layout: post
-title: SpringBoot默认的JSON解析器Jackson替换为FastJson
+title: 将SpringBoot默认的JSON解析器Jackson替换为FastJson
 tags: SpringBoot
 ---
 
 ### 背景
 
-在集成SpringBoot与ElasticSearch时，关于LocalDateTime类型的序列化与反序列化报错，SpringBoot默认的Jackson用起来不是很顺手（需要实例化ObjectMapper），便计划使用FastJson，然而，直接引入FastJson后，会与默认的Jackson发生冲突。。
+在集成`SpringBoot`与`ElasticSearch`时，关于`LocalDateTime`类型的序列化与反序列化报错，`SpringBoot`默认的`Jackson`用起来不是很顺手（需要实例化`ObjectMapper`），便计划使用`FastJson`，然而，直接引入`FastJson`后，会与默认的`Jackson`发生冲突。。
+
+依赖：
+```xml
+<dependency>
+  <groupId>com.alibaba</groupId>
+  <artifactId>fastjson</artifactId>
+  <version>1.2.62</version>
+</dependency>
+```
 
 ### Solution
 
