@@ -23,6 +23,7 @@ tags: ElasticSearch
 采用3个节点，单机模拟集群环境，不同的节点端口不同，伪集群。将之前的单节点再复制两份，组成3个服务，各自的`elasticsearch.yml`配置如下：
 
 - 节点0配置（主节点）
+
 ```yml
 # cors
 http.cors.enabled: true
@@ -36,6 +37,7 @@ network.host: 127.0.0.1
 ```
 
 - 节点1配置
+
 ```yml
 # cors
 http.cors.enabled: true
@@ -50,6 +52,7 @@ discovery.zen.ping.unicast.hosts: ["127.0.0.1","127.0.0.1:9210","127.0.0.1:9220"
 ```
 
 - 节点2配置
+
 ```yml
 # cors
 http.cors.enabled: true
@@ -87,6 +90,7 @@ Notes:
 ```
 
 2. 查看集群健康状况: `http://localhost:9200/_cluster/health`
+
 ```json
 {
   "cluster_name": "heartsuit",
@@ -107,6 +111,7 @@ Notes:
 }
 ```
 重点关注`status`：
+
 `red`: 数据不完整
 `yellow`: 数据完整，但是没有完整的副本
 `green`: 一切正常，有完整的主版本和副本
