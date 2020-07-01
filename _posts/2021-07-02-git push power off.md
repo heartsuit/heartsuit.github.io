@@ -38,14 +38,14 @@ fatal: your current branch appears to be broken
 
 1. 查看当前HEAD记录
 
-![2020-07-02-Git 00.png](https://github.com/heartsuit/heartsuit.github.io/raw/master/pictures/2020-07-02-Git 00.png)
+![2020-07-01-Git-00.png](https://github.com/heartsuit/heartsuit.github.io/raw/master/pictures/2020-07-01-Git-00.png)
 
 里面全是0，正常情况下应该是一个`commit hash`。
 
 2. 查看HEAD日志
 到`.git\logs\refs\heads`目录下查看对应分支的日志文件
 
-![2020-07-02-Git head.png](https://github.com/heartsuit/heartsuit.github.io/raw/master/pictures/2020-07-02-Git head.png)
+![2020-07-01-Git-head.png](https://github.com/heartsuit/heartsuit.github.io/raw/master/pictures/2020-07-01-Git-head.png)
 
 最下方为最新的commit记录。
 
