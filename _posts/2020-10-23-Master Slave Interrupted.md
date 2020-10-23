@@ -99,7 +99,7 @@ SHOW SLAVE STATUS\G
 原来，问题就出在我们在执行`DROP USER`时，未使用 `USE mysql;`语句（执行`DROP USER`不需要进入`mysql`系统数据库，也可以执行成功）；
 然而，MySQL的机械地认为`DROP USER`操作我们是在`USE employee`之后执行的，所以认为是针对`employee`数据库的操作，便执行了同步，而从库中根本不存在`prod@%`这样的用户，所以便报错，导致主从同步中断。
 
-### 总结
+### Summary
 
 在数据库中操作时，一定要注意当前所在的数据库是哪个，作为一个良好的实践：在SQL语句前加`USE dbname`。
 
