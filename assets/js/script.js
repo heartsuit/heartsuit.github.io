@@ -1,4 +1,4 @@
-$("body").css('background-image', `url('http://101.132.130.218:8880/backgroundb')`);
+$("body").css('background-image', `url('https://sfkj666.com/backgroundb')`);
 $("body").css('background-repeat', `no-repeat`);
 $("body").css('background-size', `cover`);
 
