@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 1-初识SpringSecurity：user in-memeory 
+title: 1-初识SpringSecurity：user in-memory 
 tags: SpringBoot,SpringSecurity
 ---
 
@@ -62,7 +62,7 @@ pom文件中引入`SpringSecurity`依赖
 ```
 然后不做其他任何改动，直接重启项目。
 
-在浏览器访问：`localhost:8080/hello`，这次，接口返回302，发生跳转到了`http://localhost:8080/login`，要求我们输入用户名与密码完成登录。可问题是，这里的账号密码分别是多少呢？
+在浏览器访问：`localhost:8080/hello`，这次，接口返回302，跳转到了`http://localhost:8080/login`，要求我们输入用户名与密码完成登录。可问题是，这里的账号密码分别是多少呢？
 
 仔细观察日志，在控制台的启动日志中有如下一行：
 
@@ -161,7 +161,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
     java.lang.IllegalArgumentException: There is no PasswordEncoder mapped for the id "null"
 
-作为一个安全框架，SpringSecurity还是很有原则的，要求使用者必须对密码进行加密，因为(数据泄露)[http://www.isccc.gov.cn/xwdt/xwkx/07/903972.shtml]的事件在历史上也是多次发生了。。而且明文存储密码，还可能被偷窥；一旦持久化的数据库暴露，会引发一系列的其他连环事故：比如撞库（讲真，大多数人为了方便记忆，在各网站、平台的密码都是相同的，大家都是肉体凡胎，谁又能记住不同的密码呢），怕了怕了。
+作为一个安全框架，SpringSecurity还是很有原则的，要求使用者必须对密码进行加密，因为[数据泄露](http://www.isccc.gov.cn/xwdt/xwkx/07/903972.shtml)的事件在历史上也是多次发生了。。而且明文存储密码，还可能被偷窥；一旦持久化的数据库暴露，会引发一系列的其他连环事故：比如撞库（讲真，大多数人为了方便记忆，在各网站、平台的密码都是相同的，大家都是肉体凡胎，谁又能记住不同的密码呢），怕了怕了。
 
 解决方法1：我们修改配置，定义一个Bean，返回一个`PasswordEncoder`实例，
 
