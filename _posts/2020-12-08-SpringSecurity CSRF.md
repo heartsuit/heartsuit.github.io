@@ -179,7 +179,7 @@ public class HelloController {
 1. 在同一个浏览器（此处为Firefox，Chrome内核的浏览器未成功）的不同Tab下，在`world`域名下请求`hello`域名下的GET接口/hello：`<img src="http://hello:8080/hello">`，请求成功到达源站后端，实现了CSRF：跨站请求伪造。
 2. 验证了`SpringSecurity`虽然默认开启CSRF防护，但是幂等请求诸如"GET", "HEAD", "TRACE", "OPTIONS"被忽略。
 
-### 实验1：CSRF POST攻击
+### 实验2：CSRF POST攻击
 
 在`spring-security-csrf`项目中模拟一个按钮操作，发起`POST`请求，这里采用原生`JavaScript`发起`Ajax`的`POST`请求：`http://hello:8080/ok`
 
@@ -227,7 +227,7 @@ Fishing: <img src="http://hello:8080/hello">
 
 开启了CSRF防护之后，那么问题来了：
 1. 我们后端的POST请求都被拦截了，前端难道就没办法发起POST请求了吗？
-2. 我们何时需要开启CSRF防护，何时开启？
+2. 我们何时需要CSRF防护，何时开启？
 
 这些问题，后续将一一解答。
 
