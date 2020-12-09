@@ -129,6 +129,7 @@ public class HelloController {
 ```
 
 - 前端模板
+
 ```html
 <!DOCTYPE html>
 <html lang="en">
@@ -163,6 +164,7 @@ public class HelloController {
     }
 }
 ```
+
 - 前提：为了模拟不同域名下的请求（即CSRF），我们在本地的`hosts`文件添加如下内容：
 
 ```
