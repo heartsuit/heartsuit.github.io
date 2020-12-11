@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 2-SpringSecurity：自定义Form表单
+title: 3-SpringSecurity：自定义Form表单
 tags: SpringBoot,SpringSecurity
 ---
 
@@ -389,8 +389,8 @@ public class SecurityContextLogoutHandler implements LogoutHandler {
 	private boolean clearAuthentication = true;
 
 	// ~ Methods
-	// ========================================================================================================
-
+	// ====================================================
+    
 	/**
 	 * Requires the request to be passed in.
 	 *
