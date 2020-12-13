@@ -51,6 +51,7 @@ tags: SpringBoot,SpringSecurity
 显然，我们这里的登录请求是个`POST`方法（`SpringSecurity`默认忽略"GET", "HEAD", "TRACE", "OPTIONS"等幂等请求的`CSRF`拦截）。登录时必须携带`_csrf`参数，与认证信息一并提交，否则报403。
 
 - 后端安全配置（默认开启`CSRF`）
+
 ```java
 @Override
 protected void configure(HttpSecurity http) throws Exception {
@@ -109,6 +110,7 @@ public class HelloController {
         return "ok post";
     }    
 }
+```
 
 - 前端模板（新增index.html）
 
@@ -295,8 +297,8 @@ Note: 这里大部分同学有个问题：Cookie都被自动带到请求中了�
 
 ### Reference
 
-[SpringSecurity官方文档](https://docs.spring.io/spring-security/site/docs/5.4.1/reference/html5/)
-[SpringSecurity官方API](https://docs.spring.io/spring-security/site/docs/current/api/org/springframework/security/web/csrf/CookieCsrfTokenRepository.html)
+- [SpringSecurity官方文档](https://docs.spring.io/spring-security/site/docs/5.4.1/reference/html5/)
+- [SpringSecurity官方API](https://docs.spring.io/spring-security/site/docs/current/api/org/springframework/security/web/csrf/CookieCsrfTokenRepository.html)
 
 ---
 
