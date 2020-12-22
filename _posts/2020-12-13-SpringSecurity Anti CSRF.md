@@ -10,7 +10,7 @@ tags: SpringBoot,SpringSecurity
 
 接着上一篇文章[3-SpringSecurity：自定义Form表单](https://blog.csdn.net/u013810234/article/details/111054094)中的项目：`spring-security-form`，继续演示开启`CSRF`防护的场景（当时关闭了CSRF：.csrf().disable()）。
 
-依赖不变，核心依赖为`Web`与`Thymeleaf`：
+依赖不变，核心依赖为`Web`，`SpringSecurity`与`Thymeleaf`：
 
 ```xml
 <dependencies>
@@ -22,7 +22,11 @@ tags: SpringBoot,SpringSecurity
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-thymeleaf</artifactId>
     </dependency>
-
+    <dependency>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-security</artifactId>
+    </dependency>
+    
     <dependency>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-devtools</artifactId>
