@@ -13,7 +13,7 @@ RBAC是什么？Role Based Access Control，关于RBAC的介绍，网上资源�
 * 用户-权限：user, user-permission, permission
 * 用户-角色-权限：user, user-role, role, role-permission, permission
 
-新建一个 `SpringBoot` 项目，起名 `spring-security-rbac` ，核心依赖为 `Web` 与 `SpringSecurity` ：
+新建一个 `SpringBoot` 项目，起名 `springboot-security-rbac` ，核心依赖为 `Web` 与 `SpringSecurity` ：
 
 ``` xml
 <dependencies>

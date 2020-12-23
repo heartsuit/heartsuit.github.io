@@ -8,7 +8,7 @@ tags: SpringBoot,SpringSecurity
 
 本系列教程，是作为团队内部的培训资料准备的。主要以实验的方式来体验`SpringSecurity`的各项Feature。
 
-新建一个`SpringBoot`项目，起名`spring-security-form`，核心依赖为`Web`，`SpringSecurity`与`Thymeleaf`。
+新建一个`SpringBoot`项目，起名`springboot-security-form`，核心依赖为`Web`，`SpringSecurity`与`Thymeleaf`。
 
 ```xml
 <dependencies>
