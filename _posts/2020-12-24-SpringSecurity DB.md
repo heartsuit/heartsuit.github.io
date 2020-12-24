@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 6-SpringSecurity：user in-db
+title: 6-SpringSecurity：数据库存储用户信息
 tags: SpringBoot, SpringSecurity
 ---
 
