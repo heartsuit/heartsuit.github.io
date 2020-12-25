@@ -276,6 +276,6 @@ Note：虽然 `SpringSecurity` 的 `@EnableGlobalMethodSecurity` 注解提供了
 
 ---
 
-***If you have any questions or any bugs are found, please feel free to contact me. ***
+***If you have any questions or any bugs are found, please feel free to contact me.***
 
 ***Your comments and suggestions are welcome!***

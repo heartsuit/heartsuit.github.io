@@ -272,6 +272,6 @@ for (PermissionDto permission : permissions) {
 
 ---
 
-***If you have any questions or any bugs are found, please feel free to contact me. ***
+***If you have any questions or any bugs are found, please feel free to contact me.***
 
 ***Your comments and suggestions are welcome!***
