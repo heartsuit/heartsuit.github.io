@@ -291,7 +291,7 @@ public final class PasswordEncoderFactories {
 2. [如何安全地持久化密码？](https://codahale.com/how-to-safely-store-a-password/)
 3. [bcrypt密码图解](https://www.jianshu.com/p/2b131bfc2f10)
 4. [bcrypt每次生成的hash都不一样，那么它是如何进行校验的？](https://blog.csdn.net/u013810234/article/details/77053011)
-
+5. [Source Code: Github](https://github.com/heartsuit/demo-spring-boot/tree/master/springboot-security)
 ---
 
 ***If you have any questions or any bugs are found, please feel free to contact me.***
