@@ -85,7 +85,7 @@ HMACSHA256(
 
 ![2021-01-13-JWTWrong.png](https://github.com/heartsuit/heartsuit.github.io/raw/master/pictures/2021-01-13-JWTWrong.png)
 
-### 源码解析
+### 编码实现
 
 新建一个 `SpringBoot` 项目，起名 `springboot-security-jwt` ，核心依赖为 `Web` , `SpringSecurity` 及 `jjwt` ：
 
