@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 10-SpringSecurity：JWT
+title: 10-SpringSecurity：JWT及无状态服务
 tags: SpringBoot, SpringSecurity
 ---
 
