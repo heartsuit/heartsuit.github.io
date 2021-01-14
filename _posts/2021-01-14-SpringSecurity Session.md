@@ -10,19 +10,19 @@ tags: SpringBoot, SpringSecurity
 
 分布式集群架构下的 `Session` 共享一般有以下几种实现方案：
 
-1. Session 复制
+* Session 复制
 
 集群中任一服务器上的 `Session` 发生变化（增删改），该节点会把这个 `Session` 的所有内容序列化，然后广播给所有其它节点，从而实现 `Session` 同步。
 
-2. Session 粘滞
+* Session 粘滞
 
 利用 `Ngnix` 负载均衡策略中的 `ip_hash` 机制，将某个 `ip` 的所有请求都定向到同一台服务器上，即定向流量分发，这个其实不存在Session共享，仅是实现了用户请求与某个服务的绑定。 
 
-3. Session 持久化
+* Session 持久化
 
 将所有的 `Session` 集中存储，存储到数据库中，保证 `Session` 的持久化，但是我们知道，随着用户数据量（活跃）的增加，查询数据库开销也随之增加。
 
-4. Session 共享
+* Session 共享
 
 将所有的 `Session` 集中存储，可使用分布式缓存方案比如 `Redis` 来缓存 `Session` ，实现 `Session` 共享，查询效率高，同时可以横向扩展。
 
@@ -123,7 +123,7 @@ Note：在Idea中，可通过以下配置可同时运行一个服务的多个实
 
 Note：由于仍然采用的传统的 `Cookie-Session` 模式，所以上述实验必须在同一浏览器下进行，在请求时，浏览器会自动带上 `Cookie` （其中存了SessionID）；
 
-#### 实验1：再次验证Session共享
+### 实验1：再次验证Session共享
 
 在 `Controller` 中新增两个接口：一个写入键值对，一个读取键值，接口如下：
 
