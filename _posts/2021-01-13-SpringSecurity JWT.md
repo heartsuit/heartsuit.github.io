@@ -14,7 +14,7 @@ tags: SpringBoot, SpringSecurity
 
 关于JWT的介绍，网上资源有很多，可参考：[https://jwt.io/introduction](https://jwt.io/introduction)，简单来说，JWT由三部分构成：Header、Payload、Signature，三者之间以点号. 分隔，前面两部分使用Base64编码（[关于Base64编码的更多信息](https://blog.csdn.net/u013810234/article/details/111825761)），具体构成如下：
 
-![2021-01-13-JWTParsed. png](https://github.com/heartsuit/heartsuit.github.io/raw/master/pictures/2021-01-13-JWTParsed.png)
+![2021-01-13-JWTParsed.png](https://github.com/heartsuit/heartsuit.github.io/raw/master/pictures/2021-01-13-JWTParsed.png)
 
 ``` java
 HMACSHA256(
@@ -63,27 +63,27 @@ HMACSHA256(
 
 ### 实验0：登录获取JWT
 
-![2021-01-13-JWTLogin. png](https://github.com/heartsuit/heartsuit.github.io/raw/master/pictures/2021-01-13-JWTLogin.png)
+![2021-01-13-JWTLogin.png](https://github.com/heartsuit/heartsuit.github.io/raw/master/pictures/2021-01-13-JWTLogin.png)
 
 ### 实验1：携带JWT：正常响应
 
-![2021-01-13-JWT200. png](https://github.com/heartsuit/heartsuit.github.io/raw/master/pictures/2021-01-13-JWT200.png)
+![2021-01-13-JWT200.png](https://github.com/heartsuit/heartsuit.github.io/raw/master/pictures/2021-01-13-JWT200.png)
 
 ### 实验2：未携带JWT：未认证响应
 
-![2021-01-13-JWT401. png](https://github.com/heartsuit/heartsuit.github.io/raw/master/pictures/2021-01-13-JWT401.png)
+![2021-01-13-JWT401.png](https://github.com/heartsuit/heartsuit.github.io/raw/master/pictures/2021-01-13-JWT401.png)
 
 ### 实验3：携带JWT：无权限响应
 
-![2021-01-13-JWT403. png](https://github.com/heartsuit/heartsuit.github.io/raw/master/pictures/2021-01-13-JWT403.png)
+![2021-01-13-JWT403.png](https://github.com/heartsuit/heartsuit.github.io/raw/master/pictures/2021-01-13-JWT403.png)
 
 ### 实验4：携带JWT：过期响应
 
-![2021-01-13-JWTExpired. png](https://github.com/heartsuit/heartsuit.github.io/raw/master/pictures/2021-01-13-JWTExpired.png)
+![2021-01-13-JWTExpired.png](https://github.com/heartsuit/heartsuit.github.io/raw/master/pictures/2021-01-13-JWTExpired.png)
 
 ### 实验5：携带JWT：非法格式响应
 
-![2021-01-13-JWTWrong. png](https://github.com/heartsuit/heartsuit.github.io/raw/master/pictures/2021-01-13-JWTWrong.png)
+![2021-01-13-JWTWrong.png](https://github.com/heartsuit/heartsuit.github.io/raw/master/pictures/2021-01-13-JWTWrong.png)
 
 ### 源码解析
 
@@ -124,7 +124,7 @@ HMACSHA256(
 </dependencies>
 ```
 
-![2021-01-13-Project. png](https://github.com/heartsuit/heartsuit.github.io/raw/master/pictures/2021-01-13-Project.png)
+![2021-01-13-Project.png](https://github.com/heartsuit/heartsuit.github.io/raw/master/pictures/2021-01-13-Project.png)
 
 创建资源接口： `/user/add` ， `/user/query` ，以及默认的home路径 `/` ，用以展示登录用户信息，若未登录，则展示匿名用户信息。
 
@@ -411,6 +411,6 @@ public final class JwtConstant {
 
 ---
 
-***If you have any questions or any bugs are found, please feel free to contact me. ***
+***If you have any questions or any bugs are found, please feel free to contact me.***
 
 ***Your comments and suggestions are welcome!***
