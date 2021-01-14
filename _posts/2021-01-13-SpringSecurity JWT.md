@@ -8,7 +8,7 @@ tags: SpringBoot, SpringSecurity
 
 本系列教程，是作为团队内部的培训资料准备的。主要以实验的方式来体验 `SpringSecurity` 的各项Feature。
 
-会话管理，是一个比较大的话题，大家熟知的`Cookie-Session`模式就忽略掉，今天重点介绍无状态会话：基于令牌的`JWT`（JSON Web Token），适用于微服务架构的会话管理方式；后续会涉及计到`Session`共享、`OAuth2.0`等关于分布式集群的会话管理。
+会话管理，是一个比较大的话题，大家熟知的`Cookie-Session`模式就忽略掉，今天重点介绍无状态会话：基于令牌的`JWT`（JSON Web Token），适用于微服务架构的会话管理方式；后续会涉及到`Session`共享、`OAuth2.0`等关于分布式集群的会话管理。
 
 ### JWT简介
 
@@ -27,7 +27,7 @@ HMACSHA256(
 
 * 有状态服务
 
-有状态服务，即服务端记录每次会话的客户端信息，从而识别客户端身份，根据用户身份进行相应的处理，`HTTP`本身是无状态的，短连接，因此便有了我们传统的`Cookie-Session`模式，这在单体架构中广泛使用。用户完成登录后，与用户的会话信息被保存在服务端的`Session`中，然后服务端响应一个`SessionID`给前端，前端将这个`SessionID`存储在`Cookie`中，后续请求携带Cookie信息继续发起请求，后端再查询其对应的会话信息，完成请求响应。
+有状态服务，即服务端记录每次会话的客户端信息，从而识别客户端身份，根据用户身份进行相应的处理，`HTTP`本身是无状态的，短连接，因此便有了我们传统的`Cookie-Session`模式，这在单体架构中广泛使用。用户完成登录后，与用户的会话信息被保存在服务端的`Session`中，然后服务端响应一个`SessionID`给前端，前端将这个`SessionID`存储在`Cookie`中，后续请求携带`Cookie`信息继续发起请求，后端再查询其对应的会话信息，完成请求响应。
 
 这种方式在微服务架构下会带来一些问题：
 
@@ -401,7 +401,7 @@ public final class JwtConstant {
 
 ### Source Code
 
-[Github](https://github.com/heartsuit/demo-spring-boot/tree/master/springboot-security)
+[Github](https://github.com/heartsuit/demo-spring-boot/tree/master/springboot-security/springboot-security-jwt)
 
 ### Reference
 
