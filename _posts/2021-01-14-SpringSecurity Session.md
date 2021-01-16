@@ -16,7 +16,7 @@ tags: SpringBoot, SpringSecurity
 
 * Session 粘滞
 
-利用 `Ngnix` 负载均衡策略中的 `ip_hash` 机制，将某个 `ip` 的所有请求都定向到同一台服务器上，即定向流量分发，这个其实不存在Session共享，仅是实现了用户请求与某个服务的绑定。 
+利用 `Ngnix` 负载均衡策略中的 `ip_hash` 机制，将某个 `ip` 的所有请求都定向到同一台服务器上，即定向流量分发，这个其实不存在`Session`共享，仅是实现了用户请求与某个服务的绑定。 
 
 * Session 持久化
 
@@ -28,7 +28,7 @@ tags: SpringBoot, SpringSecurity
 
 > 显然，上述四种方案实际中应用更多的是最后一种：基于分布式缓存（eg: Memcached, Redis）的Session共享，我们今天就演示这种方案。
 
-新建一个 `SpringBoot` 项目，起名 `springboot-security-Session` ，核心依赖为 `Web` , `SpringSecurity` , `SpringSession` 及 `Redis` ：
+新建一个 `SpringBoot` 项目，起名 `springboot-security-session` ，核心依赖为 `Web` , `SpringSecurity` , `SpringSession` 及 `Redis` ：
 
 * pom依赖
 
