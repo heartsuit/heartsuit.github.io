@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 8-SpringSecurity：RemeberMe
+title: 8-SpringSecurity：RemeberMe及Base64编码
 tags: SpringBoot, SpringSecurity
 ---
 
