@@ -167,7 +167,7 @@ Note: 如果我们直接在浏览器中输入 `http://localhost:8000` 则会自�
 
 ![2021-01-27-OpenIDJWT.png](https://github.com/heartsuit/heartsuit.github.io/raw/master/pictures/2021-01-27-OpenIDJWT.png)
 
-### 实验3：通过AccessToken请求Keycloak的用户信息接口
+### 实验4：通过AccessToken请求Keycloak的用户信息接口
 
 定义抽象 `API` 绑定类，通过拦截器将获取到的 `AccessToken` 设置到后续请求头中，通过 `RestTemplate` 实现对 `API` 的请求：
 
