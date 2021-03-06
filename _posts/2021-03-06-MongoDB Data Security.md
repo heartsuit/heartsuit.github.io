@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 我的MongoDB数据被黑客删库了，还勒索要支付比特币赎回
-tags: SpringBoot, SpringSecurity, OAuth2.0
+tags: MongoBD
 ---
 
 ### 背景
