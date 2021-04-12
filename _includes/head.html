@@ -7,7 +7,7 @@
     <link rel="shortcut icon" href="/assets/img/favicon.ico" type="image/x-icon">
 
     <!--Add bootstrap to achieve adaptive-->
-    <script src="{{ '/assets/css/bootstrap.min.css' | relative_url }}"></script>
+    <link rel="stylesheet" href="{{ '/assets/css/bootstrap.min.css?v=' | append: site.github.build_revision | relative_url }}"></link>
     <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
 
     <script src="{{ '/assets/js/jquery.min.js' | relative_url }}"></script>
