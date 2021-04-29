@@ -31,7 +31,7 @@ server {
 
 ### 分析问题
 
-以前也没有用过 `Apache` ，只是知道曾经的 `httpd` 作为 `HTTP` 服务器风靡一时，
+以前也没有用过 `Apache` ，只是知道曾经的 `httpd` 作为 `HTTP` 服务器风靡一时，下面就找下这该死的 `Hello Apache!` 究竟从何而来。。
 
 ``` bash
 # 第一反应，难道有个Apache在运行？
@@ -141,7 +141,7 @@ root@iZuf69c5h89bkzv0aqfm8lZ:~# nginx -s reload
 | @.abc.com    | 主域名解析，不带主机名的解析 | abc.com                  |
 | *.abc.com    | 泛域名解析，可解析所有的二级域名| ok.abc.com, 1.abc.com等|
 
-Notes: 注意浏览器缓存，最好清除浏览器缓存，或者用一个新的浏览器进行测试，否则，浏览器会自动跳转。
+Notes: 注意浏览器缓存，最好清除浏览器缓存，或者用一个新的浏览器进行测试，否则，浏览器会自动跳转，尤其当配置了HTTPS时。
 
 ---
 
