@@ -82,6 +82,10 @@ Note：
 
 * `.doc`生成地址也硬编码在代码中：`D:/data/dbDetail.doc`（DataSourceDetailServiceImpl.toWord方法）；
 
+### Source Code
+
+[https://github.com/heartsuit/db2word](https://github.com/heartsuit/db2word)
+
 ### Reference
 
 * [https://github.com/BeliveYourSelf/lv617DbTest](https://github.com/BeliveYourSelf/lv617DbTest)
