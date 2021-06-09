@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 一键导出PostgreSQL数据库表设计
+title: 一键导出PostgreSQL数据库表设计为word文档
 tags: PostgreSQL
 ---
 
