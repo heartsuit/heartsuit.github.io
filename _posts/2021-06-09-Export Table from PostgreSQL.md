@@ -22,13 +22,13 @@ tags: PostgreSQL
 
 ![2021-06-09-ExportPostgreSQL.png](https://github.com/heartsuit/heartsuit.github.io/raw/master/pictures/2021-06-09-ExportPostgreSQL.png)
 
-## 运行
+### 运行
 
 `MySQL` 版作者的实现是写了一个 `Controller` ，提供了一个 `RESTful` 接口来生成文档，这里是在单元测试类中提供了一个方法：
 
 运行 `com.heartsuit.db2word.postgresql.service.impl. DataSourceDetailServiceImplTest` 中的 `toWord()` 测试方法，可直接生成 `.doc` 文件。
 
-## 参考SQL
+### 参考SQL
 
 * 查询所有表名
 
@@ -74,7 +74,7 @@ Note：
 
 * 如果想了解下多数据源配置，动态切换数据源，则可以切到`combined`分支。
 
-## postgresql分支代码
+### postgresql分支代码
 
 该分支基于原作者的代码，实现了将 `PostgreSQL` 数据表结构导出为word的功能。
 
