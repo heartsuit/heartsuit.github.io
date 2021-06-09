@@ -1,7 +1,7 @@
 ---
 layout: post
-title: 在华为鲲鹏openEuler20.03系统上安装MySQL8
-tags: Server, MySQL
+title: 一键导出PostgreSQL数据库表设计
+tags: PostgreSQL
 ---
 
 ### 背景
@@ -17,6 +17,8 @@ tags: Server, MySQL
 从网上看了下，有人提供了方案＼(☆o☆)／，可一键导出 `MySQL` 数据库设计为 `.doc` 文件，见参考地址；我这里在作者的基础上，实现一键导出 `PostgreSQL` 数据库设计为 `.doc` 文件。
 
 ### 效果
+
+这里以开源物联网平台 `jetlinks` 项目的数据表为例进行 `PostgreSQL` 数据库设计的导出。
 
 ![2021-06-09-ExportPostgreSQL.png](https://github.com/heartsuit/heartsuit.github.io/raw/master/pictures/2021-06-09-ExportPostgreSQL.png)
 
