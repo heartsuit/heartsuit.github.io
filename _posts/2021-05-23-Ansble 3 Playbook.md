@@ -185,7 +185,7 @@ PLAY RECAP *********************************************************************
     # 强制杀死，未停止运行的进程
     - name: Force kill stuck processes
       shell: "kill -9 {{ item }}"
-      with_items: "{{ killed_processes.results | select('failed') | map(attribute='item') | list }}"
+      with_items: "{ { killed_processes.results | select('failed') | map(attribute='item') | list }}"
 
     # 启动新的jar包
     - name: Start service {{ file_name.stdout }}
