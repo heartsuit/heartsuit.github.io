@@ -8,7 +8,7 @@ tags: PostgreSQL
 
 项目开始时，数据库表设计是从概要设计到详细设计，再到数据库中的表结构，有一套完整的文档；
 
-然而，随着项目的演进，需求的变更，导致数据库表结构发生了比较大的变化（加表，加字段，该类型等），对于大多数小公司的项目，由于项目管理流程的不规范，在这个时候大概率是数据库设计文档没有同步跟进而过时；
+然而，随着项目的演进，需求的变更，导致数据库表结构发生了比较大的变化（加表，加字段，改类型等），对于大多数小公司的项目，由于项目管理流程的不规范，在这个时候大概率是数据库设计文档没有同步跟进而过时；
 
 现在，问题来了，出于各种原因吧，需要提供当前数据库的设计文档（总不能一张张表、一个个字段去手写吧。。）；
 
@@ -26,7 +26,7 @@ tags: PostgreSQL
 
 `MySQL` 版作者的实现是写了一个 `Controller` ，提供了一个 `RESTful` 接口来生成文档，这里是在单元测试类中提供了一个方法：
 
-运行 `com.heartsuit.db2word.postgresql.service.impl. DataSourceDetailServiceImplTest` 中的 `toWord()` 测试方法，可直接生成 `.doc` 文件。
+运行 `com.heartsuit.db2word.postgresql.service.impl.DataSourceDetailServiceImplTest` 中的 `toWord()` 测试方法，可直接生成 `.doc` 文件。
 
 ### 参考SQL
 
