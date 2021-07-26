@@ -18,13 +18,13 @@ tags: TDengine
 
 * 白皮书
 
-https://www.taosdata.com/downloads/TDengine_White_Paper_20.pdf
+[https://www.taosdata.com/downloads/TDengine_White_Paper_20.pdf](https://www.taosdata.com/downloads/TDengine_White_Paper_20.pdf)
 
 * 海量物联网时序大数据
-      https://www.taosdata.com/blog/2019/07/09/105.html
-      https://www.taosdata.com/blog/2019/07/29/542.html
-      https://www.taosdata.com/blog/2019/07/09/107.html
-      https://www.taosdata.com/blog/2019/07/09/109.html
+1. [https://www.taosdata.com/blog/2019/07/09/105.html](https://www.taosdata.com/blog/2019/07/09/105.html)
+2. [https://www.taosdata.com/blog/2019/07/29/542.html](https://www.taosdata.com/blog/2019/07/29/542.html)
+3. [https://www.taosdata.com/blog/2019/07/09/107.html](https://www.taosdata.com/blog/2019/07/09/107.html)
+4. [https://www.taosdata.com/blog/2019/07/09/109.html](https://www.taosdata.com/blog/2019/07/09/109.html)
 
 > `TDengine` 专为物联网、车联网等时序空间大数据设计，其核心功能是时序数据库。但为减少大数据平台的研发和运维的复杂度，更进一步降低计算资源， `TDengine` 还提供大数据处理所需要的消息队列、消息订阅、缓存、流式计算等功能。
 
@@ -73,7 +73,7 @@ version: 2.1.2.0
 
 ### 下载
 
-https://www.taosdata.com/cn/getting-started/
+[https://www.taosdata.com/cn/getting-started/](https://www.taosdata.com/cn/getting-started/)
 
 下载完成后，上传至服务器，我习惯将这些包放到 `/usr/local` 目录。
 
