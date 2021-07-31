@@ -207,7 +207,7 @@ drwxr-xr-x. 4 root root 68 7月  26 14:26 vnode7
 
 ### 查看管理节点
 
-两个节点，一主一次。
+两个节点，一主一从。
 
 ```bash
 taos> show mnodes;
