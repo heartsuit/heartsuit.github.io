@@ -186,11 +186,11 @@ public class LoginController {
 ### 自定义工具类进行解密
 
 ```xml
-		<dependency>
-			<groupId>commons-codec</groupId>
-			<artifactId>commons-codec</artifactId>
-			<version>1.12</version>
-		</dependency>
+<dependency>
+  <groupId>commons-codec</groupId>
+  <artifactId>commons-codec</artifactId>
+  <version>1.12</version>
+</dependency>
 ```
 
 ```java
@@ -242,11 +242,11 @@ public class RSAEncrypt {
 ### 使用hutool中的工具类进行解密
 
 ```xml
-		<dependency>
-			<groupId>cn.hutool</groupId>
-			<artifactId>hutool-all</artifactId>
-			<version>5.0.6</version>
-		</dependency>	
+<dependency>
+  <groupId>cn.hutool</groupId>
+  <artifactId>hutool-all</artifactId>
+  <version>5.0.6</version>
+</dependency>	
 ```
 
 ## 前端工程
@@ -430,6 +430,66 @@ public class CorsConfig implements WebMvcConfigurer {
             }
         };
     }
+}
+```
+
+## 附：代码生成RSA密钥对
+
+当然，除了使用Windows、Linux上的openssl工具生成密钥对之外，我们也可以使用代码来直接生成。
+
+```xml
+<dependency>
+  <groupId>org.bouncycastle</groupId>
+  <artifactId>bcprov-jdk15on</artifactId>
+  <version>1.64</version>
+</dependency>
+```
+
+```java
+public class RSAEncrypt {
+    private static final KeyPair keyPair = genKeyPair() ;
+    private static org.bouncycastle.jce.provider.BouncyCastleProvider bouncyCastleProvider = null;
+
+    public static synchronized org.bouncycastle.jce.provider.BouncyCastleProvider getInstance() {
+        if (bouncyCastleProvider == null) {
+            bouncyCastleProvider = new org.bouncycastle.jce.provider.BouncyCastleProvider();
+        }
+        return bouncyCastleProvider;
+    }
+
+    /**
+     * 随机生成密钥对
+     */
+    public static KeyPair  genKeyPair()  {
+        try {
+//            Provider provider =new org.bouncycastle.jce.provider.BouncyCastleProvider();
+//            Security.addProvider(DEFAULT_PROVIDER);
+            SecureRandom random = new SecureRandom();
+            KeyPairGenerator generator = KeyPairGenerator.getInstance("RSA", getInstance());
+            generator.initialize(1024,random);
+            return generator.generateKeyPair();
+        } catch(Exception e) {
+            throw new RuntimeException(e);
+        }
+    }
+    /**
+     * 获取公钥字符串（base64字符串）
+     * @return
+     */
+    public static String generateBase64PublicKey() {
+        PublicKey  publicKey = (RSAPublicKey) keyPair.getPublic();
+        return new String(Base64.encodeBase64(publicKey.getEncoded()));
+    }
+    /**
+     * 获取私钥字符串（base64字符串）
+     * @return
+     */
+    public static String generateBase64PrivateKey() {
+        PrivateKey privateKey = (RSAPrivateKey) keyPair.getPrivate();
+        // 得到私钥字符串
+        return new String(Base64.encodeBase64((privateKey.getEncoded())));
+    }
+    ...
 }
 ```
 
