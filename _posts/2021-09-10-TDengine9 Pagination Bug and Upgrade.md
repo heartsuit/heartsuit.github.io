@@ -164,7 +164,7 @@ A: 其实，稍微观察下就知道，我们在执行卸载命令后，旧版�
 
 * pom文件中的`taos-jdbcdriver`依赖版本升级
 
-![2021-09-10-DriverCompatible.jpg](https://github.com/heartsuit/heartsuit.github.io/raw/master/pictures/2021-09-10-DriverCompatible.jpg)
+![2021-09-10-DriverCompatible.png](https://github.com/heartsuit/heartsuit.github.io/raw/master/pictures/2021-09-10-DriverCompatible.png)
 
 ```xml
 <dependency>
