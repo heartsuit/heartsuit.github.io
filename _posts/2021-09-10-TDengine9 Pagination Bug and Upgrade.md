@@ -8,7 +8,7 @@ tags: TDengine
 
 为什么要对 `TDengine` 进行升级？
 
-从一开始使用 `TDengine` 就选了当时最新的版本 `2.1.2.0` ，这个版本应该也不算旧了。不过今天在使用其分页功能查询子表时，发现了一个问题， `TDengine` 毕竟是一款新的数据库，有问题也很正常。
+从一开始使用 `TDengine` 就选了当时最新的版本 `2.1.2.0` ，这个版本应该也不算旧了。不过今天在使用其分页功能查询表时，发现了一个问题， `TDengine` 毕竟是一款新的数据库，有问题也很正常。
 
 ```bash
 [root@hadoop2 ~]# taos --version
@@ -21,7 +21,7 @@ version: 2.1.2.0
 
 ![2021-09-10-PaginationBug.jpg](https://github.com/heartsuit/heartsuit.github.io/raw/master/pictures/2021-09-10-PaginationBug.jpg)
 
-使用 `SpringBoot` 集成了 `TDengine` , `MyBatisPlus` 后，在对一些子表中分页查询时，不同的 `offset` 竟然返回相同的值。检查了前后端参数数据交互，没啥问题；以下是 `MyBatisPlus` 关于子表查询的前3页生成的SQL语句，拿着这些语句在 `taos` 客户端执行，竟然返回相同的数据！！神奇了~
+使用 `SpringBoot` 集成了 `TDengine` , `MyBatisPlus` 后，在对一些表中分页查询时，不同的 `offset` 竟然返回相同的值。检查了前后端参数数据交互，没啥问题；以下是 `MyBatisPlus` 关于表查询的前3页生成的SQL语句，拿着这些语句在 `taos` 客户端执行，竟然返回相同的数据！！神奇了~
 
 ```sql
 SELECT ts,voltage,currente,temperature,sn,city,groupid  FROM power  WHERE sn = '1105' AND ts BETWEEN '2021-09-07 09:15:11.138
