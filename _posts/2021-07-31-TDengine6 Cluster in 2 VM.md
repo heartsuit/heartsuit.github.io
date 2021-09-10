@@ -78,7 +78,7 @@ firstEp                   hadoop1:6030
 fqdn                      hadoop2
 ```
 
-Notes: `firstEp` 都配置为第一个节点的地址，我开始的时候将第二个节点的 `firstEp` 配置为 `hadoop1:6030` ，那必须起不来。。
+Notes: `firstEp` 都配置为第一个节点的地址，我开始的时候将第二个节点的 `firstEp` 配置为 `hadoop2:6030` ，那必须起不来。。
 
 ### 5. 启动第一个taosd服务节点
 
@@ -638,7 +638,7 @@ Note：
 
 ### 一开始犯的错
 
-`firstEp` 都配置为第一个节点的地址，我开始的时候将第二个节点的 `firstEp` 配置为 `hadoop1:6030` ，那必须起不来。。
+`firstEp` 都配置为第一个节点的地址，我开始的时候将第二个节点的 `firstEp` 配置为 `hadoop2:6030` ，那必须起不来。。
 
 ![2021-7-31-ClusterError.jpg](https://github.com/heartsuit/heartsuit.github.io/raw/master/pictures/2021-7-31-ClusterError.jpg)
 
