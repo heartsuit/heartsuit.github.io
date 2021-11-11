@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 13-TDengine使用JDBC-JNI连接报错：JNI connection is NULL，原因你可能想不到
+title: 13-TDengine使用JDBC-JNI连接报错：JNI connection is NULL
 tags: TDengine
 ---
 
@@ -12,11 +12,11 @@ tags: TDengine
 
 ### 服务报错
 
-SpringBoot项目的控制台错误信息： `java.sql. SQLException: JNI ERROR (2354): JNI connection is NULL`
+SpringBoot项目的控制台错误信息： `java.sql.SQLException: JNI ERROR (2354): JNI connection is NULL`
 
 ![2021-11-11-Exception.jpg](https://github.com/heartsuit/heartsuit.github.io/raw/master/pictures/2021-11-11-Exception.jpg)
 
-这个问题我曾经在这篇文章[2-TDengine客户端连接，RESTful，JDBC]()里也遇到过， 当时是因为我没有开放 `6030` 的 `UDP` 端口，可是现在我连整个防火墙都关了。无奈之下，又到官网重温下客户端连接失败的解决方法。
+这个问题我曾经在这篇文章[2-TDengine客户端连接，RESTful，JDBC](https://heartsuit.blog.csdn.net/article/details/119146497)里也遇到过， 当时是因为我没有开放 `6030` 的 `UDP` 端口，可是现在我连整个防火墙都关了。无奈之下，又到官网重温下客户端连接失败的解决方法。
 
 ### 问题排查
 
