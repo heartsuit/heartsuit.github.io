@@ -12,7 +12,7 @@ tags: Nginx
 
 > 指向“https://www.abc.com/static/js/chunk-libs.176e403f.js”的 `<script>` 加载失败
 
-![2021-11-26-ScriptErrorInFirefox.jpg](https://hub.fastgit.org/heartsuit/heartsuit.github.io/raw/master/pictures/2021-11-26-ScriptErrorInFirefox.jpg)
+![2021-11-26-ScriptErrorInFirefox.jpg](https://github.com/heartsuit/heartsuit.github.io/raw/master/pictures/2021-11-26-ScriptErrorInFirefox.jpg)
 
 这其实没有提供任何有用的信息。。换个浏览器试试。
 
@@ -44,7 +44,7 @@ Note：**部署架构是这样的：域名所在的服务器A通过内网IP代�
 
 既然是运行环境发生了变化，我们首先检查了主机的各项指标：CPU、内存、磁盘等。当 `df -h` 查看磁盘空间时，问题暴露了：磁盘爆了(╥╯^╰╥)
 
-![2021-11-26-ReleaseSpace.jpg](https://hub.fastgit.org/heartsuit/heartsuit.github.io/raw/master/pictures/2021-11-26-ReleaseSpace.jpg)
+![2021-11-26-ReleaseSpace.jpg](https://github.com/heartsuit/heartsuit.github.io/raw/master/pictures/2021-11-26-ReleaseSpace.jpg)
 
 那么问题来了，为啥磁盘会爆，既然是跟 `Nginx` 相关的问题，那么第一步应先查看 `Nginx` 的错误日志。
 
@@ -55,7 +55,7 @@ vi /var/log/nginx/error.log
 
 以下是 `Nginx` 错误日志给出的部分错误信息，关键信息：**(28: No space left on device)**，没空间啦~~
 
-![2021-11-26-NginxLog.jpg](https://hub.fastgit.org/heartsuit/heartsuit.github.io/raw/master/pictures/2021-11-26-NginxLog.jpg)
+![2021-11-26-NginxLog.jpg](https://github.com/heartsuit/heartsuit.github.io/raw/master/pictures/2021-11-26-NginxLog.jpg)
 
 > 2021/11/24 11:10:08 [crit] 23967#0: *82293762 pwritev() "/var/lib/nginx/tmp/proxy/2/32/0000543322" failed (28: No space left on device) while reading upstream, client: 110.179.80.101, server: www.abc.com, request: "GET /static/js/app.5033a65a.js HTTP/2.0", upstream: "http://192.168.0.36:80/static/js/app.5033a65a.js", host: "www.abc.com", referrer: "https://www.abc.com/"
 
