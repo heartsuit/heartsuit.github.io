@@ -26,7 +26,7 @@ tags: Github
 
 ![2021-12-3-Gitee.jpg](https://github.com/heartsuit/heartsuit.github.io/raw/master/pictures/2021-12-3-Gitee.jpg)
 
-### 镜像站；
+### 镜像站
 
 * [https://github.com.cnpmjs.org/](https://github.com.cnpmjs.org/)
 * [https://hub.fastgit.org/](https://hub.fastgit.org/)
@@ -59,7 +59,7 @@ Note:
 
 * [https://shrill-pond-3e81.hunsh.workers.dev/](https://shrill-pond-3e81.hunsh.workers.dev/)
 
-这种一般用于下载单个 `Release` ， `Archive` 文件，比如，我要下载 `prometheus` 的一个发布版：[https://github.com/prometheus/prometheus/releases/download/v2.31.1/prometheus-2.31.1.darwin-amd64.tar.gz](https://github.com/prometheus/prometheus/releases/download/v2.31.1/prometheus-2.31.1.darwin-amd64.tar.gz)，直接下载会很慢，活着下载失败。可以放到这类网站的下载框加速。
+这种一般用于下载单个 `Release` ， `Archive` 文件，比如，我要下载 `prometheus` 的一个发布版：[https://github.com/prometheus/prometheus/releases/download/v2.31.1/prometheus-2.31.1.darwin-amd64.tar.gz](https://github.com/prometheus/prometheus/releases/download/v2.31.1/prometheus-2.31.1.darwin-amd64.tar.gz)，直接下载会很慢，或者下载失败。可以放到这类网站的下载框加速。
 
 ![2021-12-3-3rdSite.jpg](https://github.com/heartsuit/heartsuit.github.io/raw/master/pictures/2021-12-3-3rdSite.jpg)
 
