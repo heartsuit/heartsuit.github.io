@@ -43,6 +43,8 @@ tags: Github
 
 Note：以下插件与本标题无关，只是平时常用的浏览器插件。
 
+![2021-12-11-FirefoxPlugin.jpg](https://github.com/heartsuit/heartsuit.github.io/raw/master/pictures/2021-12-11-FirefoxPlugin.jpg)
+
 * 搜索：`octotree` 可以树形结构查看Github仓库中的文件，减少了多级目录的查看，提高效率
 * 搜索：`enchanced github` 可查看单个文件的大小，下载单个文件
 * 搜索：`gitzip for github` 可直接下载单个文件夹，下载单个文件夹（在指定文件夹后的空白区域双击即可下载），这个上面有介绍。
