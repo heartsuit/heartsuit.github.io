@@ -396,7 +396,7 @@ public class ImageWaterMark extends PdfPageEventHelper {
 
 ### Source Code
 
-完整源码见 `GitHub` ：[2021-12-24-Limitation.jpg](https://github.com/heartsuit/heartsuit.github.io/raw/master/pictures/2021-12-24-Limitation.jpg)，附数据库表模型与数据，图片水印文件以及导出的 `PDF` 样例。
+完整源码见 `GitHub` ：[https://github.com/heartsuit/demo-spring-boot/tree/master/springboot-export-pdf](https://github.com/heartsuit/demo-spring-boot/tree/master/springboot-export-pdf)，附数据库表模型与数据，图片水印文件以及导出的 `PDF` 样例。
 
 ### Reference
 
