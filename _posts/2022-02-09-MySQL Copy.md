@@ -152,6 +152,18 @@ cat /var/lib/mysql/master.info
 
 ### Reference
 
+关于 `MySQL` 主从同步、读写分离，我之前零星地总结过遇到问题与解决方法。如果恰巧你也遇到了类似问题，那么很高兴能够为你节省点时间。
+
+* [挂载并初始化Linux数据盘，完成MySQL数据迁移](https://heartsuit.blog.csdn.net/article/details/105633347)
+* [Ubuntu下对MySQL指定数据库定时备份](https://heartsuit.blog.csdn.net/article/details/86599055)
+* [mysqldump备份时导致所有数据表锁定，无法提供服务](https://heartsuit.blog.csdn.net/article/details/105978479)
+* [MySQL主从同步配置](https://heartsuit.blog.csdn.net/article/details/105663683)
+* [问题排查：线上MySQL启动报错：Job for mysqld.service failed because the control process exited with error code.](https://heartsuit.blog.csdn.net/article/details/108229737)
+* [一个不规范操作导致MySQL主从同步中断（GTID模式）](https://heartsuit.blog.csdn.net/article/details/109248066)
+* [数据量激增，导致MySQL主从同步延迟](https://heartsuit.blog.csdn.net/article/details/109273695)
+
+ 
+
 ---
 
 ***If you have any questions or any bugs are found, please feel free to contact me.***
