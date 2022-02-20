@@ -76,7 +76,7 @@ Configure other nodes to join this cluster:
 
 至此，集群配置完成。
 
-![2022-02-20-ThreeNodesjpg](https://github.com/heartsuit/heartsuit.github.io/raw/master/pictures/2022-02-20-ThreeNodesjpg)
+![2022-02-20-ThreeNodes.jpg](https://github.com/heartsuit/heartsuit.github.io/raw/master/pictures/2022-02-20-ThreeNodes.jpg)
 
 * 完整搭建过程
 
