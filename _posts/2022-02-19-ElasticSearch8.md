@@ -155,7 +155,7 @@ Configure other nodes to join this cluster:
 
 输入用户名： `elastic` ，密码： `9SWTTFDuibtaS2*L0NRv` 。登录成功后，经典的启动信息页面：“You Know, for Search”。
 
-![2022-02-19-ElasticSearchHTTPS.jpg](https://github.com/heartsuit/heartsuit.github.io/raw/master/pictures/2022-02-19-ElasticSearchHTTPS.jpg)
+![2022-02-19-ElasticSearchVersion.jpg](https://github.com/heartsuit/heartsuit.github.io/raw/master/pictures/2022-02-19-ElasticSearchVersion.jpg)
 
 ## 下载、安装并启动Kibana8
 
