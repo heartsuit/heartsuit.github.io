@@ -35,7 +35,7 @@ Note：三台主机的名称分别为 `hadoop1` ， `hadoop2` ， `hadoop3` 。
 
 ## 集群配置
 
-`ElasticSearch` 8.0的集群配置相对刚方便一些，只需要将第一个实例上生成的 `enrollment token` 附带上，在后续的两个节点上执行启动命令即可。
+`ElasticSearch` 8.0的集群配置相对更方便一些，只需要将第一个实例上生成的 `enrollment token` 附带上，在后续的两个节点上执行启动命令即可。
 
 其实在第一个 `ElasticSearch` 实例运行成功后，控制台输出了以下内容：
 
