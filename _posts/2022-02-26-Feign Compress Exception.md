@@ -51,7 +51,7 @@ feign:
 
 明确了问题的原因，解决起来就比较容易了。我们可以简单粗暴地将压缩关闭即可。。
 
-![2022-02-20-ElasticSearchCluster.jpg](https://github.com/heartsuit/heartsuit.github.io/raw/master/pictures/2022-02-20-ElasticSearchCluster.jpg)
+![2022-02-26-FeignConfig.jpg](https://github.com/heartsuit/heartsuit.github.io/raw/master/pictures/2022-02-26-FeignConfig.jpg)
 
 Note：由于改成了批量传输的方式，导致业务处理耗时较长，在请求发起端可能出现"Timed out.."这类错误。这里的配置将 `HTTP` 连接的超时时间由10s修改成了60s；等数据同步完成，再改回来。
 
