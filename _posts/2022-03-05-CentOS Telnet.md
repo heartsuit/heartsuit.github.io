@@ -77,7 +77,7 @@ protected-mode no
 
 接下来，我们使用虚拟机中刚安装的 `telnet` 连接宿主机上运行的一个自己编写的基于 `Node.js` 的极简 `TCP` 服务： `EchoServer` ，即客户端发来什么消息， `TCP` 服务端便将消息回复回去，这一般在我们学习网络编程时（Java的Socket通信，Mina，Netty以及WebSocket）的入门示例。
 
-![2022-03-05-TelnetNodejpg](https://github.com/heartsuit/heartsuit.github.io/raw/master/pictures/2022-03-05-TelnetNodejpg)
+![2022-03-05-TelnetNode.jpg](https://github.com/heartsuit/heartsuit.github.io/raw/master/pictures/2022-03-05-TelnetNode.jpg)
 
 ```javascript
 let net = require('net');
