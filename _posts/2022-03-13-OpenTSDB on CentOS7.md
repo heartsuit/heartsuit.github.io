@@ -1,6 +1,6 @@
 ---
 layout: post
-title: OpenTSDB2.4.1在CentOS7上的安装
+title: 开源时序数据库OpenTSDB2.4.1在CentOS7上的安装
 tags: OpenTSDB, 运维
 ---
 
@@ -227,7 +227,7 @@ opentsdb (pid  85207) 正在运行...
 
 访问： `http://hadoop6:4242/` ，默认进入到图表页面。
 
-![2022-03-13-OpenTSDB1jpg](https://github.com/heartsuit/heartsuit.github.io/raw/master/pictures/2022-03-13-OpenTSDB1jpg)
+![2022-03-13-OpenTSDB1.jpg](https://github.com/heartsuit/heartsuit.github.io/raw/master/pictures/2022-03-13-OpenTSDB1.jpg)
 
 另外，还可以查看关键指标统计、运行日志与版本信息。
 
