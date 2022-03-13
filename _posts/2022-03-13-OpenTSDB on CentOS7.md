@@ -233,6 +233,10 @@ opentsdb (pid  85207) 正在运行...
 
 ![2022-03-13-OpenTSDB2.jpg](https://github.com/heartsuit/heartsuit.github.io/raw/master/pictures/2022-03-13-OpenTSDB2.jpg)
 
+### 小总结
+
+总体来说，使用 `OpenTSDB` 作为时序数据的存储架构涉及的组件过多，这样带来的问题就是整体架构相对比较脆弱；另外是运维复杂，需要维护一套大数据的基础组件，尤其是进行分布式部署的时候，这种天然的缺陷（依赖 `Hadoop` 、 `HBase` ）更是暴露无遗。当然，可研究下源码，体会下时序数据库的设计原理还是不错的。
+
 ---
 
 ***If you have any questions or any bugs are found, please feel free to contact me.***
