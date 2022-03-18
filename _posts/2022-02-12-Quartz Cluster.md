@@ -51,7 +51,7 @@ DROP TABLE IF EXISTS QRTZ_CALENDARS;
 ```
 
 * 11张表说明
-
+```
 | 序号   | 表名                   | 说明                             |
 | -------| -----------------------| ---------------------------------|
 | 1      |QRTZ_CALENDARS    |存储Quartz日历信息|
@@ -65,7 +65,7 @@ DROP TABLE IF EXISTS QRTZ_CALENDARS;
 | 9      |QRTZ_BLOG_TRIGGERS    |以Blob类型存储的Trigger|
 | 10      |QRTZ_TRIGGERS      |存储已配置的Trigger的基本信息|
 | 11      |QRTZ_SIMPROP_TRIGGERS      |存储CalendarIntervalTrigger和DailyTimeIntervalTrigger两种类型的触发器|
-
+```
 11张表的详细信息，参考：https://blog.csdn.net/xiaoniu_888/article/details/83181078
 
 Note：cron方式需要用到的4张数据表：QRTZ_TRIGGERS，QRTZ_CRON_TRIGGERS，QRTZ_FIRED_TRIGGERS，QRTZ_JOB_DETAILS。
