@@ -51,21 +51,7 @@ DROP TABLE IF EXISTS QRTZ_CALENDARS;
 ```
 
 * 11张表说明
-```
-序号   | 表名                   | 说明                             |
--------| -----------------------| ---------------------------------|
-1      |QRTZ_CALENDARS    |存储Quartz日历信息|
-2      |QRTZ_CRON_TRIGGERS      |存放Cron类型的Trigger，包括Cron表达式和时区信息|
-3      |QRTZ_FIRED_TRIGGERS      |存储与已触发的Trigger相关的状态信息，以及相联Job的执行信息|
-4      |QRTZ_PAUSED_TRIGGER_GRPS    |存储已暂停的Trigger组的信息|
-5      |QRTZ_SCHEDULER_STATE    |存储少量的Scheduler相关的状态信息|
-6      |QRTZ_LOCKS      |存储锁信息，为多个节点调度提供分布式锁，实现分布式调度，默认有2个锁: STATE_ACCESS, TRIGGER_ACCESS|
-7      |QRTZ_JOB_DETAILS      |存储每一个已配置的JobDetail信息|
-8      |QRTZ_SIMPLE_TRIGGERS    |存储Simple类型的Trigger，包括重复次数、间隔、以及已触的次数|
-9      |QRTZ_BLOG_TRIGGERS    |以Blob类型存储的Trigger|
-10      |QRTZ_TRIGGERS      |存储已配置的Trigger的基本信息|
-11      |QRTZ_SIMPROP_TRIGGERS      |存储CalendarIntervalTrigger和DailyTimeIntervalTrigger两种类型的触发器|
-```
+
 11张表的详细信息，参考：https://blog.csdn.net/xiaoniu_888/article/details/83181078
 
 Note：cron方式需要用到的4张数据表：QRTZ_TRIGGERS，QRTZ_CRON_TRIGGERS，QRTZ_FIRED_TRIGGERS，QRTZ_JOB_DETAILS。
