@@ -116,6 +116,13 @@ cp -r redis redis-6379
 1394 cluster-config-file nodes-6379.conf
 1400 cluster-node-timeout 15000
 ```
+Note：如果配置了认证，则需要增加`masterauth your-guess`配置，否则从节点报错：
+
+> MASTER aborted replication with an error: NOAUTH Authentication required.
+
+以上报错的结果就是，从节点不断尝试重连，疯狂输出日志，便导致另外一个错误：
+
+> Opening the temp file needed for MASTER <-> REPLICA synchronization: No space left on device
 
 这样 `Redis` 集群中的一个实例就配置好了（为了避免受到已运行的实例的干扰，我们将之前生成的 `dump.rdb` 以及日志文件删除；如果是崭新的实例，则不需要操作），那么我们再从配置好的这个 `redis-6379` 复制出一个 `redis-6380` ，计划将其作为这台主机上的 `Replica` 。
 
