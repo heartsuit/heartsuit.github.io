@@ -116,7 +116,8 @@ cp -r redis redis-6379
 1394 cluster-config-file nodes-6379.conf
 1400 cluster-node-timeout 15000
 ```
-Note：如果配置了认证，则需要增加`masterauth your-guess`配置，否则从节点报错：
+
+Note：如果配置了认证，则需要增加 `masterauth your-guess` 配置，否则从节点报错：
 
 > MASTER aborted replication with an error: NOAUTH Authentication required.
 
@@ -145,6 +146,12 @@ cp -r redis-6379/ redis-6380
 [root@sx-std-789123-0007 opt]# scp -r /opt/redis-6379/ root@172.27.204.162:/opt
 [root@sx-std-789123-0007 opt]# scp -r /opt/redis-6380/ root@172.27.204.162:/opt
 ```
+
+在 `Redis Cluster` 集群中的每个节点，需要用到两个端口：
+1. port，6379，用于客户端建立连接及命令通信，集群节点间的`key`迁移；
+2. cluster-port，16379（默认是在port的设置上偏移10000），用于集群总线通信：节点宕机监测、配置更新等；
+
+port对集群外部开放，cluster-port在集群间开放即可。
 
 ### 关闭防火墙
 
