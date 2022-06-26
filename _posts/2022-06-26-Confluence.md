@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 本地部署Confluence遇到的问题：MySQL数据库编码、隔离级别、验证码不显示
-tags: 国产化, 正向代理
+tags: Confluence
 ---
 
 ## 背景
