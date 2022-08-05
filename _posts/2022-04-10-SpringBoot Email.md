@@ -283,7 +283,11 @@ http://localhost:8080/mail/code
 
 以上测试地址，分别对应普通文本邮件，HTML富文本邮件，带附件邮件，内联静态图片邮件，HTML模板邮件以及生成验证码接口。
 
-### Reference
+## Source Code
+
+[https://github.com/heartsuit/demo-spring-boot/tree/master/springboot-mail](https://github.com/heartsuit/demo-spring-boot/tree/master/springboot-mail)
+
+## Reference
 
 * https://blog.csdn.net/qq_31984879/article/details/87516363
 
