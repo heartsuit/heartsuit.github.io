@@ -51,7 +51,7 @@ ExecStart=/usr/bin/dockerd -H tcp://0.0.0.0:2375 -H fd:// --containerd=/run/cont
 
 之后，可以在 `IDEA` 的 `Services` Tab下看到已建立连接的 `Docker` 服务，包括容器、镜像、网络以及数据卷。这时，如果编写了 `Dockerfile` ，可以直接运行容器。
 
-![2022-80-28-DocerService.jpg](https://github.com/heartsuit/heartsuit.github.io/raw/master/pictures/2022-80-28-DocerService.jpg)
+![2022-08-28-DocerService.jpg](https://github.com/heartsuit/heartsuit.github.io/raw/master/pictures/2022-08-28-DocerService.jpg)
 
 下一篇，我们通过 `SpringBoot` 应用 `Docker` 化后，一键部署 `SpringBoot` 服务到 `Docker` 。
 
