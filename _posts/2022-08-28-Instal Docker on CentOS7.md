@@ -34,10 +34,12 @@ tags: CloudNative, Docker
 * 云原生之容器编排实践-SpringBoot应用Docker化
 * 云原生之容器编排实践-阿里云私有容器镜像仓库
 * 云原生之容器编排实践-在CentOS7上安装minikube
-* 云原生之容器编排实践-minikube使用阿里云私有镜像仓库
-* 云原生之容器编排实践-SpringBoot应用以pod方式部署到minikube
+* 云原生之容器编排实践-minikube传递秘钥使用阿里云私有镜像仓库
+* 云原生之容器编排实践-Docker使用JDK-Alpine镜像的时区问题
+* 云原生之容器编排实践-SpringBoot应用以YAML描述文件部署pod到minikube
 * 云原生之容器编排实践-SpringBoot应用以Deployment方式部署到minikube以及弹性伸缩
 * 云原生之容器编排实践-以k8s的Service方式暴露SpringBoot服务
+* 云原生之容器编排实践-Kubernetes资源管理：标签选择器，注解以及命名空间
 
 ## 系统环境
 
