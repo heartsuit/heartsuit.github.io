@@ -57,6 +57,10 @@ built by gcc 4.8.5 20150623 (Red Hat 4.8.5-44) (GCC)
 configure arguments:
 ```
 
+Note: 
+1. 如果在编译时报错缺少组件，可以先安装基础依赖：`yum -y install gcc openssl openssl-devel pcre-devel zlib zlib-devel`。
+2. 如果要配置HTTPS，需要在编译时安装 `SSL` 模块，configure时附带参数：`./configure --with-http_stub_status_module --with-http_ssl_module --with-openssl=/usr/bin/openssl`。
+
 ## 启动验证
 
 ```conf
