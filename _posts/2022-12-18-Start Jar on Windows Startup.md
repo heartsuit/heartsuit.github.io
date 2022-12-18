@@ -41,7 +41,7 @@ CreateObject("Wscript. Shell").run "D:\Java\IdeaProjects\demo\target\demo.bat",0
 C:\ProgramData\Microsoft\Windows\Start Menu\Programs\StartUp
 ```
 
-![2022-12-18-640-480.jpg](https://github.com/heartsuit/heartsuit.github.io/raw/master/pictures/2022-12-18-640-480.jpg)
+![2022-12-18-StartUp.jpg](https://github.com/heartsuit/heartsuit.github.io/raw/master/pictures/2022-12-18-StartUp.jpg)
 
 ## Reference
 
