@@ -172,6 +172,41 @@ logfile "/usr/local/redis/log/redis.log"
 
 Note: `Redis` 默认端口为 `6379` ，我这里改了端口为 `6380` 。
 
+- 配置Redis服务开机自启
+
+```bash
+[root@localhost redis]# vi /etc/systemd/system/redis.service
+[Unit]
+Description=redis-server
+After=network.target
+
+[Service]
+Type=forking
+ExecStart=/usr/local/redis/bin/redis-server /usr/local/redis/redis.conf
+PrivateTmp=true
+
+[Install]
+WantedBy=multi-user.target
+```
+
+- 验证开机自启
+
+```bash
+[root@localhost redis]# systemctl list-unit-files | grep redis
+redis.service                              disabled       
+[root@localhost redis]# systemctl enable redis
+Created symlink /etc/systemd/system/multi-user.target.wants/redis.service → /etc/systemd/system/redis.service.
+[root@localhost redis]# systemctl list-unit-files | grep redis
+redis.service                              enabled  
+```
+- 常用命令
+```bash
+systemctl start redis
+systemctl enable redis
+systemctl status redis
+systemctl stop redis
+```
+
 ### 安装Zookeeper
 
 ``` bash
