@@ -276,6 +276,30 @@ COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-redhat-linux/4.8.5/lto-wrapper
 gcc 版本 4.8.5 20150623 (Red Hat 4.8.5-4) (GCC) 
 ```
 
+## 小总结
+
+当你的服务器无法连接到互联网时。这可能是由于网络限制、安全策略或其他原因造成的。在这种情况下，就需要手动下载在可以访问互联网的机器上，下载 `Docker`  `24.0.2` 的离线安装包，并在目标服务器上进行安装。
+
+另外，可能需要离线安装 `GCC` 和 `G++` 环境：
+
+1. 当无法通过网络连接下载和安装`GCC`和`G++`时。
+2. 当需要在没有网络连接的环境中进行编译和构建C或C++代码时。
+
+要离线安装GCC和G++环境，除了上述的rpm，还可以按照以下步骤进行操作：
+
+1. 在具有Internet连接的计算机上，下载GCC和G++的离线安装包（通常是tar.gz或tar.xz格式）。
+2. 将离线安装包传输到目标计算机上。
+3. 在目标计算机上解压离线安装包。
+4. 进入解压后的目录，并运行以下命令进行配置和安装：
+
+```bash
+./configure
+make
+sudo make install
+```
+
+这将配置、编译和安装 `GCC` 和 `G++` 环境。安装完成后，您可以在目标计算机上使用 `GCC` 和 `G++` 编译和构建 `C` 或 `C++` 代码，比如我们经常以源码方式安装的 `Nginx` 、 `Redis` 。
+
 ## Reference
 
 * [https://www.cnblogs.com/dandelion200/p/14577480.html](https://www.cnblogs.com/dandelion200/p/14577480.html)
