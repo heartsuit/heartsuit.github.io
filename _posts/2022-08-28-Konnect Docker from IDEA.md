@@ -53,6 +53,18 @@ ExecStart=/usr/bin/dockerd -H tcp://0.0.0.0:2375 -H fd:// --containerd=/run/cont
 
 ![2022-08-28-DocerService.jpg](https://github.com/heartsuit/heartsuit.github.io/raw/master/pictures/2022-08-28-DocerService.jpg)
 
+## 小总结
+
+通过 `IDEA` 连接 `Docker` 服务给我们带来以下几个好处：
+
+1. 方便管理和监控容器：通过`IDEA`连接`Docker`服务，可以直接在`IDEA`界面上管理和监控`Docker`容器。可以方便地查看容器的状态、日志和资源使用情况，还可以执行容器的启动、停止和重启操作。
+
+2. 快速部署和调试应用：通过`IDEA`连接`Docker`服务，可以快速部署应用到`Docker`容器中，并进行调试。可以在`IDEA`中配置容器的运行环境和参数，然后一键启动容器，实现快速的应用部署和调试过程。
+
+3. 与开发工具的集成：`IDEA`连接`Docker`服务可以与其他开发工具进行集成，提供更便捷的开发体验。例如，可以在`IDEA`中使用`Docker`插件来管理容器和镜像，还可以通过插件与版本控制工具集成，实现容器和代码的一体化管理。
+
+总之，通过 `IDEA` 连接 `Docker` 服务可以提高开发效率，简化容器管理和应用部署过程，同时提供更好的集成和调试体验。 
+
 下一篇，我们通过 `SpringBoot` 应用 `Docker` 化后，一键部署 `SpringBoot` 服务到 `Docker` 。
 
 ---
