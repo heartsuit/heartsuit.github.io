@@ -113,6 +113,22 @@ Note：源码已上传 `GitHub` ：[https://github.com/heartsuit/cloud-native](h
 
 执行 `mvn package` 命令，或者通过 `Maven` 插件的 `package` 命令完成一键打包与部署到容器的操作。
 
+## 小总结
+
+将 `Spring Boot` 应用 `Docker` 化有以下几个原因：
+
+1. 便携性：`Docker`容器提供了一种轻量级、可移植的运行环境。通过将`Spring Boot`应用程序打包成`Docker`镜像，可以在不同的环境中轻松部署和运行，无需担心环境配置的差异性。
+
+2. 一致性：`Docker`镜像包含了应用程序及其依赖的所有组件，包括操作系统、库和配置文件等。这确保了在不同的部署环境中，应用程序的运行环境始终保持一致，避免了由于环境差异导致的问题。
+
+3. 可扩展性：使用`Docker`可以轻松地扩展`Spring Boot`应用程序。通过在`Docker`容器中运行多个实例，可以实现水平扩展，以满足高负载和大流量的需求。
+
+4. 开发和测试效率：`Docker`容器提供了隔离的运行环境，使开发人员可以在本地开发和测试应用程序，而无需担心与其他应用程序的冲突。同时，`Docker`还支持持续集成和持续交付（CI/CD），可以自动化构建、测试和部署`Spring Boot`应用程序。
+
+5. 资源利用率：`Docker`容器是轻量级的，可以在同一物理机上运行多个容器，充分利用服务器资源。这对于提高服务器的利用率和降低成本非常有益。
+
+综上，将 `Spring Boot` 应用程序 `Docker` 化可以提供便携性、一致性、可扩展性、开发和测试效率以及资源利用率的优势。这使得 `Docker` 成为部署和运行 `Spring Boot` 应用程序的理想选择。 
+
 ---
 
 ***If you have any questions or any bugs are found, please feel free to contact me.***
