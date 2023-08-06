@@ -117,6 +117,18 @@ Note：需要reboot重启生效。
 5.4.207-1.el7.elrepo.x86_64
 ```
 
+## 小总结
+
+使用 `Kubernetes` 并不一定需要升级 `CentOS 7` 的内核版本。 `Kubernetes` 可以在较低版本的 `CentOS 7` 上运行，但是某些功能可能需要较新的内核版本才能正常工作。如果您计划使用 `Kubernetes` 的高级功能，如网络插件或容器运行时，那么升级内核版本可能是必要的。可以通过以下步骤来升级 `CentOS 7` 的内核版本：
+
+1. 检查当前内核版本：运行命令uname -r来查看当前的内核版本。
+2. 检查可用的内核版本：运行命令yum list available kernel来查看可用的内核版本。
+3. 安装新的内核版本：选择一个符合需求的内核版本，并运行命令yum install kernel-<version>来安装它。
+4. 更新引导配置：运行命令grub2-mkconfig -o /boot/grub2/grub.cfg来更新引导配置文件。
+5. 重启系统：运行命令reboot来重启系统并使用新的内核版本。
+
+请注意，在升级内核之前，建议先备份重要的数据，并确保您了解如何回滚到旧的内核版本，以防出现问题。此外，升级内核可能需要一些时间和系统重启，因此请确保在合适的时间进行操作。 
+
 ---
 
 ***If you have any questions or any bugs are found, please feel free to contact me.***
