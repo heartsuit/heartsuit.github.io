@@ -10,6 +10,18 @@ tags: CloudNative, Docker, Kubernetes
 
 作为初学者，为避免在裸金属主机上搭建 `Kubernetes` 集群的复杂度，以及使用云服务商提供的容器编排服务的一脸懵逼等打击信心的深坑，建议使用 `minikube` 来进入 `Kubernetes` 的世界。
 
+`Minikube` 是一个用于在本地机器上运行 `Kubernetes` 集群的工具。使用 `Minikube` 有以下几个好处：
+
+1. 学习和开发环境：`Minikube`提供了一个轻量级的`Kubernetes`环境，可以在本地机器上快速搭建和测试`Kubernetes`应用程序。这对于学习和开发`Kubernetes`相关的技术非常有帮助。
+
+2. 离线环境：`Minikube`可以在没有互联网连接的情况下运行，这对于在没有稳定网络连接的环境中进行开发和测试非常有用。
+
+3. 快速部署和验证：使用`Minikube`可以快速部署和验证`Kubernetes`应用程序，而无需依赖复杂的生产环境。这对于快速迭代和验证想法非常有帮助。
+
+4. 多平台支持：`Minikube`支持在多个操作系统上运行，包括`Windows`、`Mac`和`Linux`。这使得开发人员可以在自己喜欢的操作系统上使用`Kubernetes`。
+
+总而言之， `Minikube` 是一个方便、灵活和易于使用的工具，可以帮助开发人员在本地机器上快速搭建和测试 `Kubernetes` 应用程序。 
+
 ## 系统环境
 
 采用一台虚拟机进行实践。。
