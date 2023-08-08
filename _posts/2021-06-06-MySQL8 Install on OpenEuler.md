@@ -173,6 +173,82 @@ yum localinstall mysql-community-libs-8.0.19-1.el7.aarch64.rpm
 
 试了网上一些方法，没效果，就想着换个 `CentOS8` 版本的 `MySQL8` 安装吧，然后就可以了。
 
+### 在CentOS7上安装MySQL8
+
+上述的安装方式同样适用于在CentOS7上安装MySQL8，不过需要下载对应架构下的安装包，以X64为例。
+
+```bash
+wget http://repo.mysql.com/yum/mysql-8.0-community/el/7/x86_64/mysql-community-common-8.0.19-1.el7.x86_64.rpm
+wget http://repo.mysql.com/yum/mysql-8.0-community/el/7/x86_64/mysql-community-libs-8.0.19-1.el7.x86_64.rpm
+wget http://repo.mysql.com/yum/mysql-8.0-community/el/7/x86_64/mysql-community-client-8.0.19-1.el7.x86_64.rpm
+wget http://repo.mysql.com/yum/mysql-8.0-community/el/7/x86_64/mysql-community-server-8.0.19-1.el7.x86_64.rpm
+
+yum localinstall mysql-community-common-8.0.19-1.el7.x86_64.rpm
+yum localinstall mysql-community-libs-8.0.19-1.el7.x86_64.rpm
+yum localinstall mysql-community-client-8.0.19-1.el7.x86_64.rpm
+yum localinstall mysql-community-server-8.0.19-1.el7.x86_64.rpm
+```
+
+在执行 `yum localinstall mysql-community-libs-8.0.19-1.el7.x86_64.rpm` 时可能遇到的问题：
+
+```
+yum localinstall mysql-community-libs-8.0.19-1.el7.x86_64.rpm
+已加载插件：fastestmirror
+正在检查 mysql-community-libs-8.0.19-1.el7.x86_64.rpm: mysql-community-libs-8.0.19-1.el7.x86_64
+mysql-community-libs-8.0.19-1.el7.x86_64.rpm 将被安装
+正在解决依赖关系
+--> 正在检查事务
+---> 软件包 mariadb-libs.x86_64.1.5.5.65-1.el7 将被 取代
+--> 正在处理依赖关系 libmysqlclient.so.18()(64bit)，它被软件包 2:postfix-2.10.1-9.el7.x86_64 需要
+Loading mirror speeds from cached hostfile
+ * base: mirrors.tuna.tsinghua.edu.cn
+ * extras: mirrors.tuna.tsinghua.edu.cn
+ * updates: mirrors.tuna.tsinghua.edu.cn
+--> 正在处理依赖关系 libmysqlclient.so.18(libmysqlclient_18)(64bit)，它被软件包 2:postfix-2.10.1-9.el7.x86_64 需要
+---> 软件包 mysql-community-libs.x86_64.0.8.0.19-1.el7 将被 舍弃
+--> 正在检查事务
+---> 软件包 mariadb-libs.x86_64.1.5.5.65-1.el7 将被 升级
+---> 软件包 mariadb-libs.x86_64.1.5.5.68-1.el7 将被 更新
+Removing mariadb-libs.x86_64 1:5.5.68-1.el7 - u due to obsoletes from mysql-community-libs.x86_64 0:8.0.19-1.el7 - u
+--> 正在使用新的信息重新解决依赖关系
+--> 正在检查事务
+---> 软件包 mariadb-libs.x86_64.1.5.5.68-1.el7 将被 更新
+--> 正在处理依赖关系 libmysqlclient.so.18(libmysqlclient_18)(64bit)，它被软件包 2:postfix-2.10.1-9.el7.x86_64 需要
+--> 正在处理依赖关系 libmysqlclient.so.18()(64bit)，它被软件包 2:postfix-2.10.1-9.el7.x86_64 需要
+--> 解决依赖关系完成
+错误：软件包：2:postfix-2.10.1-9.el7.x86_64 (@anaconda)
+          需要：libmysqlclient.so.18()(64bit)
+          正在删除: 1:mariadb-libs-5.5.65-1.el7.x86_64 (@anaconda)
+              libmysqlclient.so.18()(64bit)
+          取代，由: mysql-community-libs-8.0.19-1.el7.x86_64 (/mysql-community-libs-8.0.19-1.el7.x86_64)
+             ~libmysqlclient.so.21()(64bit)
+          更新，由: 1:mariadb-libs-5.5.68-1.el7.x86_64 (base)
+              libmysqlclient.so.18()(64bit)
+错误：软件包：2:postfix-2.10.1-9.el7.x86_64 (@anaconda)
+          需要：libmysqlclient.so.18(libmysqlclient_18)(64bit)
+          正在删除: 1:mariadb-libs-5.5.65-1.el7.x86_64 (@anaconda)
+              libmysqlclient.so.18(libmysqlclient_18)(64bit)
+          取代，由: mysql-community-libs-8.0.19-1.el7.x86_64 (/mysql-community-libs-8.0.19-1.el7.x86_64)
+              未找到
+          更新，由: 1:mariadb-libs-5.5.68-1.el7.x86_64 (base)
+              libmysqlclient.so.18(libmysqlclient_18)(64bit)
+ 您可以尝试添加 --skip-broken 选项来解决该问题
+ 您可以尝试执行：rpm -Va --nofiles --nodigest
+```
+
+解决方法：
+
+```bash
+# 检查系统自带的mariadb-libs包
+[root@hadoop2 ~]# rpm -qa | grep mariadb
+mariadb-libs-5.5.65-1.el7.x86_64
+
+# 卸载掉系统自带的mariadb-libs包
+[root@hadoop2 ~]# yum remove mariadb-libs
+```
+
+然后重新执行前面的安装命令即可。
+
 ### Reference
 
 * [华为官方镜像](https://mirrors.huaweicloud.com/)
