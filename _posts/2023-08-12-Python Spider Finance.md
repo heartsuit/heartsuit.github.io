@@ -230,7 +230,7 @@ plt.show()
 
 根据我们看到网页中的实际表格进行数据表设计。
 
-![2023-08-12-MySQLTable](https://github.com/heartsuit/heartsuit.github.io/raw/master/pictures/2023-08-12-Chart.jpg)
+![2023-08-12-MySQLTable.jpg](https://github.com/heartsuit/heartsuit.github.io/raw/master/pictures/2023-08-12-MySQLTable.jpg)
 
 ```sql
 CREATE TABLE `b_profit_test` (
