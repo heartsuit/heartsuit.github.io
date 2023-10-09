@@ -257,6 +257,14 @@ hello-minikube-58647b77b8-srpbq   1/1     Running   0          18s
 
 ```bash
 # 将部署暴露为服务
+[root@k8s0 ~]# kubectl expose deployment hello-minikube --type=NodePort --port=8080
+service/hello-minikube exposed
+
+# 获取服务的URL
+[root@k8s0 ~]# minikube service --url hello-minikube
+http://192.168.76.2:31061
+
+# 如果终端有浏览器，直接打开
 [root@k8s0 ~]# minikube service hello-minikube
 |-----------|----------------|-------------|---------------------------|
 | NAMESPACE |      NAME      | TARGET PORT |            URL            |
