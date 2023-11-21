@@ -74,9 +74,17 @@ public class NacosConfig implements ApplicationRunner {
 }
 ```
 
+## 业务服务正常，但是日志中持续报错
+
+> java.lang.NoClassDefFoundError: com/alibaba/nacos/shaded/com/google/common/util/concurrent/AbstractFuture$Failure$1
+
+经过排查后发现，这个错误是由于之前升级了`Nacos`(2.0.4)，但是后端服务中的nacos-client（2.0.3）没有同步修改版本导致的。
+
 ## Reference
 
-[https://blog.csdn.net/qq_28379809/article/details/103773149](https://blog.csdn.net/qq_28379809/article/details/103773149)
+- [https://blog.csdn.net/qq_28379809/article/details/103773149](https://blog.csdn.net/qq_28379809/article/details/103773149)
+
+- [https://github.com/alibaba/nacos/issues/7435](https://github.com/alibaba/nacos/issues/7435)
 
 ---
 
