@@ -28,6 +28,7 @@ chkconfig mongod on #加入开机启动服务
 
 - 数据目录：/var/log/mongodb
 - 日志目录：/var/lib/mongodb
+- 配置文件：/etc/mongod.conf
 
 ### 基本操作
 
@@ -40,6 +41,7 @@ show dbs # 显示所有可连接的数据库；
 use dbName # 切换数据库（若DB不存在，则创建）；
 show tables # 显示数据库中的表；
 db.getCollectionNames() # 显示数据库中的表；
+db.version() # 查看数据库版本
 ```
 
 - CRUD
