@@ -16,7 +16,7 @@ tags: Tools
 
 ## 解决方案
 
-经过查阅发现可以通过安装一个虚拟屏幕，来实现分辨率可选。这个软件是： `usbmmidd_v2`
+经过查阅发现可以通过安装一个虚拟屏幕，来实现分辨率可选。这个软件是： `usbmmidd_v2`，[百度网盘：提取密码: u2sx](https://pan.baidu.com/s/1MtaDRiKTRnTL3b1Axjx0EQ?pwd=u2sx)
 
 ![2022-12-18-usbmmidd.jpg](https://github.com/heartsuit/heartsuit.github.io/raw/master/pictures/2022-12-18-usbmmidd.jpg)
 
