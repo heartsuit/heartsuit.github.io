@@ -14,7 +14,7 @@ tags: Docker
 
 ## devicemapper
 
-在处理问题前，先来了解下什么是 `docker/devicemapper` ，这个目录存储了 `Docker` 使用 `devicemapper` 存储驱动时的相关数据。这包括镜像、容器和卷的数据。 `Devicemapper` 是 `Docker` 的一种存储驱动程序，它使用块设备来存储 `Docker` 容器的数据。在 `docker/devicemapper` 目录中，我们可以看到 `metadata`、`snapshots` 和 `thinpool` 等文件和目录，用于存储 `devicemapper` 驱动所需的数据。
+在处理问题前，先来了解下什么是 `docker/devicemapper` ，这个目录存储了 `Docker` 使用 `devicemapper` 存储驱动时的相关数据。这包括镜像、容器和卷的数据。 `Devicemapper` 是 `Docker` 的一种存储驱动程序，它使用块设备来存储 `Docker` 容器的数据。在 `docker/devicemapper` 目录中，我们可以看到 `metadata` 、 `snapshots` 和 `thinpool` 等文件和目录，用于存储 `devicemapper` 驱动所需的数据。
 
 ## 腾出空间
 
@@ -43,6 +43,26 @@ tags: Docker
 * 清理无用的镜像和容器
 
 > docker system prune -a
+
+```bash
+# 检查Docker数据目录的大小
+du -sh /var/lib/docker
+
+# 查找并删除一些过旧或者不再需要的日志文件
+find /var/lib/docker/devicemapper/mnt -name "*.log" -type f -exec rm {} \; 
+
+# 查找并删除一些过旧或者不再需要的临时文件
+find /var/lib/docker/devicemapper/mnt -name "*.tmp" -type f -exec rm {} \; 
+
+# 删除无用卷
+docker volume rm $(docker volume ls -qf dangling=true)
+
+# 清理dangling image
+docker rmi $(docker images --filter "dangling=true" -q --no-trunc)
+
+# 清理无用的镜像和容器
+docker system prune -a
+```
 
 * 调整Docker的数据目录
 如果你的Docker数据目录（通常是/var/lib/docker）所在的分区空间不足，也可以考虑将其迁移到空间更大的分区。具体的迁移方式网上教程很多，由于我这次
