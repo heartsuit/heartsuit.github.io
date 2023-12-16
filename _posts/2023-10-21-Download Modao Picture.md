@@ -112,3 +112,9 @@ downloadFile(2, "./2.png")
 2. 这种情况通常发生在客户端发送了一个带有 `If-Modified-Since` 或 `If-None-Match` 头部的请求，这些头部包含了之前请求时服务器返回的资源的相关信息，用于判断资源是否发生了变化。
 
 3. 要解决这个问题，可以尝试在 `fetch` 请求中添加 `Cache-Control: no-cache` 头部，这将告诉服务器不使用缓存版本，强制返回实际的资源内容。
+
+---
+
+**_If you have any questions or any bugs are found, please feel free to contact me._**
+
+**_Your comments and suggestions are welcome!_**

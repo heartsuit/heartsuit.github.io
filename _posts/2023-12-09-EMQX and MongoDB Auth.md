@@ -273,3 +273,9 @@ NoSQLBooster for MongoDB本身是提供了30天的试用期的，看如何想办
 ## Reference
 
 * [Ubuntu下安装使用MongoDB](https://heartsuit.blog.csdn.net/article/details/83415756)
+
+---
+
+**_If you have any questions or any bugs are found, please feel free to contact me._**
+
+**_Your comments and suggestions are welcome!_**

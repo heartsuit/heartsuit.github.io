@@ -356,3 +356,9 @@ query getCounty($code: String, $withLanguages: Boolean!) {
 * [Hasura安装脚本](https://github.com/hasura/graphql-engine/blob/master/install-manifests/docker-compose/docker-compose.yaml])
 * [Countries GraphQL API 源码](https://github.com/trevorblades/countries)
 * [Countries 数据集](https://annexare.github.io/Countries/)
+
+---
+
+**_If you have any questions or any bugs are found, please feel free to contact me._**
+
+**_Your comments and suggestions are welcome!_**

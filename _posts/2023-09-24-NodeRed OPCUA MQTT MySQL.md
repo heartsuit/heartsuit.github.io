@@ -167,3 +167,9 @@ return msg;
 
 * [使用nvm管理不同版本的Node.js](https://heartsuit.blog.csdn.net/article/details/116665356)
 * [Node-Red官方文档](https://nodered.org/docs/getting-started/local)
+
+---
+
+**_If you have any questions or any bugs are found, please feel free to contact me._**
+
+**_Your comments and suggestions are welcome!_**
