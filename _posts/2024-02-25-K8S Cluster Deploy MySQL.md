@@ -47,6 +47,10 @@ Linux version 3.10.0-1160.71.1.el7.x86_64 (mockbuild@kbuilder.bsys.centos.org) (
 CentOS Linux release 7.9.2009 (Core)
 ```
 
+## 部署示意
+
+![2024-02-25-K8SMySQL.png](https://github.com/heartsuit/heartsuit.github.io/raw/master/pictures/2024-02-25-K8SMySQL.png)
+
 ## YAML转换
 
 `ruoyi-cloud` 项目本身提供了一个使用 `docker-compose` 部署的配置文件以及所有依赖服务镜像的构建脚本，是在项目根目录的 `docker` 目录下，可参考[Docker容器化部署若依微服务ruoyi-cloud项目](https://heartsuit.blog.csdn.net/article/details/134613312)。
