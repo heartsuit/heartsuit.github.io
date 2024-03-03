@@ -49,7 +49,7 @@ CentOS Linux release 7.9.2009 (Core)
 
 ## 部署示意
 
-![2024-03-02-K8SNacos.png](https://github.com/heartsuit/heartsuit.github.io/raw/master/pictures/2024-03-02-K8SNacos.png)
+![2024-03-02-K8SNacos.jpg](https://github.com/heartsuit/heartsuit.github.io/raw/master/pictures/2024-03-02-K8SNacos.jpg)
 
 ## YAML转换
 
