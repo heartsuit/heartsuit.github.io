@@ -12,7 +12,7 @@ tags: TDengine, Grafana
 
 > 今天(2024年10月10日)我们非常高兴地宣布，TDengine 3.3.3.0 版本正式发布。本次更新引入了多项重要功能和性能优化，旨在为用户提供更高效、更灵活的数据解决方案。在 3.3.3.0 版本中，我们着重优化了监控和告警功能，新增了多种常见的 MySQL 函数，并增强了对 MongoDB 数据源的支持。这些改进将为用户在物联网和大数据应用中提供更强大的功能，助力大家在数字化转型过程中实现更大的成功。
 
-**时序数据库**作为软件项目的基础设施，对其运行状态进行实时监控的重要性不言而喻，今天就来体验下**重优化了监控和告警功能**。曾在 `TDengine 2.1.2.0` 发布后，体验了将 `TDengine` 日志数据表的内容在 `Grafana` 仪表盘上可视化展现的功能；后来官方不断扩展其监控能力，打造了 `TDinsight` 这一可视化工具，与 `Grafana` 的生态打成一片。这篇文章通过容器化安装 `TDengine` 时序数据库，使用 `taosKeeper` 与 `TDinsight` 实现对 `TDengine` 服务的状态监测与钉钉告警消息推送。
+**时序数据库**作为软件项目的基础设施，对其运行状态进行实时监控的重要性不言而喻，今天就来体验下**重优化了监控和告警功能**。曾在 `TDengine 2.1.2.0` 发布后，体验了将 `TDengine` 日志数据表的内容在 `Grafana` 仪表盘上可视化展现的功能；后来官方不断扩展其监控能力，打造了 `TDinsight` 这一可视化工具，与 `Grafana` 的生态打成一片。这篇文章通过容器化安装 `TDengine` 时序数据库与 `TDinsight` 监控大盘，使用 `taosKeeper` 与 `TDinsight` 实现对 `TDengine` 服务的状态监测与钉钉告警消息推送。
 
 ## 虚机资源
 
@@ -184,13 +184,13 @@ root@9118ddbfa74b:~# taosBenchmark -I stmt -n 2000000 -t 10000
 
 ![2024-10-16-6-AlertDemo.jpg](https://github.com/heartsuit/heartsuit.github.io/raw/master/pictures/2024-10-16-6-AlertDemo.jpg)
 
-![2024-10-16-5-AlertDemo2.jpg](https://github.com/heartsuit/heartsuit.github.io/raw/master/pictures/2024-10-16-5-AlertDemo2.jpg)
+![2024-10-16-6-AlertDemo2.jpg](https://github.com/heartsuit/heartsuit.github.io/raw/master/pictures/2024-10-16-6-AlertDemo2.jpg)
 
 ### 告警触发推送与告警解除推送
 
 当 `taosBenchmark` 写入数据逐渐将磁盘空间耗尽时，会触发告警，进而会通过我们配置的告警方式和策略进行推送，本文中我们将通过钉钉接收到推送消息：
 
-![2024-10-16-5-AlertDemo3.jpg](https://github.com/heartsuit/heartsuit.github.io/raw/master/pictures/2024-10-16-5-AlertDemo3.jpg)
+![2024-10-16-6-AlertDemo3.jpg](https://github.com/heartsuit/heartsuit.github.io/raw/master/pictures/2024-10-16-6-AlertDemo3.jpg)
 
 当我通过 `taos` 命令行中执行 `drop database test;` 删除 `test` 数据库后， `TDengine` 服务恢复正常，过一段时间（一个告警监测周期）后，在钉钉上会收到各类告警解除的消息。
 
@@ -218,7 +218,7 @@ taos> drop database test;
 Drop OK, 0 row(s) affected (1.476353s)
 ```
 
-![2024-10-16-5-AlertDemo4.jpg](https://github.com/heartsuit/heartsuit.github.io/raw/master/pictures/2024-10-16-5-AlertDemo4.jpg)
+![2024-10-16-6-AlertDemo4.jpg](https://github.com/heartsuit/heartsuit.github.io/raw/master/pictures/2024-10-16-6-AlertDemo4.jpg)
 
 Note: 在 `Prometheus` 与 `AlertManager` 的生态中， `alertstate` 字段表示报警的状态，有以下几种可能的取值：
 
