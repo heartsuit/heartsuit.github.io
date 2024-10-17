@@ -1,4 +1,4 @@
-$("body").css('background-image', `url('https://sfkj666.com/backgroundb')`);
+$("body").css('background-image', `url('https://raw.githubusercontent.com/heartsuit/heartsuit.github.io/master/pictures/background.jpg')`);
 $("body").css('background-repeat', `no-repeat`);
 $("body").css('background-size', `cover`);
 
