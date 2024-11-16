@@ -144,7 +144,7 @@ scrape_configs:
 
 * Prometheus控制台验证influx相关的指标
 
-![2024-11-17-1-InfluxDBIndex](https://github.com/heartsuit/heartsuit.github.io/raw/master/pictures/2024-11-17-1-InfluxDBIndex)
+![2024-11-17-1-InfluxDBIndex.jpg](https://github.com/heartsuit/heartsuit.github.io/raw/master/pictures/2024-11-17-1-InfluxDBIndex.jpg)
 
 ### 配置Grafana对主机状态的可视化
 
@@ -172,7 +172,7 @@ scrape_configs:
 
 ### InfluxDB监控效果
 
-![2024-11-17-3-InfluxDBDashboard.jpg.jpg](https://github.com/heartsuit/heartsuit.github.io/raw/master/pictures/2024-11-17-3-InfluxDBDashboard.jpg.jpg)
+![2024-11-17-3-InfluxDBDashboard.jpg](https://github.com/heartsuit/heartsuit.github.io/raw/master/pictures/2024-11-17-3-InfluxDBDashboard.jpg)
 
 ## 小总结
 
