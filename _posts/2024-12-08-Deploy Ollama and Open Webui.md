@@ -72,7 +72,7 @@ systemctl restart docker
 
 ```bash
 # 拉取最新版镜像
-[root@SXCTC-YYSC02 ollama]# docker pull ollama/ollama
+[root@llm ollama]# docker pull ollama/ollama
 Using default tag: latest
 latest: Pulling from ollama/ollama
 latest: Pulling from ollama/ollama
@@ -86,12 +86,12 @@ Status: Downloaded newer image for ollama/ollama:latest
 docker.io/ollama/ollama:latest
 
 # 查看拉取成功的镜像
-[root@SXCTC-YYSC02 ollama]# docker images
+[root@llm ollama]# docker images
 REPOSITORY                                           TAG         IMAGE ID       CREATED         SIZE
 ollama/ollama                                        latest      a8316b7b7fcd   35 hours ago    4.65GB
 
 # 挂载目录、指定端口启动
-[root@SXCTC-YYSC02 ollama]# docker run -d -v /opt/ollama:/root/.ollama -p 11434:11434 --name ollama ollama/ollama
+[root@llm ollama]# docker run -d -v /opt/ollama:/root/.ollama -p 11434:11434 --name ollama ollama/ollama
 ```
 
 ### 验证ollama安装
@@ -100,10 +100,10 @@ ollama/ollama                                        latest      a8316b7b7fcd   
 
 ```
 # 一开始，还没有模型
-[root@SXCTC-YYSC02 ollama]# docker exec -it ollama ollama list
+[root@llm ollama]# docker exec -it ollama ollama list
 NAME    ID    SIZE    MODIFIED 
 
-[root@SXCTC-YYSC02 ollama]# docker exec -it ollama ollama run llama3.2
+[root@llm ollama]# docker exec -it ollama ollama run llama3.2
 pulling manifest 
 pulling dde5aa3fc5ff... 100% ▕███████████████████████████████████████████████████████████████████████████████████████████▏ 2.0 GB
 pulling 966de95ca8a6... 100% ▕███████████████████████████████████████████████████████████████████████████████████████████▏ 1.4 KB
@@ -175,21 +175,21 @@ Note: Ctrl+D退出命令行交互聊天。。
 
 ```bash
 # 查看ollama版本信息
-[root@SXCTC-YYSC02 ollama]# docker exec -it ollama ollama -v
+[root@llm ollama]# docker exec -it ollama ollama -v
 ollama version is 0.4.7
 
 # 查看已下载的大模型
-[root@SXCTC-YYSC02 ollama]# docker exec -it ollama ollama list
+[root@llm ollama]# docker exec -it ollama ollama list
 NAME               ID              SIZE      MODIFIED      
 llama3.2:latest    a80c4f17acd5    2.0 GB    6 minutes ago 
 
 # 查看正在运行的模型
-[root@SXCTC-YYSC02 ollama]# docker exec -it ollama ollama ps
+[root@llm ollama]# docker exec -it ollama ollama ps
 NAME               ID              SIZE      PROCESSOR    UNTIL              
 llama3.2:latest    a80c4f17acd5    3.5 GB    100% CPU     4 minutes from now
 
 # 查看指定的模型信息
-[root@SXCTC-YYSC02 ollama]# docker exec -it ollama ollama show llama3.2:latest
+[root@llm ollama]# docker exec -it ollama ollama show llama3.2:latest
   Model
     architecture        llama     
     parameters          3.2B      
@@ -212,7 +212,7 @@ llama3.2:latest    a80c4f17acd5    3.5 GB    100% CPU     4 minutes from now
 ### 容器化部署OpenWebUI
 
 ```bash
-[root@SXCTC-YYSC02 ollama]# docker run -d -e HF_ENDPOINT=https://hf-mirror.com -p 8080:8080 --add-host=host.docker.internal:host-gateway -v /opt/open-webui:/app/backend/data --name open-webui --restart always ghcr.io/open-webui/open-webui:main
+[root@llm ollama]# docker run -d -e HF_ENDPOINT=https://hf-mirror.com -p 8080:8080 --add-host=host.docker.internal:host-gateway -v /opt/open-webui:/app/backend/data --name open-webui --restart always ghcr.io/open-webui/open-webui:main
 ```
 
 Note：如果遇到了连接超时问题，可以添加镜像 `HuggingFace` 端点环境变量。
