@@ -239,9 +239,33 @@ Note：如果遇到了连接超时问题，可以添加镜像 `HuggingFace` 端�
 
 ![2024-12-08-6-WebUIChat2.jpg](https://github.com/heartsuit/heartsuit.github.io/raw/master/pictures/2024-12-08-6-WebUIChat2.jpg)
 
+## 离线部署
+
+实际生产环境，有时候没有互联网环境，需要进行离线部署。
+
+### 导出/导入镜像tar包
+
+先将前面在可以连接互联网的主机上下载的镜像保存导出为tar包。
+
+```
+docker save ollama/ollama -o ollama.tar
+docker save ghcr.io/open-webui/open-webui:main -o open-webui.tar
+```
+
+然后在需要进行离线部署的主机上执行以下命令加载镜像。
+
+```
+docker load -i ollama.tar
+docker load -i open-webui.tar
+```
+
+### 模型迁移
+
+比如将我们已下载的 `llama3.2` 模型迁移到离线主机上：将模型文件目录 `models` （这里是 `/opt/ollama/models` ）拷贝到目标离线主机的对应目录即可。
+
 ## 小总结
 
-上述内容介绍了如何使用 `Ollama` 和 `Open WebUI` 搭建私有化大模型部署环境。文章首先介绍了在一台纯 `CPU` 的虚拟机上（IP：192.168.44.170）部署 `Ollama v0.4.7` ，通过 `Docker` 容器化部署并配置国内镜像源加速。部署完成后，使用 `llama3.2` （3B）模型进行了命令行交互测试，验证了包括中文在内的基本对话功能。接着部署了 `Open WebUI v0.4.7` 作为 `Web` 交互界面，通过浏览器访问 `8080` 端口，创建管理员账号后即可进行可视化的模型对话。整个部署过程简单直观，为用户提供了一个便捷的私有化大模型解决方案。
+上述内容介绍了如何使用 `Ollama` 和 `Open WebUI` 搭建私有化大模型部署环境。文章首先介绍了在一台纯 `CPU` 的虚拟机上（IP：192.168.44.170）部署 `Ollama v0.4.7` ，通过 `Docker` 容器化部署并配置国内镜像源加速。部署完成后，使用 `llama3.2` （3B）模型进行了命令行交互测试，验证了包括中文在内的基本对话功能。接着部署了 `Open WebUI v0.4.7` 作为 `Web` 交互界面，通过浏览器访问 `8080` 端口，创建管理员账号后即可进行可视化的模型对话。最后提供了离线部署操作，整个部署过程简单直观，为用户提供了一个便捷的私有化大模型解决方案。
 
 ## Reference
 
