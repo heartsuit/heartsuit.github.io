@@ -205,6 +205,14 @@ Note：在输入模型名称，点击保存时，会有一个调用远程模型A
 
 ## 构建个人知识库
 
+大语言模型的训练数据一般基于公开的数据，且每一次训练需要消耗大量算力，这意味着模型的知识一般不会包含私有领域的知识，同时在公开知识领域存在一定的滞后性。为了解决这一问题，目前通用的方案是采用 `RAG` （检索增强生成）技术，使用用户问题来匹配最相关的外部数据，将检索到的相关内容召回后作为模型提示词的上下文来重新组织回复。
+
+这里我选择之前写的关于数据集成工具 `ETLCloud` 的系列文章( `PDF` 格式)作为知识库素材。
+
+Note: 当前 `Dify` 的知识库支持以下格式的文件：
+1. 长文本内容（TXT、Markdown、DOCX、HTML、JSONL 甚至是 PDF 文件）
+2. 结构化数据（CSV、Excel 等）
+
 * 选择数据源
 
 ![2024-12-15-9-Knowledge1.jpg](https://github.com/heartsuit/heartsuit.github.io/raw/master/pictures/2024-12-15-9-Knowledge1.jpg)
@@ -220,6 +228,14 @@ Note：在输入模型名称，点击保存时，会有一个调用远程模型A
 * 添加知识库作为聊天助手的上下文
 
 ![2024-12-15-9-Knowledge4.jpg](https://github.com/heartsuit/heartsuit.github.io/raw/master/pictures/2024-12-15-9-Knowledge4.jpg)
+
+* 询问知识库相关内容
+
+![2024-12-15-10-Knowlege.jpg](https://github.com/heartsuit/heartsuit.github.io/raw/master/pictures/2024-12-15-10-Knowlege.jpg)
+
+Note: 
+1. 打完收工，个人知识库小助手成功上线啦！
+2. 每次的回答输出还提供了参考文档，贴心~
 
 ## 离线部署
 
