@@ -1,6 +1,6 @@
 ---
 layout: post
-title: LLM大语言模型私有化部署-OpenEuler22.03SP3上容器化部署Dify与Qwen2.5
+title: LLM大语言模型私有化部署-使用Dify与Qwen2.5打造专属知识库
 tags: AI, LLM
 ---
 
