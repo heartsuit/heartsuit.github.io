@@ -32,7 +32,7 @@ tags: AI, LLM
 
 ### 注册获取Tavily Search授权
 
-`Tavily Search` 需要授权后才能使用，通过“如何获取”超链接跳转到 `Tavily Search` 官方进行注册登录，我这里使用 `GitHub` 账号直接登录，之后可以获取到一个 `API Key` 。
+`Tavily Search` 需要授权后才能使用，通过“如何获取”超链接跳转到 `Tavily Search` 官方进行注册登录，我这里使用 `GitHub` 账号直接登录，之后可以获取到一个 `API Key` ，一个月有1000的免费次数。
 
 ![2024-12-22-4-Login.jpg](https://github.com/heartsuit/heartsuit.github.io/raw/master/pictures/2024-12-22-4-Login.jpg)
 
@@ -50,7 +50,7 @@ Note：输入、输出参数可以通过输入 `/` 进行选择。
 
 ### 配置LLM节点的系统提示词
 
-在LLM节点，键入/选择 `Tavily Search` 的输出text，编辑系统提示词Prompt：
+在LLM节点，键入/选择 `Tavily Search` 的输出 `text` ，编辑系统提示词 `Prompt` ：
 
 > 根据搜索引擎返回的结果：{{#1734574383345.text#}}，回答用户问题。
 
