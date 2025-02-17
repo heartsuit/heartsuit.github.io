@@ -222,6 +222,20 @@ k8s-node2    Ready    <none>                 35h   v1.20.9
 kubectl apply -f https://raw.githubusercontent.com/kubernetes/dashboard/v2.3.1/aio/deploy/recommended.yaml
 ```
 
+```bash
+# 将服务类型改为NodePort
+[root@k8s-master dashboard]# kubectl -n kubernetes-dashboard patch services kubernetes-dashboard -p '{"spec":{"type":"NodePort"}}'
+service/kubernetes-dashboard patched
+
+# 查看暴露的端口号
+[root@k8s-master dashboard]# kubectl get svc -n kubernetes-dashboard
+NAME                        TYPE        CLUSTER-IP      EXTERNAL-IP   PORT(S)         AGE
+dashboard-metrics-scraper   ClusterIP   10.96.58.169    <none>        8000/TCP        10m
+kubernetes-dashboard        NodePort    10.96.107.205   <none>        443:31196/TCP   10m
+```
+
+用于浏览器访问：暴露的 `NodePort` 类型的服务：172.16.201.25:31196
+
 ### 创建访问账号
 
 ```bash
