@@ -240,6 +240,13 @@ UPLOAD_FILE_SIZE_LIMIT=50M
 UPLOAD_FILE_BATCH_LIMIT=10
 ```
 
+Note: `Dify` 用到了代理服务器，所以 `Nginx` 的上传文件大小限制也需要修改：同样是编辑 `.env` 文件，查找： `NGINX_CLIENT_MAX_BODY_SIZE` 。
+
+```
+# 上传文件大小限制，默认15M。
+NGINX_CLIENT_MAX_BODY_SIZE=50M
+```
+
 ## 小总结
 
 本文主要介绍了 `Dify` 本地部署后遇到的几个常见问题及其解决方案：首先是忘记密码的处理，可以通过官方提供的 `flask reset-password` 命令重置，或者直接操作 `PostgreSQL` 数据库修改密码信息；其次是密码错误次数超限导致账户锁定的问题，可以通过删除 `Redis` 中对应的限制 `Key` 来解决；再次是端口占用和 `HTTPS` 配置问题，可以通过修改 `.env` 文件中的 `EXPOSE_NGINX_PORT` 和 `NGINX_HTTPS_ENABLED` 等配置来解决；最后介绍了如何通过调整 `.env` 文件中的 `UPLOAD_FILE_SIZE_LIMIT` 和 `UPLOAD_FILE_BATCH_LIMIT` 参数来突破知识库文档上传的大小限制和数量限制。

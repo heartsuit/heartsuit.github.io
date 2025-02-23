@@ -1,6 +1,6 @@
 ---
 layout: post
-title: LLM大语言模型私有化部署-使用Dify的工作流编排打造专属AI数据分析师
+title: LLM大语言模型私有化部署-使用Dify的工作流编排打造专属AI诗词数据分析师
 tags: AI, LLM
 ---
 
@@ -43,7 +43,7 @@ LIMIT 10
 
 ### 添加LLM-生成SQL节点
 
-先选择一个合适的模型，这里经过测试，阿里百炼的 `LLM` 模型 `qwen2.5-14b-instruct / qwen2.5-72b-instruct / qwen-plus-latest` 模型（低于14B的模型效果一般。。）均可实现稳定的输出。
+先选择一个合适的模型，这里经过测试，阿里百炼的 `LLM` 模型 `qwen2.5-14b-instruct / qwen2.5-72b-instruct / qwen-plus-latest` 模型（低于14B的模型效果一般。。也可以试试 `DeepSeek` ~~）均可实现稳定的输出。
 
 ![2025-02-23-4-LLMModel.jpg](https://github.com/heartsuit/heartsuit.github.io/raw/master/pictures/2025-02-23-4-LLMModel.jpg)
 
