@@ -14,9 +14,9 @@ tags: Kubernetes
 
 | 主机名      | IP            | 说明 |
 | ---------- | ------------- | ------- |
-| k8s-master | 172.16.201.25 | 主节点   |
-| k8s-node1  | 172.16.201.26 | 工作节点 |
-| k8s-node2  | 172.16.201.27 | 工作节点 |
+| k8s-master | 192.168.44.25 | 主节点   |
+| k8s-node1  | 192.168.44.26 | 工作节点 |
+| k8s-node2  | 192.168.44.27 | 工作节点 |
 
 ## 系统环境
 
@@ -95,7 +95,7 @@ yum install -y kubelet-1.20.9 kubeadm-1.20.9 kubectl-1.20.9
 systemctl enable --now kubelet
 
 #所有机器配置master域名
-echo "172.16.201.25  k8s-master" >> /etc/hosts
+echo "192.168.44.25  k8s-master" >> /etc/hosts
 ```
 
 ## 下载各个主机需要的镜像
@@ -124,7 +124,7 @@ chmod +x ./images.sh && ./images.sh
 
 ```bash
 kubeadm init \
---apiserver-advertise-address=172.16.201.25 \
+--apiserver-advertise-address=192.168.44.25 \
 --control-plane-endpoint=k8s-master \
 --image-repository registry.cn-hangzhou.aliyuncs.com/lfy_k8s_images \
 --kubernetes-version v1.20.9 \
@@ -234,7 +234,7 @@ dashboard-metrics-scraper   ClusterIP   10.96.58.169    <none>        8000/TCP  
 kubernetes-dashboard        NodePort    10.96.107.205   <none>        443:31196/TCP   10m
 ```
 
-用于浏览器访问：暴露的 `NodePort` 类型的服务：172.16.201.25:31196
+用于浏览器访问：暴露的 `NodePort` 类型的服务：192.168.44.25:31196
 
 ### 创建访问账号
 
